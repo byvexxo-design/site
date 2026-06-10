@@ -1,146 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A Vexo é uma agência premium de criação de sites focada em resultado, SEO e performance. Conheça nossa história, valores e quem está por trás da marca.">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre — Vexo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Conheça a Vexo — quem somos, o que nos guia e as pessoas por trás de cada projeto de site que gera resultado.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://byvexo.com.br/sobre.html">
+  <meta property="og:type" content="website"><meta property="og:url" content="https://byvexo.com.br/sobre.html">
+  <meta property="og:title" content="Sobre — Vexo"><meta property="og:description" content="Conheça a Vexo — quem somos, o que nos guia e as pessoas por trás de cada projeto.">
+  <meta property="og:image" content="https://byvexo.com.br/og-home.png"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="Vexo">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Sobre — Vexo"><meta name="twitter:description" content="Conheça a Vexo."><meta name="twitter:image" content="https://byvexo.com.br/og-home.png">
+  <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/favicon-180.png"><link rel="manifest" href="/site.webmanifest">
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KTLNBPG6');</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5M0GVDBS27"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5M0GVDBS27');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --black:#0D0D0D; --forest:#0F4D2E; --green:#00E676; --off:#F7F6F3;
-      --muted:rgba(247,246,243,0.48); --sub:rgba(247,246,243,0.26);
-      --border:rgba(247,246,243,0.1); --border2:rgba(247,246,243,0.06);
-      --green-dim:rgba(0,230,118,0.1); --green-border:rgba(0,230,118,0.22);
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',sans-serif; background:var(--black); color:var(--off); -webkit-font-smoothing:antialiased; overflow-x:hidden; }
-    .wrap { width:100%; max-width:1120px; margin:0 auto; padding:0 20px; }
-    .label { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--green); opacity:.85; margin-bottom:1rem; display:block; }
-    .title { font-family:'Plus Jakarta Sans',sans-serif; font-weight:200; line-height:1.1; letter-spacing:-0.02em; font-size:clamp(2rem,8vw,3.4rem); color:var(--off); }
-    .title em { font-style:italic; font-weight:300; color:var(--green); }
-    .body-text { font-size:1rem; font-weight:300; line-height:1.7; color:var(--muted); margin-top:1rem; }
-    .btn { display:inline-flex; align-items:center; justify-content:center; font-family:'Inter',sans-serif; font-size:15px; font-weight:500; padding:15px 28px; border-radius:8px; cursor:pointer; border:none; text-decoration:none; transition:opacity .2s,transform .15s; -webkit-tap-highlight-color:transparent; }
-    .btn:active { transform:scale(0.97); }
-    .btn-primary { background:var(--green); color:var(--black); width:100%; }
-    .btn-primary:hover { opacity:.88; }
-    .btn-ghost { background:transparent; color:var(--muted); border:0.5px solid var(--border); width:100%; }
-    .btn-ghost:hover { color:var(--off); border-color:rgba(247,246,243,0.25); }
-
-    /* NAV */
-    nav { position:sticky; top:0; z-index:100; background:rgba(13,13,13,0.93); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:0.5px solid var(--border); }
-    .nav-inner { display:flex; align-items:center; justify-content:space-between; height:60px; }
-    .logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.3rem; letter-spacing:0.03em; color:var(--off); text-decoration:none; }
-    .logo span { color:var(--green); }
-    .nav-links { display:none; align-items:center; gap:1.75rem; }
-    .nav-links a { font-size:13px; color:var(--muted); text-decoration:none; transition:color .2s; }
-    .nav-links a:hover, .nav-links a.active { color:var(--off); }
-    .nav-cta { font-size:13px; font-weight:500; background:var(--green); color:var(--black); border:none; padding:9px 18px; border-radius:6px; cursor:pointer; white-space:nowrap; text-decoration:none; }
-    .nav-menu-btn { background:none; border:0.5px solid var(--border); border-radius:6px; padding:8px 10px; cursor:pointer; color:var(--muted); display:flex; align-items:center; }
-    .nav-menu-btn svg { width:18px; height:18px; }
-    .mobile-menu { display:none; flex-direction:column; gap:0; background:rgba(13,13,13,0.98); border-bottom:0.5px solid var(--border); }
-    .mobile-menu.open { display:flex; }
-    .mobile-menu a, .mobile-menu button { font-size:15px; font-weight:400; color:var(--muted); text-decoration:none; padding:16px 20px; border-bottom:0.5px solid var(--border2); background:none; border-left:none; border-right:none; border-top:none; text-align:left; cursor:pointer; font-family:'Inter',sans-serif; transition:color .2s; }
-    .mobile-menu a:hover, .mobile-menu button:hover { color:var(--off); }
-    .mobile-menu .m-cta { color:var(--green); font-weight:500; border-bottom:none; }
-
-    /* SECTIONS */
-    section { padding:80px 0; }
-    section + section { border-top:0.5px solid var(--border); }
-
-    /* PAGE HERO */
-    .page-hero { padding:72px 0 64px; }
-    .page-hero .title { font-size:clamp(2.4rem,9vw,4.2rem); margin-bottom:1.25rem; }
-    .page-hero .body-text { max-width:560px; margin-bottom:0; }
-
-    /* SOBRE — manifesto */
-    .manifesto { max-width:720px; }
-    .manifesto p { font-size:1.05rem; font-weight:300; line-height:1.8; color:rgba(247,246,243,0.72); margin-bottom:1.5rem; }
-    .manifesto p:last-child { margin-bottom:0; }
-    .manifesto strong { color:var(--off); font-weight:500; }
-
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{--black:#0D0D0D;--forest:#0F4D2E;--green:#00E676;--off:#F7F6F3;--muted:rgba(247,246,243,0.48);--sub:rgba(247,246,243,0.26);--border:rgba(247,246,243,0.1);--border2:rgba(247,246,243,0.06);--green-dim:rgba(0,230,118,0.1);--green-border:rgba(0,230,118,0.22);}
+    html{scroll-behavior:smooth;}body{font-family:'Inter',sans-serif;background:var(--black);color:var(--off);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px;}
+    .label{font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--green);opacity:.85;margin-bottom:1rem;display:block;}
+    .title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:200;line-height:1.1;letter-spacing:-0.02em;font-size:clamp(2rem,8vw,3.4rem);color:var(--off);}
+    .title em{font-style:italic;font-weight:300;color:var(--green);}
+    .body-text{font-size:1rem;font-weight:300;line-height:1.7;color:var(--muted);margin-top:1rem;}
+    .btn{display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;padding:15px 28px;border-radius:8px;cursor:pointer;border:none;text-decoration:none;transition:opacity .2s,transform .15s;-webkit-tap-highlight-color:transparent;}
+    .btn:active{transform:scale(0.97);}
+    .btn-primary{background:var(--green);color:var(--black);width:100%;}.btn-primary:hover{opacity:.88;}
+    .btn-ghost{background:transparent;color:var(--muted);border:0.5px solid var(--border);width:100%;}.btn-ghost:hover{color:var(--off);}
+    nav{position:sticky;top:0;z-index:100;background:rgba(13,13,13,0.93);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:0.5px solid var(--border);}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:60px;}
+    .logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;font-size:1.3rem;letter-spacing:0.03em;color:var(--off);text-decoration:none;}
+    .logo span{color:var(--green);}
+    .nav-links{display:none;align-items:center;gap:1.75rem;}
+    .nav-links a{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--off);}
+    .nav-cta{font-size:13px;font-weight:500;background:var(--green);color:var(--black);border:none;padding:9px 18px;border-radius:6px;cursor:pointer;white-space:nowrap;text-decoration:none;}
+    .nav-menu-btn{background:none;border:0.5px solid var(--border);border-radius:6px;padding:8px 10px;cursor:pointer;color:var(--muted);display:flex;align-items:center;}
+    .nav-menu-btn svg{width:18px;height:18px;}
+    .mobile-menu{display:none;flex-direction:column;background:rgba(13,13,13,0.98);border-bottom:0.5px solid var(--border);}
+    .mobile-menu.open{display:flex;}
+    .mobile-menu a,.mobile-menu button{font-size:15px;font-weight:400;color:var(--muted);text-decoration:none;padding:16px 20px;border-bottom:0.5px solid var(--border2);background:none;border-left:none;border-right:none;border-top:none;text-align:left;cursor:pointer;font-family:'Inter',sans-serif;transition:color .2s;}
+    .mobile-menu a:hover,.mobile-menu button:hover{color:var(--off);}
+    .mobile-menu .m-cta{color:var(--green);font-weight:500;border-bottom:none;}
+    section{padding:80px 0;}section+section{border-top:0.5px solid var(--border);}
+    .page-hero{padding:72px 0 64px;}.page-hero .title{font-size:clamp(2.4rem,9vw,4.2rem);}
+    /* MANIFESTO */
+    .manifesto{max-width:720px;}.manifesto p{font-size:1.05rem;font-weight:300;line-height:1.8;color:rgba(247,246,243,0.72);margin-bottom:1.5rem;}.manifesto p:last-child{margin-bottom:0;}.manifesto strong{color:var(--off);font-weight:500;}
     /* VALORES */
-    .valores-grid { display:grid; grid-template-columns:1fr; gap:12px; margin-top:2rem; }
-    .valor-card { border:0.5px solid var(--border); border-radius:12px; padding:1.5rem; background:rgba(247,246,243,0.03); }
-    .valor-n { font-family:'Plus Jakarta Sans',sans-serif; font-weight:200; font-size:1.8rem; color:var(--green); line-height:1; margin-bottom:.75rem; letter-spacing:-0.02em; }
-    .valor-title { font-size:15px; font-weight:500; color:var(--off); margin-bottom:.4rem; }
-    .valor-desc { font-size:13px; color:var(--muted); line-height:1.65; }
-
-    /* EQUIPE placeholder */
-    .team-grid { display:grid; grid-template-columns:1fr; gap:12px; margin-top:2rem; }
-    .team-card { border:0.5px solid var(--border); border-radius:12px; padding:1.5rem; display:flex; gap:1rem; align-items:flex-start; background:rgba(247,246,243,0.02); }
-    .team-av { width:52px; height:52px; border-radius:50%; background:var(--green-dim); border:0.5px solid var(--green-border); display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:500; color:var(--green); flex-shrink:0; }
-    .team-name { font-size:15px; font-weight:500; color:var(--off); margin-bottom:3px; }
-    .team-role { font-size:12px; color:var(--green); margin-bottom:6px; }
-    .team-bio { font-size:13px; color:var(--muted); line-height:1.6; }
-
+    .valores-grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:2rem;}
+    .valor-card{border:0.5px solid var(--border);border-radius:12px;padding:1.5rem;background:rgba(247,246,243,0.03);}
+    .valor-n{font-family:'Plus Jakarta Sans',sans-serif;font-weight:200;font-size:1.8rem;color:var(--green);line-height:1;margin-bottom:.75rem;letter-spacing:-0.02em;}
+    .valor-title{font-size:15px;font-weight:500;color:var(--off);margin-bottom:.4rem;}
+    .valor-desc{font-size:13px;color:var(--muted);line-height:1.65;}
+    /* EQUIPE */
+    .team-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:2rem;}
+    .team-card{border:0.5px solid var(--border);border-radius:14px;overflow:hidden;background:rgba(247,246,243,0.02);}
+    .team-photo{width:100%;height:260px;object-fit:cover;object-position:top;display:block;}
+    .team-body{padding:1.25rem 1.5rem;}
+    .team-name{font-size:17px;font-weight:500;color:var(--off);margin-bottom:3px;}
+    .team-role{font-size:12px;color:var(--green);font-weight:500;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:.75rem;}
+    .team-bio{font-size:13px;color:var(--muted);line-height:1.65;}
     /* CTA */
-    .cta-box { background:rgba(15,77,46,0.16); border:0.5px solid var(--green-border); border-radius:20px; padding:3rem 1.5rem; text-align:center; }
-    .cta-box .title { font-size:clamp(1.8rem,7vw,2.8rem); }
-    .cta-box .body-text { max-width:440px; margin:1rem auto 2rem; text-align:left; }
-    .cta-btns { display:flex; flex-direction:column; gap:12px; }
-
-    /* FOOTER */
-    footer { padding:48px 0 32px; border-top:0.5px solid var(--border); }
-    .foot-top { display:flex; flex-direction:column; gap:2rem; margin-bottom:2rem; }
-    .foot-logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.2rem; color:var(--off); }
-    .foot-logo span { color:var(--green); }
-    .foot-tagline { font-size:12px; color:var(--muted); margin-top:5px; }
-    .foot-links { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; }
-    .foot-links a { font-size:12px; color:var(--muted); text-decoration:none; }
-    .foot-links a:hover { color:var(--off); }
-    .foot-copy { padding-top:1.5rem; border-top:0.5px solid var(--border2); font-size:11px; color:var(--sub); text-align:center; }
-
-    @media(min-width:640px) {
-      .wrap { padding:0 40px; }
-      .page-hero { padding:100px 0 80px; }
-      .btn-primary, .btn-ghost { width:auto; }
-      .valores-grid { grid-template-columns:repeat(2,1fr); }
-      .team-grid { grid-template-columns:repeat(2,1fr); }
-      .cta-btns { flex-direction:row; justify-content:center; }
-      .cta-btns .btn { width:auto; }
-      .foot-top { flex-direction:row; justify-content:space-between; align-items:flex-start; }
-    }
-    @media(min-width:900px) {
-      .nav-links { display:flex; }
-      .nav-menu-btn { display:none; }
-      section { padding:100px 0; }
-      .valores-grid { grid-template-columns:repeat(3,1fr); }
-    }
-    @media(min-width:1024px) { .wrap { padding:0 5%; } }
+    .cta-box{background:rgba(15,77,46,0.16);border:0.5px solid var(--green-border);border-radius:20px;padding:3rem 1.5rem;text-align:center;}
+    .cta-box .title{font-size:clamp(1.8rem,7vw,2.6rem);}
+    .cta-box .body-text{max-width:440px;margin:1rem auto 2rem;text-align:left;}
+    .cta-btns{display:flex;flex-direction:column;gap:12px;}
+    footer{padding:48px 0 32px;border-top:0.5px solid var(--border);}
+    .foot-top{display:flex;flex-direction:column;gap:2rem;margin-bottom:2rem;}
+    .foot-logo{font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;font-size:1.2rem;color:var(--off);}
+    .foot-logo span{color:var(--green);}
+    .foot-tagline{font-size:12px;color:var(--muted);margin-top:5px;}
+    .foot-links{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;}
+    .foot-links a{font-size:12px;color:var(--muted);text-decoration:none;}
+    .foot-links a:hover{color:var(--off);}
+    .foot-copy{padding-top:1.5rem;border-top:0.5px solid var(--border2);font-size:11px;color:var(--sub);text-align:center;}
+    .wa-float{position:fixed;bottom:24px;right:20px;z-index:200;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.35);text-decoration:none;transition:transform .2s;}
+    .wa-float:hover{transform:scale(1.08);}.wa-float svg{width:28px;height:28px;fill:#fff;}
+    @media(min-width:640px){.wrap{padding:0 40px;}.page-hero{padding:100px 0 80px;}.btn-primary,.btn-ghost{width:auto;}.valores-grid{grid-template-columns:repeat(2,1fr);}.team-grid{grid-template-columns:repeat(2,1fr);}.cta-btns{flex-direction:row;justify-content:center;}.cta-btns .btn{width:auto;}.foot-top{flex-direction:row;justify-content:space-between;align-items:flex-start;}}
+    @media(min-width:900px){.nav-links{display:flex;}.nav-menu-btn{display:none;}section{padding:100px 0;}.valores-grid{grid-template-columns:repeat(3,1fr);}}
+    @media(min-width:1024px){.wrap{padding:0 5%;}}
   </style>
 </head>
 <body>
-
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTLNBPG6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav>
   <div class="wrap nav-inner">
     <a href="/" class="logo">Vexo<span>.</span></a>
     <div class="nav-links" role="navigation" aria-label="Menu principal">
-      <a href="/sobre.html" class="active">Sobre</a>
       <a href="/#como-funciona">Como funciona</a>
-      <a href="/#segmentos">Segmentos</a>
       <a href="/cases.html">Cases</a>
+      <a href="/sobre.html" class="active">Sobre</a>
       <a href="/blog.html">Blog</a>
-      <a href="/contato.html" class="nav-cta">Falar com a Vexo</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="https://wa.me/5518996745458?text=Olá%2C%20vim%20da%20página%20Sobre%20da%20Vexo!" target="_blank" rel="noopener" class="nav-cta">Falar com a Vexo</a>
     </div>
     <button class="nav-menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
       <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h14M2 9h14M2 14h14"/></svg>
     </button>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="/sobre.html">Sobre</a>
-    <a href="/#como-funciona">Como funciona</a>
-    <a href="/#segmentos">Segmentos</a>
-    <a href="/cases.html">Cases</a>
-    <a href="/blog.html">Blog</a>
-    <button class="m-cta" onclick="location.href='/contato.html'">Falar com a Vexo</button>
+    <a href="/#como-funciona">Como funciona</a><a href="/cases.html">Cases</a><a href="/sobre.html">Sobre</a><a href="/blog.html">Blog</a><a href="/faq.html">FAQ</a>
+    <button class="m-cta" onclick="location.href='https://wa.me/5518996745458?text=Olá%2C%20vim%20da%20página%20Sobre%20da%20Vexo!'">Falar com a Vexo</button>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="page-hero" style="border-top:none;">
   <div class="wrap">
     <span class="label">Quem somos</span>
@@ -149,7 +114,6 @@
   </div>
 </section>
 
-<!-- MANIFESTO -->
 <section>
   <div class="wrap">
     <span class="label">Nossa visão</span>
@@ -162,74 +126,46 @@
   </div>
 </section>
 
-<!-- VALORES -->
 <section>
   <div class="wrap">
     <span class="label">O que nos guia</span>
     <h2 class="title">Princípios que estão<br><em>em tudo que entregamos</em></h2>
     <div class="valores-grid">
-      <div class="valor-card">
-        <div class="valor-n">01</div>
-        <div class="valor-title">Resultado antes de tudo</div>
-        <p class="valor-desc">Não entregamos portfólio. Entregamos crescimento. Cada decisão de design e tecnologia serve a um propósito: gerar resultado real para o seu negócio.</p>
-      </div>
-      <div class="valor-card">
-        <div class="valor-n">02</div>
-        <div class="valor-title">Clareza total</div>
-        <p class="valor-desc">Sem jargão, sem promessa vaga. Você sabe exatamente o que vai ser feito, quando vai ser entregue e o que vai custar. Do primeiro contato ao site no ar.</p>
-      </div>
-      <div class="valor-card">
-        <div class="valor-n">03</div>
-        <div class="valor-title">Técnica que funciona</div>
-        <p class="valor-desc">SEO, velocidade e estrutura não são diferenciais — são obrigação. Cada site sai com a base técnica correta para ranquear e performar desde o primeiro dia.</p>
-      </div>
-      <div class="valor-card">
-        <div class="valor-n">04</div>
-        <div class="valor-title">Parceria de verdade</div>
-        <p class="valor-desc">Entendemos o negócio do cliente antes de escrever uma linha de código. O site reflete quem a empresa é — não um template com o nome trocado.</p>
-      </div>
-      <div class="valor-card">
-        <div class="valor-n">05</div>
-        <div class="valor-title">Mobile em primeiro lugar</div>
-        <p class="valor-desc">A maioria dos clientes dos nossos clientes acessa pelo celular. Todo site que criamos é construído pensando no mobile antes do desktop — sempre.</p>
-      </div>
-      <div class="valor-card">
-        <div class="valor-n">06</div>
-        <div class="valor-title">Evolução contínua</div>
-        <p class="valor-desc">O Google muda. O comportamento dos usuários muda. Acompanhamos essas mudanças para que os sites dos nossos clientes continuem relevantes e ranqueando.</p>
-      </div>
+      <div class="valor-card"><div class="valor-n">01</div><div class="valor-title">Resultado antes de tudo</div><p class="valor-desc">Não entregamos portfólio. Entregamos crescimento. Cada decisão de design e tecnologia serve a um propósito: gerar resultado real para o seu negócio.</p></div>
+      <div class="valor-card"><div class="valor-n">02</div><div class="valor-title">Clareza total</div><p class="valor-desc">Sem jargão, sem promessa vaga. Você sabe exatamente o que vai ser feito, quando vai ser entregue e o que vai custar. Do primeiro contato ao site no ar.</p></div>
+      <div class="valor-card"><div class="valor-n">03</div><div class="valor-title">Técnica que funciona</div><p class="valor-desc">SEO, velocidade e estrutura não são diferenciais — são obrigação. Cada site sai com a base técnica correta para ranquear e performar desde o primeiro dia.</p></div>
+      <div class="valor-card"><div class="valor-n">04</div><div class="valor-title">Parceria de verdade</div><p class="valor-desc">Entendemos o negócio do cliente antes de escrever uma linha de código. O site reflete quem a empresa é — não um template com o nome trocado.</p></div>
+      <div class="valor-card"><div class="valor-n">05</div><div class="valor-title">Mobile em primeiro lugar</div><p class="valor-desc">A maioria dos clientes dos nossos clientes acessa pelo celular. Todo site que criamos é construído pensando no mobile antes do desktop — sempre.</p></div>
+      <div class="valor-card"><div class="valor-n">06</div><div class="valor-title">Evolução contínua</div><p class="valor-desc">O Google muda. O comportamento dos usuários muda. Acompanhamos essas mudanças para que os sites dos nossos clientes continuem relevantes e ranqueando.</p></div>
     </div>
   </div>
 </section>
 
-<!-- EQUIPE -->
 <section>
   <div class="wrap">
     <span class="label">Quem faz a Vexo</span>
     <h2 class="title">As pessoas por trás<br><em>de cada projeto</em></h2>
-    <!-- PLACEHOLDER — substitua com os dados reais da equipe -->
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-av">—</div>
-        <div>
-          <div class="team-name">Nome do fundador</div>
-          <div class="team-role">Fundador & Estrategista</div>
-          <p class="team-bio">Breve bio aqui — experiência, motivação e o que traz para cada projeto da Vexo.</p>
+        <img src="/joao.jpg" alt="João Vitor Cassiano — CEO da Vexo" class="team-photo" loading="lazy">
+        <div class="team-body">
+          <div class="team-name">João Vitor Cassiano</div>
+          <div class="team-role">CEO & Fundador</div>
+          <p class="team-bio">Empresário há 5 anos, João construiu a Vexo com um propósito claro: ajudar outros empresários a crescerem pelo digital. Lidera a estratégia e o relacionamento com cada cliente da casa.</p>
         </div>
       </div>
       <div class="team-card">
-        <div class="team-av">—</div>
-        <div>
-          <div class="team-name">Nome do membro</div>
-          <div class="team-role">Cargo & especialidade</div>
-          <p class="team-bio">Breve bio aqui — experiência, motivação e o que traz para cada projeto da Vexo.</p>
+        <img src="/rebeca.png" alt="Rebeca Okano — CMO da Vexo" class="team-photo" loading="lazy">
+        <div class="team-body">
+          <div class="team-name">Rebeca Okano</div>
+          <div class="team-role">CMO</div>
+          <p class="team-bio">Rebeca atua diretamente no registro criativo das marcas. É ela quem garante que cada projeto da Vexo tenha identidade, coerência e uma comunicação que realmente conecta com o cliente certo.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
 <section>
   <div class="wrap">
     <div class="cta-box">
@@ -237,7 +173,7 @@
       <h2 class="title">Vamos conversar sobre<br><em>o seu negócio?</em></h2>
       <p class="body-text">Uma conversa sem compromisso para entender o que você precisa e mostrar o que a Vexo pode fazer.</p>
       <div class="cta-btns">
-        <a href="/contato.html" class="btn btn-primary">Falar com a Vexo</a>
+        <a href="https://wa.me/5518996745458?text=Olá%2C%20vim%20da%20página%20Sobre%20e%20quero%20conversar!" target="_blank" rel="noopener" class="btn btn-primary">Falar com a Vexo</a>
         <a href="/cases.html" class="btn btn-ghost">Ver nossos projetos</a>
       </div>
     </div>
@@ -247,36 +183,21 @@
 <footer>
   <div class="wrap">
     <div class="foot-top">
-      <div>
-        <div class="foot-logo">Vexo<span>.</span></div>
-        <div class="foot-tagline">Sites que geram resultado de verdade.</div>
-      </div>
+      <div><div class="foot-logo">Vexo<span>.</span></div><div class="foot-tagline">Sites que geram resultado de verdade.</div></div>
       <nav class="foot-links" aria-label="Links do rodapé">
-        <a href="/sobre.html">Sobre</a>
-        <a href="/#como-funciona">Como funciona</a>
-        <a href="/cases.html">Cases</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/contato.html">Contato</a>
-        <a href="/privacidade.html">Privacidade</a>
+        <a href="/">Home</a><a href="/sobre.html">Sobre</a><a href="/cases.html">Cases</a><a href="/blog.html">Blog</a><a href="/faq.html">FAQ</a><a href="/contato.html">Contato</a>
       </nav>
     </div>
     <div class="foot-copy">© 2026 Vexo · byvexo.com.br · Todos os direitos reservados</div>
   </div>
 </footer>
-
+<a href="https://wa.me/5518996745458?text=Olá%2C%20vim%20do%20site%20da%20Vexo!" target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.524 5.849L.057 23.617a.75.75 0 0 0 .922.922l5.783-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.73 9.73 0 0 1-4.951-1.354l-.355-.211-3.683.931.949-3.567-.232-.368A9.721 9.721 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+</a>
 <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  menuBtn.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', isOpen);
-  });
-  mobileMenu.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    });
-  });
+  const menuBtn=document.getElementById('menu-btn'),mobileMenu=document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click',()=>{const o=mobileMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);});
+  mobileMenu.querySelectorAll('a,button').forEach(el=>el.addEventListener('click',()=>{mobileMenu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
 </script>
 </body>
 </html>
