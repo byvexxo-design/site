@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog da Vexo — conteúdo direto para empresários que querem entender como aparecer no Google, atrair clientes pelo site e construir autoridade digital.">
+  <title>Blog — Vexo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black:#0D0D0D; --forest:#0F4D2E; --green:#00E676; --off:#F7F6F3;
+      --muted:rgba(247,246,243,0.48); --sub:rgba(247,246,243,0.26);
+      --border:rgba(247,246,243,0.1); --border2:rgba(247,246,243,0.06);
+      --green-dim:rgba(0,230,118,0.1); --green-border:rgba(0,230,118,0.22);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Inter',sans-serif; background:var(--black); color:var(--off); -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+    .wrap { width:100%; max-width:1120px; margin:0 auto; padding:0 20px; }
+    .label { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--green); opacity:.85; margin-bottom:1rem; display:block; }
+    .title { font-family:'Plus Jakarta Sans',sans-serif; font-weight:200; line-height:1.1; letter-spacing:-0.02em; font-size:clamp(2rem,8vw,3.4rem); color:var(--off); }
+    .title em { font-style:italic; font-weight:300; color:var(--green); }
+    .body-text { font-size:1rem; font-weight:300; line-height:1.7; color:var(--muted); margin-top:1rem; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; font-family:'Inter',sans-serif; font-size:15px; font-weight:500; padding:15px 28px; border-radius:8px; cursor:pointer; border:none; text-decoration:none; transition:opacity .2s,transform .15s; -webkit-tap-highlight-color:transparent; }
+    .btn:active { transform:scale(0.97); }
+    .btn-primary { background:var(--green); color:var(--black); width:100%; }
+    .btn-primary:hover { opacity:.88; }
+    .btn-ghost { background:transparent; color:var(--muted); border:0.5px solid var(--border); width:100%; }
+    .btn-ghost:hover { color:var(--off); border-color:rgba(247,246,243,0.25); }
+
+    nav { position:sticky; top:0; z-index:100; background:rgba(13,13,13,0.93); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:0.5px solid var(--border); }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; height:60px; }
+    .logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.3rem; letter-spacing:0.03em; color:var(--off); text-decoration:none; }
+    .logo span { color:var(--green); }
+    .nav-links { display:none; align-items:center; gap:1.75rem; }
+    .nav-links a { font-size:13px; color:var(--muted); text-decoration:none; transition:color .2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--off); }
+    .nav-cta { font-size:13px; font-weight:500; background:var(--green); color:var(--black); border:none; padding:9px 18px; border-radius:6px; cursor:pointer; white-space:nowrap; text-decoration:none; }
+    .nav-menu-btn { background:none; border:0.5px solid var(--border); border-radius:6px; padding:8px 10px; cursor:pointer; color:var(--muted); display:flex; align-items:center; }
+    .nav-menu-btn svg { width:18px; height:18px; }
+    .mobile-menu { display:none; flex-direction:column; gap:0; background:rgba(13,13,13,0.98); border-bottom:0.5px solid var(--border); }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a, .mobile-menu button { font-size:15px; font-weight:400; color:var(--muted); text-decoration:none; padding:16px 20px; border-bottom:0.5px solid var(--border2); background:none; border-left:none; border-right:none; border-top:none; text-align:left; cursor:pointer; font-family:'Inter',sans-serif; transition:color .2s; }
+    .mobile-menu a:hover, .mobile-menu button:hover { color:var(--off); }
+    .mobile-menu .m-cta { color:var(--green); font-weight:500; border-bottom:none; }
+
+    section { padding:80px 0; }
+    section + section { border-top:0.5px solid var(--border); }
+    .page-hero { padding:72px 0 48px; }
+    .page-hero .title { font-size:clamp(2.4rem,9vw,4.2rem); margin-bottom:1.25rem; }
+
+    /* CATEGORIAS */
+    .cats { display:flex; flex-wrap:wrap; gap:8px; margin-top:2rem; }
+    .cat-btn { font-size:12px; font-weight:500; padding:7px 16px; border-radius:20px; border:0.5px solid var(--border); background:transparent; color:var(--muted); cursor:pointer; transition:all .2s; font-family:'Inter',sans-serif; }
+    .cat-btn:hover, .cat-btn.active { background:var(--green-dim); border-color:var(--green-border); color:var(--off); }
+
+    /* POST DESTAQUE */
+    .post-featured { border:0.5px solid var(--border); border-radius:16px; overflow:hidden; display:grid; grid-template-columns:1fr; margin-top:2rem; background:rgba(247,246,243,0.02); transition:border-color .25s; }
+    .post-featured:hover { border-color:rgba(0,230,118,0.3); }
+    .post-feat-thumb { height:220px; background:rgba(15,77,46,0.2); display:flex; align-items:center; justify-content:center; }
+    .post-feat-thumb-label { font-family:'Plus Jakarta Sans',sans-serif; font-weight:200; font-size:1.1rem; color:var(--muted); letter-spacing:0.04em; }
+    .post-feat-body { padding:1.75rem; }
+    .post-cat { font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--green); opacity:.8; margin-bottom:.75rem; display:block; }
+    .post-title { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.3rem; line-height:1.2; color:var(--off); margin-bottom:.75rem; text-decoration:none; display:block; }
+    .post-title:hover { color:var(--green); }
+    .post-excerpt { font-size:13px; color:var(--muted); line-height:1.65; }
+    .post-meta { display:flex; align-items:center; gap:1rem; margin-top:1.25rem; padding-top:1.25rem; border-top:0.5px solid var(--border); }
+    .post-date { font-size:11px; color:var(--sub); }
+    .post-read { font-size:11px; color:var(--sub); }
+    .post-link { font-size:13px; color:var(--green); text-decoration:none; margin-left:auto; display:flex; align-items:center; gap:5px; }
+    .post-link svg { width:12px; height:12px; }
+
+    /* GRID DE POSTS */
+    .posts-grid { display:grid; grid-template-columns:1fr; gap:16px; margin-top:2rem; }
+    .post-card { border:0.5px solid var(--border); border-radius:12px; padding:1.5rem; background:rgba(247,246,243,0.02); transition:border-color .25s; }
+    .post-card:hover { border-color:rgba(0,230,118,0.2); }
+    .post-card .post-title { font-size:1.05rem; }
+
+    /* NEWSLETTER */
+    .newsletter-box { background:rgba(15,77,46,0.1); border:0.5px solid var(--green-border); border-radius:14px; padding:2rem 1.5rem; }
+    .newsletter-box h3 { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.3rem; color:var(--off); margin-bottom:.5rem; }
+    .newsletter-box p { font-size:13px; color:var(--muted); line-height:1.6; margin-bottom:1.25rem; }
+    .newsletter-form { display:flex; flex-direction:column; gap:10px; }
+    .newsletter-input { font-family:'Inter',sans-serif; font-size:14px; padding:13px 16px; border-radius:8px; border:0.5px solid var(--border); background:rgba(247,246,243,0.05); color:var(--off); outline:none; transition:border-color .2s; }
+    .newsletter-input::placeholder { color:var(--sub); }
+    .newsletter-input:focus { border-color:var(--green-border); }
+    .newsletter-btn { font-family:'Inter',sans-serif; font-size:14px; font-weight:500; padding:13px 20px; border-radius:8px; background:var(--green); color:var(--black); border:none; cursor:pointer; transition:opacity .2s; }
+    .newsletter-btn:hover { opacity:.88; }
+
+    footer { padding:48px 0 32px; border-top:0.5px solid var(--border); }
+    .foot-top { display:flex; flex-direction:column; gap:2rem; margin-bottom:2rem; }
+    .foot-logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.2rem; color:var(--off); }
+    .foot-logo span { color:var(--green); }
+    .foot-tagline { font-size:12px; color:var(--muted); margin-top:5px; }
+    .foot-links { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; }
+    .foot-links a { font-size:12px; color:var(--muted); text-decoration:none; }
+    .foot-links a:hover { color:var(--off); }
+    .foot-copy { padding-top:1.5rem; border-top:0.5px solid var(--border2); font-size:11px; color:var(--sub); text-align:center; }
+
+    @media(min-width:640px) {
+      .wrap { padding:0 40px; }
+      .page-hero { padding:100px 0 64px; }
+      .btn-primary, .btn-ghost { width:auto; }
+      .post-featured { grid-template-columns:1fr 1fr; }
+      .post-feat-thumb { height:auto; min-height:280px; }
+      .posts-grid { grid-template-columns:repeat(2,1fr); }
+      .newsletter-form { flex-direction:row; }
+      .newsletter-input { flex:1; }
+      .foot-top { flex-direction:row; justify-content:space-between; align-items:flex-start; }
+    }
+    @media(min-width:900px) {
+      .nav-links { display:flex; }
+      .nav-menu-btn { display:none; }
+      section { padding:100px 0; }
+      .posts-grid { grid-template-columns:repeat(3,1fr); }
+    }
+    @media(min-width:1024px) { .wrap { padding:0 5%; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="/" class="logo">Vexo<span>.</span></a>
+    <div class="nav-links" role="navigation" aria-label="Menu principal">
+      <a href="/sobre.html">Sobre</a>
+      <a href="/#como-funciona">Como funciona</a>
+      <a href="/#segmentos">Segmentos</a>
+      <a href="/cases.html">Cases</a>
+      <a href="/blog.html" class="active">Blog</a>
+      <a href="/contato.html" class="nav-cta">Falar com a Vexo</a>
+    </div>
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+      <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h14M2 9h14M2 14h14"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/sobre.html">Sobre</a>
+    <a href="/#como-funciona">Como funciona</a>
+    <a href="/#segmentos">Segmentos</a>
+    <a href="/cases.html">Cases</a>
+    <a href="/blog.html">Blog</a>
+    <button class="m-cta" onclick="location.href='/contato.html'">Falar com a Vexo</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero" style="border-top:none;">
+  <div class="wrap">
+    <span class="label">Blog</span>
+    <h1 class="title">Conteúdo para quem quer<br><em>crescer pelo Google</em></h1>
+    <p class="body-text">Sem jargão técnico. Tudo aqui é escrito para o empresário que quer entender como o site pode trabalhar mais pelo negócio dele.</p>
+    <div class="cats" role="group" aria-label="Filtrar por categoria">
+      <button class="cat-btn active">Todos</button>
+      <button class="cat-btn">Aparecer no Google</button>
+      <button class="cat-btn">Converter visitantes</button>
+      <button class="cat-btn">Site e autoridade</button>
+      <button class="cat-btn">Cases e resultados</button>
+    </div>
+  </div>
+</section>
+
+<!-- POST DESTAQUE -->
+<section style="border-top:none; padding-top:0;">
+  <div class="wrap">
+    <span class="label">Em destaque</span>
+    <!-- PLACEHOLDER — substitua pelo primeiro post real -->
+    <a href="#" class="post-featured" style="text-decoration:none;">
+      <div class="post-feat-thumb">
+        <span class="post-feat-thumb-label">Capa do artigo</span>
+      </div>
+      <div class="post-feat-body">
+        <span class="post-cat">Aparecer no Google</span>
+        <span class="post-title">Por que seu site não aparece no Google — e o que fazer para mudar isso</span>
+        <p class="post-excerpt">A maioria das empresas tem um site, mas quase nenhuma aparece quando o cliente busca pelo serviço. O problema raramente é o design. Entenda o que está travando sua visibilidade e como resolver de forma simples.</p>
+        <div class="post-meta">
+          <span class="post-date">Em breve</span>
+          <span class="post-read">8 min de leitura</span>
+          <span class="post-link">Ler artigo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg></span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- POSTS GRID -->
+<section>
+  <div class="wrap">
+    <span class="label">Todos os artigos</span>
+    <!-- PLACEHOLDER — substitua pelos artigos reais -->
+    <div class="posts-grid">
+      <div class="post-card">
+        <span class="post-cat">Site e autoridade</span>
+        <a href="#" class="post-title">Quanto custa um site profissional? O que ninguém fala sobre preço</a>
+        <p class="post-excerpt">Uma análise honesta sobre o que define o valor de um site e por que o mais barato quase sempre sai mais caro.</p>
+        <div class="post-meta"><span class="post-date">Em breve</span><span class="post-read">6 min</span></div>
+      </div>
+      <div class="post-card">
+        <span class="post-cat">Converter visitantes</span>
+        <a href="#" class="post-title">Seu site tem visitas mas não tem clientes? O problema pode estar aqui</a>
+        <p class="post-excerpt">Tráfego sem conversão é dinheiro desperdiçado. Veja os erros mais comuns que fazem visitantes irem embora sem entrar em contato.</p>
+        <div class="post-meta"><span class="post-date">Em breve</span><span class="post-read">5 min</span></div>
+      </div>
+      <div class="post-card">
+        <span class="post-cat">Aparecer no Google</span>
+        <a href="#" class="post-title">O que é SEO em linguagem de empresário — sem termos técnicos</a>
+        <p class="post-excerpt">Uma explicação direta para quem não entende de tecnologia mas quer entender por que o concorrente aparece e você não.</p>
+        <div class="post-meta"><span class="post-date">Em breve</span><span class="post-read">7 min</span></div>
+      </div>
+      <div class="post-card">
+        <span class="post-cat">Site e autoridade</span>
+        <a href="#" class="post-title">Site lento perde cliente — veja como a velocidade afeta seu negócio</a>
+        <p class="post-excerpt">Cada segundo a mais de carregamento reduz a chance do visitante entrar em contato. Os números são mais impactantes do que parecem.</p>
+        <div class="post-meta"><span class="post-date">Em breve</span><span class="post-read">4 min</span></div>
+      </div>
+      <div class="post-card">
+        <span class="post-cat">Cases e resultados</span>
+        <a href="#" class="post-title">Como uma clínica triplicou os agendamentos em 3 meses com um site novo</a>
+        <p class="post-excerpt">Um caso real de como mudar o site de uma clínica impactou diretamente na agenda e na percepção dos pacientes.</p>
+        <div class="post-meta"><span class="post-date">Em breve</span><span class="post-read">5 min</span></div>
+      </div>
+      <div class="post-card">
+        <span class="post-cat">Aparecer no Google</span>
+        <a href="#" class="post-title">Google Meu Negócio + site: a combinação que domina buscas locais</a>
+        <p class="post-excerpt">Para negócios locais, a combinação de um site bem feito com o GMB configurado corretamente é praticamente imbatível.</p>
+        <div class="post-meta"><span class="post-date">Em breve</span><span class="post-read">6 min</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section>
+  <div class="wrap">
+    <div class="newsletter-box">
+      <h3>Receba conteúdo direto no seu e-mail</h3>
+      <p>Sem spam. Só artigos práticos sobre como aparecer no Google e transformar o site da sua empresa em um gerador de clientes.</p>
+      <div class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="seu@email.com.br" aria-label="Seu e-mail">
+        <button class="newsletter-btn">Quero receber</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo">Vexo<span>.</span></div>
+        <div class="foot-tagline">Sites que geram resultado de verdade.</div>
+      </div>
+      <nav class="foot-links" aria-label="Links do rodapé">
+        <a href="/sobre.html">Sobre</a>
+        <a href="/#como-funciona">Como funciona</a>
+        <a href="/cases.html">Cases</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/contato.html">Contato</a>
+        <a href="/privacidade.html">Privacidade</a>
+      </nav>
+    </div>
+    <div class="foot-copy">© 2026 Vexo · byvexo.com.br · Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', isOpen);
+  });
+  mobileMenu.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

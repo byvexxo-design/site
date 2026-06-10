@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os projetos da Vexo — sites que geraram resultado real para empresas de diferentes segmentos. Cases com números e impacto comprovado.">
+  <title>Cases — Vexo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black:#0D0D0D; --forest:#0F4D2E; --green:#00E676; --off:#F7F6F3;
+      --muted:rgba(247,246,243,0.48); --sub:rgba(247,246,243,0.26);
+      --border:rgba(247,246,243,0.1); --border2:rgba(247,246,243,0.06);
+      --green-dim:rgba(0,230,118,0.1); --green-border:rgba(0,230,118,0.22);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Inter',sans-serif; background:var(--black); color:var(--off); -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+    .wrap { width:100%; max-width:1120px; margin:0 auto; padding:0 20px; }
+    .label { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--green); opacity:.85; margin-bottom:1rem; display:block; }
+    .title { font-family:'Plus Jakarta Sans',sans-serif; font-weight:200; line-height:1.1; letter-spacing:-0.02em; font-size:clamp(2rem,8vw,3.4rem); color:var(--off); }
+    .title em { font-style:italic; font-weight:300; color:var(--green); }
+    .body-text { font-size:1rem; font-weight:300; line-height:1.7; color:var(--muted); margin-top:1rem; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; font-family:'Inter',sans-serif; font-size:15px; font-weight:500; padding:15px 28px; border-radius:8px; cursor:pointer; border:none; text-decoration:none; transition:opacity .2s,transform .15s; -webkit-tap-highlight-color:transparent; }
+    .btn:active { transform:scale(0.97); }
+    .btn-primary { background:var(--green); color:var(--black); width:100%; }
+    .btn-primary:hover { opacity:.88; }
+    .btn-ghost { background:transparent; color:var(--muted); border:0.5px solid var(--border); width:100%; }
+    .btn-ghost:hover { color:var(--off); border-color:rgba(247,246,243,0.25); }
+
+    nav { position:sticky; top:0; z-index:100; background:rgba(13,13,13,0.93); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:0.5px solid var(--border); }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; height:60px; }
+    .logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.3rem; letter-spacing:0.03em; color:var(--off); text-decoration:none; }
+    .logo span { color:var(--green); }
+    .nav-links { display:none; align-items:center; gap:1.75rem; }
+    .nav-links a { font-size:13px; color:var(--muted); text-decoration:none; transition:color .2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--off); }
+    .nav-cta { font-size:13px; font-weight:500; background:var(--green); color:var(--black); border:none; padding:9px 18px; border-radius:6px; cursor:pointer; white-space:nowrap; text-decoration:none; }
+    .nav-menu-btn { background:none; border:0.5px solid var(--border); border-radius:6px; padding:8px 10px; cursor:pointer; color:var(--muted); display:flex; align-items:center; }
+    .nav-menu-btn svg { width:18px; height:18px; }
+    .mobile-menu { display:none; flex-direction:column; gap:0; background:rgba(13,13,13,0.98); border-bottom:0.5px solid var(--border); }
+    .mobile-menu.open { display:flex; }
+    .mobile-menu a, .mobile-menu button { font-size:15px; font-weight:400; color:var(--muted); text-decoration:none; padding:16px 20px; border-bottom:0.5px solid var(--border2); background:none; border-left:none; border-right:none; border-top:none; text-align:left; cursor:pointer; font-family:'Inter',sans-serif; transition:color .2s; }
+    .mobile-menu a:hover, .mobile-menu button:hover { color:var(--off); }
+    .mobile-menu .m-cta { color:var(--green); font-weight:500; border-bottom:none; }
+
+    section { padding:80px 0; }
+    section + section { border-top:0.5px solid var(--border); }
+    .page-hero { padding:72px 0 64px; }
+    .page-hero .title { font-size:clamp(2.4rem,9vw,4.2rem); margin-bottom:1.25rem; }
+
+    /* FILTROS */
+    .filters { display:flex; flex-wrap:wrap; gap:8px; margin-top:2rem; }
+    .filter-btn { font-size:12px; font-weight:500; padding:7px 16px; border-radius:20px; border:0.5px solid var(--border); background:transparent; color:var(--muted); cursor:pointer; transition:all .2s; font-family:'Inter',sans-serif; }
+    .filter-btn:hover, .filter-btn.active { background:var(--green-dim); border-color:var(--green-border); color:var(--off); }
+
+    /* CASES GRID */
+    .cases-grid { display:grid; grid-template-columns:1fr; gap:16px; margin-top:2rem; }
+    .case-card { border:0.5px solid var(--border); border-radius:14px; overflow:hidden; background:rgba(247,246,243,0.02); transition:border-color .25s; }
+    .case-card:hover { border-color:rgba(0,230,118,0.3); }
+    .case-thumb { height:200px; display:flex; align-items:center; justify-content:center; position:relative; }
+    .case-thumb-logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.8rem; letter-spacing:0.04em; }
+    .case-seg-tag { position:absolute; top:14px; left:14px; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; padding:4px 10px; border-radius:20px; }
+    .case-body { padding:1.5rem; }
+    .case-name { font-size:17px; font-weight:500; color:var(--off); margin-bottom:4px; }
+    .case-loc { font-size:12px; color:var(--muted); margin-bottom:1.25rem; }
+    .case-metrics { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:1.25rem; }
+    .case-metric { background:rgba(0,230,118,0.06); border:0.5px solid rgba(0,230,118,0.1); border-radius:8px; padding:10px 10px; text-align:center; }
+    .case-metric-n { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.1rem; color:var(--green); letter-spacing:-0.01em; }
+    .case-metric-l { font-size:10px; color:var(--muted); margin-top:2px; line-height:1.3; }
+    .case-desc { font-size:13px; color:var(--muted); line-height:1.65; }
+    .case-link { display:inline-flex; align-items:center; gap:6px; font-size:13px; color:var(--green); margin-top:1rem; text-decoration:none; }
+    .case-link svg { width:13px; height:13px; }
+
+    /* PLACEHOLDER */
+    .cases-placeholder { border:0.5px dashed var(--border); border-radius:14px; padding:4rem 2rem; text-align:center; margin-top:2rem; }
+    .ph-title { font-size:15px; font-weight:400; color:var(--muted); margin-bottom:.5rem; }
+    .ph-sub { font-size:13px; color:var(--sub); }
+
+    /* CTA */
+    .cta-box { background:rgba(15,77,46,0.16); border:0.5px solid var(--green-border); border-radius:20px; padding:3rem 1.5rem; text-align:center; }
+    .cta-box .title { font-size:clamp(1.8rem,7vw,2.8rem); }
+    .cta-box .body-text { max-width:440px; margin:1rem auto 2rem; text-align:left; }
+    .cta-btns { display:flex; flex-direction:column; gap:12px; }
+
+    footer { padding:48px 0 32px; border-top:0.5px solid var(--border); }
+    .foot-top { display:flex; flex-direction:column; gap:2rem; margin-bottom:2rem; }
+    .foot-logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.2rem; color:var(--off); }
+    .foot-logo span { color:var(--green); }
+    .foot-tagline { font-size:12px; color:var(--muted); margin-top:5px; }
+    .foot-links { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; }
+    .foot-links a { font-size:12px; color:var(--muted); text-decoration:none; }
+    .foot-links a:hover { color:var(--off); }
+    .foot-copy { padding-top:1.5rem; border-top:0.5px solid var(--border2); font-size:11px; color:var(--sub); text-align:center; }
+
+    @media(min-width:640px) {
+      .wrap { padding:0 40px; }
+      .page-hero { padding:100px 0 80px; }
+      .btn-primary, .btn-ghost { width:auto; }
+      .cases-grid { grid-template-columns:repeat(2,1fr); }
+      .cta-btns { flex-direction:row; justify-content:center; }
+      .cta-btns .btn { width:auto; }
+      .foot-top { flex-direction:row; justify-content:space-between; align-items:flex-start; }
+    }
+    @media(min-width:900px) {
+      .nav-links { display:flex; }
+      .nav-menu-btn { display:none; }
+      section { padding:100px 0; }
+      .cases-grid { grid-template-columns:repeat(3,1fr); }
+    }
+    @media(min-width:1024px) { .wrap { padding:0 5%; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="/" class="logo">Vexo<span>.</span></a>
+    <div class="nav-links" role="navigation" aria-label="Menu principal">
+      <a href="/sobre.html">Sobre</a>
+      <a href="/#como-funciona">Como funciona</a>
+      <a href="/#segmentos">Segmentos</a>
+      <a href="/cases.html" class="active">Cases</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/contato.html" class="nav-cta">Falar com a Vexo</a>
+    </div>
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+      <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h14M2 9h14M2 14h14"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/sobre.html">Sobre</a>
+    <a href="/#como-funciona">Como funciona</a>
+    <a href="/#segmentos">Segmentos</a>
+    <a href="/cases.html">Cases</a>
+    <a href="/blog.html">Blog</a>
+    <button class="m-cta" onclick="location.href='/contato.html'">Falar com a Vexo</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero" style="border-top:none;">
+  <div class="wrap">
+    <span class="label">Projetos entregues</span>
+    <h1 class="title">Sites que já estão<br><em>gerando resultado</em></h1>
+    <p class="body-text">Cada projeto aqui tem uma história real por trás. Empresas que não apareciam no Google, que não convertiam, que não transmitiam a autoridade que tinham. Isso mudou.</p>
+    <div class="filters" role="group" aria-label="Filtrar por segmento">
+      <button class="filter-btn active">Todos</button>
+      <button class="filter-btn">Saúde</button>
+      <button class="filter-btn">Jurídico</button>
+      <button class="filter-btn">Serviços</button>
+      <button class="filter-btn">E-commerce</button>
+      <button class="filter-btn">Gastronomia</button>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section style="border-top:none; padding-top:0;">
+  <div class="wrap">
+    <!-- PLACEHOLDER — substitua pelos cases reais -->
+    <div class="cases-placeholder" aria-label="Cases em breve">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="opacity:.3; margin:0 auto 1rem; display:block;"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      <div class="ph-title">Cases com resultados reais chegam em breve</div>
+      <p class="ph-sub">Cada case será publicado com métricas reais — posição no Google, aumento de contatos e impacto no negócio.</p>
+    </div>
+
+    <!-- MODELO DE CARD — descomente e preencha quando tiver cases reais
+    <div class="cases-grid">
+      <div class="case-card">
+        <div class="case-thumb" style="background:#0D0D0D;">
+          <div class="case-thumb-logo" style="color:#00E676;">Nome do cliente</div>
+          <span class="case-seg-tag" style="background:rgba(0,230,118,0.12);color:#00E676;">Segmento</span>
+        </div>
+        <div class="case-body">
+          <div class="case-name">Nome do cliente</div>
+          <div class="case-loc">Cidade, UF</div>
+          <div class="case-metrics">
+            <div class="case-metric"><div class="case-metric-n">#1</div><div class="case-metric-l">no Google</div></div>
+            <div class="case-metric"><div class="case-metric-n">+000%</div><div class="case-metric-l">contatos</div></div>
+            <div class="case-metric"><div class="case-metric-n">00 dias</div><div class="case-metric-l">no ar</div></div>
+          </div>
+          <p class="case-desc">Descrição breve do desafio e do resultado alcançado com o projeto.</p>
+          <a href="#" class="case-link">Ver projeto <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg></a>
+        </div>
+      </div>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="wrap">
+    <div class="cta-box">
+      <span class="label" style="display:block;text-align:center;">Seu negócio pode ser o próximo</span>
+      <h2 class="title">Pronto para um site que<br><em>gera resultado de verdade?</em></h2>
+      <p class="body-text">Uma conversa para entender o seu negócio e mostrar o que a Vexo pode fazer por ele.</p>
+      <div class="cta-btns">
+        <a href="/contato.html" class="btn btn-primary">Falar com a Vexo</a>
+        <a href="/sobre.html" class="btn btn-ghost">Conhecer a Vexo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo">Vexo<span>.</span></div>
+        <div class="foot-tagline">Sites que geram resultado de verdade.</div>
+      </div>
+      <nav class="foot-links" aria-label="Links do rodapé">
+        <a href="/sobre.html">Sobre</a>
+        <a href="/#como-funciona">Como funciona</a>
+        <a href="/cases.html">Cases</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/contato.html">Contato</a>
+        <a href="/privacidade.html">Privacidade</a>
+      </nav>
+    </div>
+    <div class="foot-copy">© 2026 Vexo · byvexo.com.br · Todos os direitos reservados</div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', isOpen);
+  });
+  mobileMenu.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // filtros (visual apenas por enquanto)
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
