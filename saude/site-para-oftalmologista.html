@@ -89,6 +89,24 @@
     @media(min-width:640px){.wrap{padding:0 40px;}.hero{padding:100px 0 80px;}.hero-btns{flex-direction:row;}.btn-primary,.btn-ghost{width:auto;}.hero-proof{grid-template-columns:repeat(4,1fr);}.prob-grid{grid-template-columns:repeat(2,1fr);}.entregas-grid{grid-template-columns:repeat(2,1fr);}.buscas-grid{grid-template-columns:repeat(2,1fr);}.seg-rel-grid{grid-template-columns:repeat(4,1fr);}.cta-btns{flex-direction:row;justify-content:center;}.cta-btns .btn{width:auto;}.foot-top{flex-direction:row;justify-content:space-between;align-items:flex-start;}}
     @media(min-width:900px){.nav-links{display:flex;}.nav-menu-btn{display:none;}section{padding:100px 0;}}
     @media(min-width:1024px){.wrap{padding:0 5%;}}
+
+    .popup-overlay{display:none;position:fixed;inset:0;background:rgba(13,13,13,0.85);z-index:300;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);}
+    .popup-overlay.show{display:flex;}
+    .popup-box{background:#111;border:0.5px solid rgba(0,230,118,0.22);border-radius:16px;padding:2rem 1.5rem;max-width:420px;width:100%;position:relative;}
+    .popup-close{position:absolute;top:14px;right:16px;background:none;border:none;color:rgba(247,246,243,0.4);font-size:22px;cursor:pointer;line-height:1;transition:color .2s;}
+    .popup-close:hover{color:rgba(247,246,243,0.8);}
+    .popup-label{font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#00E676;opacity:.8;margin-bottom:.75rem;display:block;}
+    .popup-title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:200;font-size:1.5rem;color:#F7F6F3;line-height:1.15;margin-bottom:.75rem;}
+    .popup-sub{font-size:13px;color:rgba(247,246,243,0.48);line-height:1.6;margin-bottom:1.5rem;}
+    .popup-form{display:flex;flex-direction:column;gap:10px;}
+    .popup-input{font-family:'Inter',sans-serif;font-size:14px;padding:12px 14px;border-radius:8px;border:0.5px solid rgba(247,246,243,0.1);background:rgba(247,246,243,0.05);color:#F7F6F3;outline:none;transition:border-color .2s;}
+    .popup-input::placeholder{color:rgba(247,246,243,0.26);}
+    .popup-input:focus{border-color:rgba(0,230,118,0.3);}
+    .popup-btn{background:#00E676;color:#0D0D0D;border:none;padding:14px;border-radius:8px;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:opacity .2s;}
+    .popup-btn:hover{opacity:.88;}
+    .popup-msg{font-size:13px;text-align:center;display:none;}
+    .popup-msg.ok{color:#00E676;display:block;}
+    .popup-msg.err{color:#f87171;display:block;}
   </style>
   <script type="application/ld+json">
   {
@@ -123,8 +141,26 @@
     <a href="/" class="logo">Vexo<span>.</span></a>
     <div class="nav-links" role="navigation">
       <a href="/">Home</a><a href="/sobre">Sobre</a><a href="/cases">Cases</a>
-      <a href="/#como-funciona">Como funciona</a><a href="/blog">Blog</a><a href="/faq">FAQ</a>
-      <a href="https://wa.me/5518996745458?text=Olá%2C%20sou%20oftalmologista%20e%20quero%20um%20site%20que%20atrai%20pacientes!" target="_blank" rel="noopener" class="nav-cta">Falar com a Vexo</a>
+      <a href="/#como-funciona">Como funciona</a><a href="/blog">Blog</a><a href="/contato">Contato</a>
+      <div class="popup-overlay" id="vexo-popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+  <div class="popup-box">
+    <button class="popup-close" id="popup-close" aria-label="Fechar">×</button>
+    <span class="popup-label">Antes de ir embora</span>
+    <h2 class="popup-title" id="popup-title">Quer saber quanto custa<br>um site para a sua empresa?</h2>
+    <p class="popup-sub">Deixa seu contato e a gente te responde em até 2 horas em dias úteis.</p>
+    <form class="popup-form" id="popup-form">
+      <input type="hidden" name="access_key" value="8ed7dc29-fe39-49ec-8ae5-764800cee2ec">
+      <input type="hidden" name="subject" id="popup-subject" value="Lead — Pop-up de saída">
+      <input type="hidden" name="from_page" id="popup-from" value="">
+      <input class="popup-input" type="text" name="name" placeholder="Seu nome" required>
+      <input class="popup-input" type="tel" name="whatsapp" placeholder="WhatsApp com DDD" required>
+      <input class="popup-input" type="text" name="segmento" placeholder="Segmento da sua empresa">
+      <div class="popup-msg" id="popup-msg"></div>
+      <button type="submit" class="popup-btn" id="popup-btn">Quero saber mais</button>
+    </form>
+  </div>
+</div>
+<a href="https://wa.me/5518996745458?text=Olá%2C%20sou%20oftalmologista%20e%20quero%20um%20site%20que%20atrai%20pacientes!" target="_blank" rel="noopener" class="nav-cta">Falar com a Vexo</a>
     </div>
     <button class="nav-menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
       <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h14M2 9h14M2 14h14"/></svg>
@@ -132,7 +168,7 @@
   </div>
   <div class="mobile-menu" id="mobile-menu">
     <a href="/">Home</a><a href="/sobre">Sobre</a><a href="/cases">Cases</a>
-    <a href="/#como-funciona">Como funciona</a><a href="/blog">Blog</a><a href="/faq">FAQ</a>
+      <a href="/#como-funciona">Como funciona</a><a href="/blog">Blog</a><a href="/contato">Contato</a>
     <button class="m-cta" onclick="location.href='https://wa.me/5518996745458?text=Olá%2C%20sou%20oftalmologista%20e%20quero%20um%20site%20que%20atrai%20pacientes!'">Falar com a Vexo</button>
   </div>
 </nav>
@@ -264,6 +300,33 @@
   const menuBtn=document.getElementById('menu-btn'),mobileMenu=document.getElementById('mobile-menu');
   menuBtn.addEventListener('click',()=>{const o=mobileMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);});
   mobileMenu.querySelectorAll('a,button').forEach(el=>el.addEventListener('click',()=>{mobileMenu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
+
+  // POPUP
+  (function(){
+    var popup=document.getElementById('vexo-popup');
+    if(!popup) return;
+    document.getElementById('popup-from').value=window.location.pathname;
+    document.getElementById('popup-subject').value='Lead — Pop-up (' + window.location.pathname + ')';
+    var shown=false, timer;
+    function show(){if(shown)return;shown=true;clearTimeout(timer);popup.classList.add('show');}
+    timer=setTimeout(show,40000);
+    document.addEventListener('mouseleave',function(e){if(e.clientY<10)show();});
+    document.getElementById('popup-close').addEventListener('click',function(){popup.classList.remove('show');});
+    popup.addEventListener('click',function(e){if(e.target===popup)popup.classList.remove('show');});
+    document.getElementById('popup-form').addEventListener('submit',async function(e){
+      e.preventDefault();
+      var btn=document.getElementById('popup-btn');
+      var msg=document.getElementById('popup-msg');
+      btn.textContent='Enviando...';btn.disabled=true;
+      try{
+        var res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(this)))});
+        var data=await res.json();
+        if(data.success){msg.className='popup-msg ok';msg.textContent='Recebido! Entraremos em contato em breve.';this.reset();}
+        else{throw new Error();}
+      }catch(err){msg.className='popup-msg err';msg.textContent='Erro ao enviar. Tente pelo WhatsApp.';}
+      btn.textContent='Quero saber mais';btn.disabled=false;
+    });
+  })();
 </script>
 </body>
 </html>
