@@ -56,12 +56,13 @@
     .valor-desc{font-size:13px;color:var(--muted);line-height:1.65;}
     /* EQUIPE */
     .team-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:2rem;}
-    .team-card{border:0.5px solid var(--border);border-radius:14px;overflow:hidden;background:rgba(247,246,243,0.02);}
-    .team-photo{width:100%;height:260px;object-fit:cover;object-position:top;display:block;}
-    .team-body{padding:1.25rem 1.5rem;}
-    .team-name{font-size:17px;font-weight:500;color:var(--off);margin-bottom:3px;}
-    .team-role{font-size:12px;color:var(--green);font-weight:500;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:.75rem;}
-    .team-bio{font-size:13px;color:var(--muted);line-height:1.65;}
+    .team-card{border:0.5px solid var(--border);border-radius:14px;overflow:hidden;background:rgba(247,246,243,0.02);display:flex;flex-direction:column;}
+    .team-thumb{width:100%;aspect-ratio:4/3;overflow:hidden;background:#111;flex-shrink:0;}
+    .team-photo{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
+    .team-body{padding:1.5rem;flex:1;}
+    .team-name{font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;font-size:1.15rem;color:var(--off);margin-bottom:4px;letter-spacing:-0.01em;}
+    .team-role{font-size:11px;color:var(--green);font-weight:500;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:.75rem;}
+    .team-bio{font-size:13px;color:var(--muted);line-height:1.7;}
     /* CTA */
     .cta-box{background:rgba(15,77,46,0.16);border:0.5px solid var(--green-border);border-radius:20px;padding:3rem 1.5rem;text-align:center;}
     .cta-box .title{font-size:clamp(1.8rem,7vw,2.6rem);}
@@ -176,15 +177,19 @@
     <h2 class="title">As pessoas por trás<br><em>de cada projeto</em></h2>
     <div class="team-grid">
       <div class="team-card">
-        <img src="/joao.jpg" alt="João Vitor Cassiano — CEO da Vexo" class="team-photo" loading="lazy">
+        <div class="team-thumb">
+          <img src="/joao.jpg" alt="João Vitor Cassiano — CEO da Vexo" class="team-photo" loading="lazy">
+        </div>
         <div class="team-body">
           <div class="team-name">João Vitor Cassiano</div>
-          <div class="team-role">CEO & Fundador</div>
+          <div class="team-role">CEO &amp; Fundador</div>
           <p class="team-bio">Empresário há 5 anos, João construiu a Vexo com um propósito claro: ajudar outros empresários a crescerem pelo digital. Lidera a estratégia e o relacionamento com cada cliente da casa.</p>
         </div>
       </div>
       <div class="team-card">
-        <img src="/rebeca.png" alt="Rebeca Okano — CMO da Vexo" class="team-photo" loading="lazy">
+        <div class="team-thumb">
+          <img src="/rebeca.png" alt="Rebeca Okano — CMO da Vexo" class="team-photo" loading="lazy">
+        </div>
         <div class="team-body">
           <div class="team-name">Rebeca Okano</div>
           <div class="team-role">CMO</div>
