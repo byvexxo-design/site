@@ -119,6 +119,31 @@
     .foot-social { display:flex; gap:16px; align-items:center; margin-top:1rem; }
     .foot-social a { color:var(--muted); text-decoration:none; transition:color .2s; display:flex; align-items:center; }
     .foot-social a:hover { color:var(--green); }
+
+    /* CASES GRID */
+    .cases-grid{display:grid;grid-template-columns:1fr;gap:32px;margin-top:2rem;}
+    .case-card{border:0.5px solid var(--border);border-radius:16px;overflow:hidden;background:rgba(247,246,243,0.02);transition:border-color .25s;}
+    .case-card:hover{border-color:rgba(0,230,118,0.3);}
+    .case-thumb{position:relative;overflow:hidden;height:240px;background:#111;}
+    .case-thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s ease;}
+    .case-card:hover .case-thumb img{transform:scale(1.03);}
+    .case-seg-badge{position:absolute;top:14px;left:14px;font-size:10px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;background:rgba(0,230,118,0.15);color:var(--green);border:0.5px solid rgba(0,230,118,0.3);padding:4px 12px;border-radius:20px;}
+    .case-body{padding:1.75rem;}
+    .case-client{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;}
+    .case-name{font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;font-size:1.3rem;color:var(--off);letter-spacing:-0.01em;}
+    .case-location{font-size:11px;color:var(--sub);}
+    .case-desc{font-size:14px;font-weight:300;color:var(--muted);line-height:1.7;margin-bottom:1.5rem;}
+    .case-quote{border-left:2px solid var(--green);padding-left:1rem;margin-bottom:1.5rem;}
+    .case-quote-text{font-size:13px;font-weight:300;color:rgba(247,246,243,0.65);line-height:1.7;font-style:italic;}
+    .case-quote-author{font-size:11px;color:var(--sub);margin-top:6px;}
+    .case-footer{display:flex;align-items:center;justify-content:space-between;padding-top:1.25rem;border-top:0.5px solid var(--border2);}
+    .case-tags{display:flex;gap:6px;flex-wrap:wrap;}
+    .case-tag{font-size:10px;font-weight:500;color:var(--muted);background:rgba(247,246,243,0.05);border:0.5px solid var(--border);padding:3px 10px;border-radius:20px;}
+    .case-link{font-size:12px;color:var(--green);text-decoration:none;display:flex;align-items:center;gap:4px;white-space:nowrap;transition:opacity .2s;}
+    .case-link:hover{opacity:.75;}
+    .case-wip{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--sub);}
+    .case-wip-dot{width:6px;height:6px;border-radius:50%;background:#f59e0b;flex-shrink:0;}
+    @media(min-width:900px){.cases-grid{grid-template-columns:repeat(2,1fr);}}
   </style>
   <script type="application/ld+json">
   {
@@ -189,34 +214,121 @@
 <!-- CASES -->
 <section style="border-top:none; padding-top:0;">
   <div class="wrap">
-    <!-- PLACEHOLDER — substitua pelos cases reais -->
-    <div class="cases-placeholder" aria-label="Cases em breve">
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="opacity:.3; margin:0 auto 1rem; display:block;"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-      <div class="ph-title">Cases com resultados reais chegam em breve</div>
-      <p class="ph-sub">Cada case será publicado com métricas reais — posição no Google, aumento de contatos e impacto no negócio.</p>
-    </div>
-
-    <!-- MODELO DE CARD — descomente e preencha quando tiver cases reais
     <div class="cases-grid">
+
+      <!-- CARD 1 — Dra. Elisiane Elias -->
       <div class="case-card">
-        <div class="case-thumb" style="background:#0D0D0D;">
-          <div class="case-thumb-logo" style="color:#00E676;">Nome do cliente</div>
-          <span class="case-seg-tag" style="background:rgba(0,230,118,0.12);color:#00E676;">Segmento</span>
+        <div class="case-thumb">
+          <img src="/images/cases/elisiane.png" alt="Site da Dra. Elisiane Elias — Pediatria e Hebiatria" loading="lazy">
+          <span class="case-seg-badge">Saúde</span>
         </div>
         <div class="case-body">
-          <div class="case-name">Nome do cliente</div>
-          <div class="case-loc">Cidade, UF</div>
-          <div class="case-metrics">
-            <div class="case-metric"><div class="case-metric-n">#1</div><div class="case-metric-l">no Google</div></div>
-            <div class="case-metric"><div class="case-metric-n">+000%</div><div class="case-metric-l">contatos</div></div>
-            <div class="case-metric"><div class="case-metric-n">00 dias</div><div class="case-metric-l">no ar</div></div>
+          <div class="case-client">
+            <div>
+              <div class="case-name">Dra. Elisiane Elias</div>
+              <div class="case-location">Pediatria e Hebiatria — São Paulo, SP</div>
+            </div>
           </div>
-          <p class="case-desc">Descrição breve do desafio e do resultado alcançado com o projeto.</p>
-          <a href="#" class="case-link">Ver projeto <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 7h10M8 3l4 4-4 4"/></svg></a>
+          <p class="case-desc">A Dra. Elisiane precisava de um site que transmitisse para os pais a mesma confiança que ela entrega no consultório. O projeto equilibrou autoridade médica com acolhimento — duas especialidades, dois consultórios, uma identidade visual coerente.</p>
+          <div class="case-quote">
+            <p class="case-quote-text">Eu precisava de um site que transmitisse a mesma confiança que ofereço aos meus pacientes. A equipe da Vexo entregou exatamente isso: um site moderno, profissional e que fortaleceu minha presença digital.</p>
+            <div class="case-quote-author">— Dra. Elisiane Elias, Pediatra e Hebiatra</div>
+          </div>
+          <div class="case-footer">
+            <div class="case-tags">
+              <span class="case-tag">Saúde</span>
+              <span class="case-tag">SEO Local</span>
+              <span class="case-tag">Design Premium</span>
+            </div>
+            <a href="https://draelisianeelias.com.br" target="_blank" rel="noopener" class="case-link">Ver site ao vivo <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
         </div>
       </div>
+
+      <!-- CARD 2 — Tríade Prime -->
+      <div class="case-card">
+        <div class="case-thumb">
+          <img src="/images/cases/triade.png" alt="Site da Tríade Prime — Consultoria Tributária" loading="lazy">
+          <span class="case-seg-badge">Consultoria</span>
+        </div>
+        <div class="case-body">
+          <div class="case-client">
+            <div>
+              <div class="case-name">Tríade Prime</div>
+              <div class="case-location">Consultoria Tributária, Contábil e Estratégica — SP e Curitiba</div>
+            </div>
+          </div>
+          <p class="case-desc">A Tríade Prime precisava de um site que comunicasse o posicionamento premium da consultoria e transmitisse credibilidade para tomadores de decisão empresarial. O resultado foi um site elegante, com hierarquia visual que conduz o visitante ao contato.</p>
+          <div class="case-quote">
+            <p class="case-quote-text">O resultado superou minhas expectativas. O site ficou elegante, organizado e transmite credibilidade desde o primeiro acesso. Hoje consigo apresentar meu escritório de forma muito mais profissional.</p>
+            <div class="case-quote-author">— Dr. Giovani, Tríade Prime</div>
+          </div>
+          <div class="case-footer">
+            <div class="case-tags">
+              <span class="case-tag">Consultoria</span>
+              <span class="case-tag">B2B</span>
+              <span class="case-tag">Design Premium</span>
+            </div>
+            <a href="https://triadeprime.com.br" target="_blank" rel="noopener" class="case-link">Ver site ao vivo <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 — Salvve -->
+      <div class="case-card">
+        <div class="case-thumb">
+          <img src="/images/cases/salvve.png" alt="Site da Salvve — Assistente Financeira" loading="lazy">
+          <span class="case-seg-badge">Fintech</span>
+        </div>
+        <div class="case-body">
+          <div class="case-client">
+            <div>
+              <div class="case-name">Salvve</div>
+              <div class="case-location">Assistente Financeira — Brasil</div>
+            </div>
+          </div>
+          <p class="case-desc">A Salvve precisava de uma plataforma que comunicasse inovação e confiança para um produto financeiro novo no mercado. O desafio foi transmitir seriedade sem abrir mão da leveza de um produto digital moderno.</p>
+          <div class="case-quote">
+            <p class="case-quote-text">Queríamos um site que mostrasse a seriedade da nossa empresa e facilitasse o contato com clientes. A Vexo entendeu nosso objetivo e entregou uma plataforma rápida, bonita e extremamente eficiente.</p>
+            <div class="case-quote-author">— Rodrigo, Salvve</div>
+          </div>
+          <div class="case-footer">
+            <div class="case-tags">
+              <span class="case-tag">Fintech</span>
+              <span class="case-tag">Produto Digital</span>
+              <span class="case-tag">Performance</span>
+            </div>
+            <a href="https://salvve.ai" target="_blank" rel="noopener" class="case-link">Ver site ao vivo <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 — Giovani Gestão de Delivery -->
+      <div class="case-card">
+        <div class="case-thumb">
+          <img src="/images/cases/giovani.png" alt="Site do Giovani — Gestão de Delivery" loading="lazy">
+          <span class="case-seg-badge">Gastronomia</span>
+        </div>
+        <div class="case-body">
+          <div class="case-client">
+            <div>
+              <div class="case-name">Giovani | Gestão de Delivery</div>
+              <div class="case-location">Especialista em Delivery — iFood, 99Food e Keeta</div>
+            </div>
+          </div>
+          <p class="case-desc">Giovani precisava de um site que comunicasse autoridade para donos de restaurante — um público que exige resultado antes de confiar. O projeto traduziu em design a energia e a credibilidade de quem já atendeu mais de 80 restaurantes.</p>
+          <div class="case-footer">
+            <div class="case-tags">
+              <span class="case-tag">Gastronomia</span>
+              <span class="case-tag">Delivery</span>
+              <span class="case-tag">Autoridade</span>
+            </div>
+            <div class="case-wip"><span class="case-wip-dot"></span>Site em breve</div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    -->
   </div>
 </section>
 
