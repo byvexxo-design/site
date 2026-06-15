@@ -108,25 +108,7 @@
     <div class="nav-links" role="navigation">
       <a href="/">Home</a><a href="/sobre">Sobre</a><a href="/cases">Cases</a>
       <a href="/#como-funciona">Como funciona</a><a href="/blog">Blog</a><a href="/contato">Contato</a>
-      <div class="popup-overlay" id="vexo-popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-  <div class="popup-box">
-    <button class="popup-close" id="popup-close" aria-label="Fechar">×</button>
-    <span class="popup-label">Antes de ir embora</span>
-    <h2 class="popup-title" id="popup-title">Quer saber quanto custa<br>um site para a sua empresa?</h2>
-    <p class="popup-sub">Deixa seu contato e a gente te responde em até 2 horas em dias úteis.</p>
-    <form class="popup-form" id="popup-form">
-      <input type="hidden" name="access_key" value="8ed7dc29-fe39-49ec-8ae5-764800cee2ec">
-      <input type="hidden" name="subject" id="popup-subject" value="Lead — Pop-up de saída">
-      <input type="hidden" name="from_page" id="popup-from" value="">
-      <input class="popup-input" type="text" name="name" placeholder="Seu nome" required>
-      <input class="popup-input" type="tel" name="whatsapp" placeholder="WhatsApp com DDD" required>
-      <input class="popup-input" type="text" name="segmento" placeholder="Segmento da sua empresa">
-      <div class="popup-msg" id="popup-msg"></div>
-      <button type="submit" class="popup-btn" id="popup-btn">Quero saber mais</button>
-    </form>
-  </div>
-</div>
-<a href="https://wa.me/5518996745458?text=Olá%2C%20li%20o%20artigo%20sobre%20visitas%20sem%20clientes%20e%20quero%20saber%20mais!" target="_blank" rel="noopener" class="nav-cta">Falar com a Vexo</a>
+      <a href="https://wa.me/5518996745458?text=Olá%2C%20li%20o%20artigo%20sobre%20visitas%20sem%20clientes%20e%20quero%20saber%20mais!" target="_blank" rel="noopener" class="nav-cta">Falar com a Vexo</a>
     </div>
     <button class="nav-menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
       <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h14M2 9h14M2 14h14"/></svg>
@@ -134,7 +116,7 @@
   </div>
   <div class="mobile-menu" id="mobile-menu">
     <a href="/">Home</a><a href="/sobre">Sobre</a><a href="/cases">Cases</a>
-      <a href="/#como-funciona">Como funciona</a><a href="/blog">Blog</a><a href="/contato">Contato</a>
+    <a href="/#como-funciona">Como funciona</a><a href="/blog">Blog</a><a href="/contato">Contato</a>
     <button class="m-cta" onclick="location.href='https://wa.me/5518996745458?text=Olá%2C%20li%20o%20artigo%20sobre%20visitas%20sem%20clientes%20e%20quero%20saber%20mais!'">Falar com a Vexo</button>
   </div>
 </nav>
@@ -202,19 +184,36 @@
     <div class="foot-copy">© 2026 Vexo · byvexo.com.br · CNPJ: 57.540.383/0001-08 · Todos os direitos reservados</div>
   </div>
 </footer>
+<div class="popup-overlay" id="vexo-popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+  <div class="popup-box">
+    <button class="popup-close" id="popup-close" aria-label="Fechar">&times;</button>
+    <span class="popup-label">Antes de ir embora</span>
+    <h2 class="popup-title" id="popup-title">Quer saber quanto custa<br>um site para a sua empresa?</h2>
+    <p class="popup-sub">Deixa seu contato e a gente te responde em até 2 horas em dias úteis.</p>
+    <form class="popup-form" id="popup-form">
+      <input type="hidden" name="access_key" value="8ed7dc29-fe39-49ec-8ae5-764800cee2ec">
+      <input type="hidden" name="subject" id="popup-subject" value="Lead — Pop-up">
+      <input type="hidden" name="from_page" id="popup-from" value="">
+      <input class="popup-input" type="text" name="name" placeholder="Seu nome" required>
+      <input class="popup-input" type="tel" name="whatsapp" placeholder="WhatsApp com DDD" required>
+      <input class="popup-input" type="text" name="segmento" placeholder="Segmento da sua empresa">
+      <div class="popup-msg" id="popup-msg"></div>
+      <button type="submit" class="popup-btn" id="popup-btn">Quero saber mais</button>
+    </form>
+  </div>
+</div>
 <a href="https://wa.me/5518996745458?text=Olá%2C%20li%20o%20artigo%20sobre%20visitas%20sem%20clientes%20e%20quero%20saber%20mais!" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.524 5.849L.057 23.617a.75.75 0 0 0 .922.922l5.783-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.73 9.73 0 0 1-4.951-1.354l-.355-.211-3.683.931.949-3.567-.232-.368A9.721 9.721 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg></a>
 <script>
   const menuBtn=document.getElementById('menu-btn'),mobileMenu=document.getElementById('mobile-menu');
   menuBtn.addEventListener('click',()=>{const o=mobileMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',o);});
   mobileMenu.querySelectorAll('a,button').forEach(el=>el.addEventListener('click',()=>{mobileMenu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
 
-  // POPUP
   (function(){
     var popup=document.getElementById('vexo-popup');
-    if(!popup) return;
+    if(!popup)return;
     document.getElementById('popup-from').value=window.location.pathname;
-    document.getElementById('popup-subject').value='Lead — Pop-up (' + window.location.pathname + ')';
-    var shown=false, timer;
+    document.getElementById('popup-subject').value='Lead — Pop-up ('+window.location.pathname+')';
+    var shown=false,timer;
     function show(){if(shown)return;shown=true;clearTimeout(timer);popup.classList.add('show');}
     timer=setTimeout(show,40000);
     document.addEventListener('mouseleave',function(e){if(e.clientY<10)show();});
@@ -223,17 +222,18 @@
     document.getElementById('popup-form').addEventListener('submit',async function(e){
       e.preventDefault();
       var btn=document.getElementById('popup-btn');
-      var msg=document.getElementById('popup-msg');
       btn.textContent='Enviando...';btn.disabled=true;
       try{
-        var res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(this)))});
+        var res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(this)))});
         var data=await res.json();
-        if(data.success){msg.className='popup-msg ok';msg.textContent='Recebido! Entraremos em contato em breve.';this.reset();}
+        if(data.success){this.reset();setTimeout(function(){window.location.href='/obrigado';},800);}
         else{throw new Error();}
-      }catch(err){msg.className='popup-msg err';msg.textContent='Erro ao enviar. Tente pelo WhatsApp.';}
+      }catch(err){
+        var msg=document.getElementById('popup-msg');
+        msg.className='popup-msg err';msg.textContent='Erro ao enviar. Tente pelo WhatsApp.';
+      }
       btn.textContent='Quero saber mais';btn.disabled=false;
     });
   })();
 </script>
 </body>
-</html>
