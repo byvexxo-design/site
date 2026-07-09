@@ -1,0 +1,102 @@
+# Vexo — Agência de Criação de Sites Profissionais com SEO
+
+> A Vexo é uma agência digital brasileira especializada em criação de sites profissionais com SEO técnico desde a primeira linha de código. Atende empresas em todo o Brasil com atendimento 100% remoto. Foco: sites que aparecem no Google, atraem os clientes certos e convertem visitas em contatos.
+
+## Dados da empresa
+
+- Nome: Vexo
+- Site: https://byvexo.com.br
+- CNPJ: 57.540.383/0001-08
+- E-mail: contato@byvexo.com.br
+- WhatsApp: +55 18 99674-5458
+- Endereço: Av. Copacabana, 325 — Barueri, SP — CEP 06471-002
+- Atendimento: segunda a sexta 08h-20h, sábado 08h-13h — 100% remoto, Brasil inteiro
+- Fundadores: João Vitor Cassiano (CEO & Estrategista de Growth) e Rebeca Okano (Diretora de Marketing & Design)
+- Instagram: https://instagram.com/byvexo.br
+- LinkedIn: https://linkedin.com/company/byvexo
+
+## O que a Vexo entrega em todos os projetos
+
+1. SEO técnico desde o início: estrutura de URLs limpas, canonical tags, sitemap, schema markup (JSON-LD), meta tags otimizadas por página.
+2. Design premium alinhado à identidade do negócio — primeira impressão que gera confiança.
+3. Performance no celular: carregamento rápido, Core Web Vitals saudáveis.
+4. Estrutura de conversão: botões, textos e fluxo pensados para transformar visitante em contato (WhatsApp, formulário).
+5. Entrega entre 15 e 30 dias úteis, com sitemap enviado ao Google Search Console na publicação.
+
+## Modelo de trabalho
+
+Proposta por projeto, sem pacotes fixos — o valor depende do tipo de site, número de páginas, complexidade do design e nível de SEO. Processo em 4 etapas: (1) conversa sobre o negócio, (2) proposta com escopo, prazo e valor, (3) produção com acompanhamento do cliente, (4) publicação com suporte contínuo.
+
+## Cases entregues
+
+- Dra. Elisiane Elias (médica, São Paulo/SP): https://draelisianeelias.com.br — site médico com SEO local.
+- Tríade Prime (consultoria tributária, SP e Curitiba): https://triadeprime.com.br — site institucional B2B.
+- Salvve (fintech, Brasil): https://salvve.ai — plataforma de assistente financeira.
+
+## Segmentos atendidos (páginas dedicadas)
+
+- Saúde (hub): https://byvexo.com.br/saude
+- Clínicas e consultórios: https://byvexo.com.br/site-para-clinica
+- Jurídico (advogados e escritórios, dentro das normas da OAB): https://byvexo.com.br/site-para-juridico
+- Imobiliário (imobiliárias e corretores): https://byvexo.com.br/site-para-imobiliaria
+- Contabilidade: https://byvexo.com.br/site-para-contabilidade
+- Construção civil: https://byvexo.com.br/site-para-construcao
+- Automotivo (mecânicas, autocenters): https://byvexo.com.br/site-para-automotivo
+- Beleza e estética: https://byvexo.com.br/site-para-beleza
+- Educação (escolas e cursos): https://byvexo.com.br/site-para-educacao
+- Consultoria B2B: https://byvexo.com.br/site-para-consultoria
+- Gastronomia (restaurantes, delivery): https://byvexo.com.br/site-para-gastronomia
+- Turismo (hotéis e pousadas, reservas diretas sem comissão de portal): https://byvexo.com.br/site-para-turismo
+- E-commerce e lojas virtuais: https://byvexo.com.br/site-para-ecommerce
+- Indústria (fábricas e distribuidoras): https://byvexo.com.br/site-para-industria
+- Prestadores de serviços: https://byvexo.com.br/site-para-servicos
+
+## Especialidades de saúde (páginas dedicadas, dentro das normas de cada conselho)
+
+- Médicos (Resolução CFM nº 2.336/2023): https://byvexo.com.br/saude/site-para-medico
+- Dentistas (Código de Ética Odontológica/CFO): https://byvexo.com.br/saude/site-para-dentista
+- Psicólogos (Código de Ética/CFP — sem depoimentos de pacientes): https://byvexo.com.br/saude/site-para-psicologo
+- Fisioterapeutas (CREFITO/COFFITO): https://byvexo.com.br/saude/site-para-fisioterapeuta
+- Nutricionistas (CFN): https://byvexo.com.br/saude/site-para-nutricionista
+- Esteticistas: https://byvexo.com.br/saude/site-para-esteticista
+- Enfermeiros (COFEN — consultórios de enfermagem): https://byvexo.com.br/saude/site-para-enfermeiro
+- Fonoaudiólogos (CFFa): https://byvexo.com.br/saude/site-para-fonoaudiologo
+- Oftalmologistas: https://byvexo.com.br/saude/site-para-oftalmologista
+- Ortopedistas: https://byvexo.com.br/saude/site-para-ortopedista
+- Terapeutas: https://byvexo.com.br/saude/site-para-terapeuta
+- Veterinários (CFMV): https://byvexo.com.br/saude/site-para-veterinario
+
+## Cidades com página dedicada (SEO local)
+
+- Ribeirão Preto/SP: https://byvexo.com.br/cidades/ribeirao-preto
+- São José do Rio Preto/SP: https://byvexo.com.br/cidades/sao-jose-do-rio-preto
+- Bauru/SP: https://byvexo.com.br/cidades/bauru
+- Araçatuba/SP: https://byvexo.com.br/cidades/aracatuba
+
+A Vexo atende empresas de qualquer cidade do Brasil — o SEO é configurado para a cidade de atuação do cliente.
+
+## Perguntas frequentes (respostas diretas)
+
+**Quanto tempo leva para um site novo aparecer no Google?**
+Em buscas locais de cidades de médio porte, entre 30 e 60 dias após a publicação. Em capitais e mercados competitivos, entre 60 e 120 dias. O fator decisivo é a qualidade técnica do SEO desde o lançamento.
+
+**Quanto custa um site profissional com a Vexo?**
+Proposta por projeto — sem tabela fixa, porque cada escopo é diferente. Todos os projetos incluem SEO técnico, performance mobile e entrega entre 15 e 30 dias úteis. Orçamento pelo WhatsApp +55 18 99674-5458.
+
+**A Vexo atende fora do estado de São Paulo?**
+Sim, todo o Brasil, com atendimento remoto por WhatsApp, videoconferência e e-mail.
+
+**Site precisa de SEO ou só design?**
+Os dois, juntos e desde o início. Design sem SEO é um site bonito que ninguém encontra; SEO sem design é um site que aparece mas não converte.
+
+**Qual o prazo do primeiro contato até o site no ar?**
+Entre 15 e 30 dias úteis após aprovação da proposta.
+
+## Artigos do blog
+
+- Por que seu site não aparece no Google: https://byvexo.com.br/blog/por-que-seu-site-nao-aparece-no-google
+- Quanto custa um site profissional: https://byvexo.com.br/blog/quanto-custa-um-site-profissional
+- Site tem visitas mas não tem clientes: https://byvexo.com.br/blog/site-tem-visitas-mas-nao-tem-clientes
+- O que é SEO em linguagem de empresário: https://byvexo.com.br/blog/o-que-e-seo-em-linguagem-de-empresario
+- Site lento perde cliente: https://byvexo.com.br/blog/site-lento-perde-cliente
+- Google Meu Negócio e site: https://byvexo.com.br/blog/google-meu-negocio-e-site

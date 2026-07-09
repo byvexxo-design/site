@@ -4,6 +4,8 @@
 
 CNPJ: 57.540.383/0001-08 * Contato: contato@byvexo.com.br * WhatsApp: +55 18 99674-5458
 
+Versão completa para LLMs: https://byvexo.com.br/llms-full.txt
+
 ## Páginas principais
 
 - [Home](https://byvexo.com.br/): Página inicial
@@ -25,7 +27,7 @@ CNPJ: 57.540.383/0001-08 * Contato: contato@byvexo.com.br * WhatsApp: +55 18 996
 - [Clínicas](https://byvexo.com.br/site-para-clinica): Sites para clínicas e consultórios
 - [Construção](https://byvexo.com.br/site-para-construcao): Sites para construtoras e reformas
 - [Indústria](https://byvexo.com.br/site-para-industria): Sites para indústrias e fabricantes
-- [Serviços](https://byvexo.com.br/site-para-serviços): Sites para prestadores de serviços
+- [Serviços](https://byvexo.com.br/site-para-servicos): Sites para prestadores de serviços
 - [Gastronomia](https://byvexo.com.br/site-para-gastronomia): Sites para restaurantes e delivery
 - [Educação](https://byvexo.com.br/site-para-educacao): Sites para escolas e cursos
 - [Beleza](https://byvexo.com.br/site-para-beleza): Sites para saloes e estetica
@@ -58,7 +60,7 @@ CNPJ: 57.540.383/0001-08 * Contato: contato@byvexo.com.br * WhatsApp: +55 18 996
 
 ## Blog
 
-- [O que é SEO em linguagem de empresário](https://byvexo.com.br/blog/o-que-e-seo-em-linguagem-de-empresário)
+- [O que é SEO em linguagem de empresário](https://byvexo.com.br/blog/o-que-e-seo-em-linguagem-de-empresario)
 - [Quanto custa um site profissional](https://byvexo.com.br/blog/quanto-custa-um-site-profissional)
 - [Google Meu Negocio e site](https://byvexo.com.br/blog/google-meu-negocio-e-site)
 - [Por que seu site não aparece no Google](https://byvexo.com.br/blog/por-que-seu-site-nao-aparece-no-google)

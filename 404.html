@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada — Vexo</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,500;1,300&family=Inter:wght@300;400;500&display=swap">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black:#0D0D0D; --green:#00E676; --off:#F7F6F3;
+      --muted:rgba(247,246,243,0.48); --border:rgba(247,246,243,0.1);
+      --green-dim:rgba(0,230,118,0.1); --green-border:rgba(0,230,118,0.22);
+    }
+    body { font-family:'Inter',sans-serif; background:var(--black); color:var(--off); -webkit-font-smoothing:antialiased; min-height:100vh; display:flex; flex-direction:column; }
+    .wrap { width:100%; max-width:1120px; margin:0 auto; padding:0 20px; }
+    nav { border-bottom:0.5px solid var(--border); }
+    .nav-inner { display:flex; align-items:center; height:60px; }
+    .logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.3rem; letter-spacing:0.03em; color:var(--off); text-decoration:none; }
+    .logo span { color:var(--green); }
+    main { flex:1; display:flex; align-items:center; padding:80px 0; }
+    .code { font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; font-size:clamp(4rem,15vw,7rem); color:var(--green); line-height:1; letter-spacing:-0.03em; }
+    h1 { font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; font-size:clamp(1.6rem,6vw,2.4rem); line-height:1.15; letter-spacing:-0.02em; margin-top:1rem; }
+    h1 em { font-style:italic; font-weight:300; color:var(--green); }
+    p { font-size:1rem; font-weight:300; line-height:1.7; color:var(--muted); margin-top:1rem; max-width:480px; }
+    .btns { display:flex; flex-wrap:wrap; gap:12px; margin-top:2rem; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; font-size:15px; font-weight:500; padding:14px 26px; border-radius:8px; text-decoration:none; transition:opacity .2s; }
+    .btn-primary { background:var(--green); color:var(--black); }
+    .btn-primary:hover { opacity:.88; }
+    .btn-ghost { background:transparent; color:var(--muted); border:0.5px solid var(--border); }
+    .btn-ghost:hover { color:var(--off); }
+    .links { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; margin-top:2.5rem; padding-top:1.5rem; border-top:0.5px solid var(--border); }
+    .links a { font-size:13px; color:var(--muted); text-decoration:none; }
+    .links a:hover { color:var(--green); }
+    footer { padding:24px 0; border-top:0.5px solid var(--border); font-size:11px; color:rgba(247,246,243,0.45); text-align:center; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="Vexo — início">Vexo<span>.</span></a>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <div class="code">404</div>
+    <h1>Esta página não existe.<br><em>Mas a sua empresa deveria existir no Google.</em></h1>
+    <p>O endereço que você acessou não foi encontrado — pode ter sido movido ou digitado errado. Use os atalhos abaixo para chegar onde você queria.</p>
+    <div class="btns">
+      <a href="/" class="btn btn-primary">Ir para a home</a>
+      <a href="/contato" class="btn btn-ghost">Falar com a Vexo</a>
+    </div>
+    <div class="links">
+      <a href="/saude">Sites para saúde</a>
+      <a href="/site-para-juridico">Sites para advogados</a>
+      <a href="/site-para-clinica">Sites para clínicas</a>
+      <a href="/cases">Cases</a>
+      <a href="/blog">Blog</a>
+      <a href="/faq">FAQ</a>
+    </div>
+  </div>
+</main>
+<footer>© 2026 Vexo · byvexo.com.br</footer>
+</body>
+</html>

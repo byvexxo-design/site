@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Blog da Vexo — SEO, Sites e Presença Digital</title>
+  <link>https://byvexo.com.br/blog</link>
+  <description>Artigos sobre criação de sites, SEO local, velocidade e presença digital. Conteúdo direto para empresários que querem aparecer no Google.</description>
+  <language>pt-BR</language>
+  <atom:link href="https://byvexo.com.br/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Por que seu site não aparece no Google e o que fazer</title>
+    <link>https://byvexo.com.br/blog/por-que-seu-site-nao-aparece-no-google</link>
+    <guid>https://byvexo.com.br/blog/por-que-seu-site-nao-aparece-no-google</guid>
+    <pubDate>Wed, 10 Jun 2026 08:00:00 -0300</pubDate>
+    <description>Descubra os principais motivos que impedem seu site de aparecer no Google e o que você pode fazer agora para mudar isso.</description>
+  </item>
+  <item>
+    <title>Quanto custa um site profissional? O que ninguém fala sobre preço</title>
+    <link>https://byvexo.com.br/blog/quanto-custa-um-site-profissional</link>
+    <guid>https://byvexo.com.br/blog/quanto-custa-um-site-profissional</guid>
+    <pubDate>Wed, 10 Jun 2026 08:00:00 -0300</pubDate>
+    <description>Entenda o que define o valor de um site profissional e por que o mais barato quase sempre sai mais caro no final.</description>
+  </item>
+  <item>
+    <title>Site com visitas sem clientes? Veja o problema</title>
+    <link>https://byvexo.com.br/blog/site-tem-visitas-mas-nao-tem-clientes</link>
+    <guid>https://byvexo.com.br/blog/site-tem-visitas-mas-nao-tem-clientes</guid>
+    <pubDate>Wed, 10 Jun 2026 08:00:00 -0300</pubDate>
+    <description>Tráfego sem conversão é dinheiro desperdiçado. Veja os erros mais comuns que fazem visitantes irem embora sem entrar em contato.</description>
+  </item>
+  <item>
+    <title>O que é SEO em linguagem de empresário</title>
+    <link>https://byvexo.com.br/blog/o-que-e-seo-em-linguagem-de-empresario</link>
+    <guid>https://byvexo.com.br/blog/o-que-e-seo-em-linguagem-de-empresario</guid>
+    <pubDate>Wed, 10 Jun 2026 08:00:00 -0300</pubDate>
+    <description>Uma explicação direta sobre SEO para quem não entende de tecnologia mas quer entender por que o concorrente aparece e você não.</description>
+  </item>
+  <item>
+    <title>Site lento perde cliente: velocidade afeta negócios</title>
+    <link>https://byvexo.com.br/blog/site-lento-perde-cliente</link>
+    <guid>https://byvexo.com.br/blog/site-lento-perde-cliente</guid>
+    <pubDate>Wed, 10 Jun 2026 08:00:00 -0300</pubDate>
+    <description>Cada segundo a mais de carregamento reduz a chance do visitante entrar em contato. Os números são mais impactantes do que parecem.</description>
+  </item>
+  <item>
+    <title>Google Meu Negócio + Site: como dominar buscas locais</title>
+    <link>https://byvexo.com.br/blog/google-meu-negocio-e-site</link>
+    <guid>https://byvexo.com.br/blog/google-meu-negocio-e-site</guid>
+    <pubDate>Wed, 10 Jun 2026 08:00:00 -0300</pubDate>
+    <description>Para negócios locais, combinar um site bem feito com o Google Meu Negócio configurado é praticamente imbatível no Google.</description>
+  </item>
+</channel>
+</rss>

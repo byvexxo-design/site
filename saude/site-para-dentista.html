@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,500&family=Inter:wght@300;400;500&display=swap"></noscript>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    :root{--black:#0D0D0D;--forest:#0F4D2E;--green:#00E676;--off:#F7F6F3;--muted:rgba(247,246,243,0.48);--sub:rgba(247,246,243,0.26);--border:rgba(247,246,243,0.1);--border2:rgba(247,246,243,0.06);--green-dim:rgba(0,230,118,0.1);--green-border:rgba(0,230,118,0.22);}
+    :root{--black:#0D0D0D;--forest:#0F4D2E;--green:#00E676;--off:#F7F6F3;--muted:rgba(247,246,243,0.48);--sub:rgba(247,246,243,0.45);--border:rgba(247,246,243,0.1);--border2:rgba(247,246,243,0.06);--green-dim:rgba(0,230,118,0.1);--green-border:rgba(0,230,118,0.22);}
     html{scroll-behavior:smooth;}body{font-family:'Inter',sans-serif;background:var(--black);color:var(--off);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
     .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px;}
     .label{font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--green);opacity:.85;margin-bottom:1rem;display:block;}
@@ -112,7 +112,17 @@
     .popup-msg{font-size:13px;text-align:center;display:none;}
     .popup-msg.ok{color:#00E676;display:block;}
     .popup-msg.err{color:#f87171;display:block;}
-  </style>
+  
+    .faq-sec-list{display:flex;flex-direction:column;max-width:820px;margin-top:2rem;}
+    .faq-sec-item{border-bottom:0.5px solid var(--border);}.faq-sec-item:first-child{border-top:0.5px solid var(--border);}
+    .faq-sec-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:'Inter',sans-serif;}
+    .faq-sec-q{font-size:15px;font-weight:500;color:var(--off);line-height:1.4;}
+    .faq-sec-icon{width:20px;height:20px;flex-shrink:0;color:var(--green);transition:transform .25s;}
+    .faq-sec-item.open .faq-sec-icon{transform:rotate(45deg);}
+    .faq-sec-answer{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+    .faq-sec-item.open .faq-sec-answer{max-height:400px;}
+    .faq-sec-a{font-size:14px;color:var(--muted);line-height:1.75;padding-bottom:1.25rem;font-weight:300;}
+</style>
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
@@ -138,6 +148,7 @@
   ]
 }
   </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","mainEntity":[{"acceptedAnswer":{"text":"Sim. A publicidade odontológica é regulamentada pelo Código de Ética Odontológica: o site pode apresentar o profissional, o CRO, as especialidades registradas e a estrutura da clínica. O uso de imagens de casos clínicos segue regras específicas do CFO, e promessa de resultado é vedada. A Vexo monta o site dentro dessas normas.","@type":"Answer"},"name":"Dentista pode ter site? O que o CRO permite?","@type":"Question"},{"acceptedAnswer":{"text":"Criando páginas otimizadas por tratamento — implante dentário, alinhadores, clareamento, próteses. Quem busca \"implante dentário em Bauru\" encontra a página exata do serviço, não uma home genérica. Isso atrai o paciente certo para o tratamento que você quer vender.","@type":"Answer"},"name":"Como o site atrai pacientes para tratamentos específicos?","@type":"Question"},{"acceptedAnswer":{"text":"CRO visível, especialidades, fotos reais da estrutura, formas de pagamento e agendamento direto pelo WhatsApp. A decisão do paciente é rápida: quanto menos cliques até o contato, mais agendamentos.","@type":"Answer"},"name":"O que o site de uma clínica odontológica precisa ter para converter?","@type":"Question"},{"acceptedAnswer":{"text":"Entre 30 e 90 dias para buscas locais. Termos de tratamento específicos, como \"invisalign\" ou \"implante\", costumam posicionar mais rápido que o termo genérico \"dentista\", porque têm menos concorrência e mais intenção de compra.","@type":"Answer"},"name":"Quanto tempo leva para aparecer no Google para \"dentista em [minha cidade]\"?","@type":"Question"}],"@type":"FAQPage"}</script>
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTLNBPG6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -250,7 +261,32 @@
       <p class="body-text">Uma conversa para entender sua especialidade, sua cidade e o perfil dos seus pacientes. Proposta clara em seguida.</p>
       <div class="cta-btns">
         <a href="https://wa.me/5518996745458?text=Olá%2C%20sou%20dentista%20e%20quero%20um%20site%20que%20atrai%20pacientes!" target="_blank" rel="noopener" class="btn btn-primary">Falar com a Vexo no WhatsApp</a>
-        <a href="/site-para-clinica" class="btn btn-ghost">Ver página de saúde</a>
+        <a href="/saude" class="btn btn-ghost">Ver página de saúde</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <span class="label">Perguntas frequentes</span>
+    <h2 class="title">O que dentistas perguntam<br><em>antes de contratar</em></h2>
+    <div class="faq-sec-list">
+      <div class="faq-sec-item">
+        <button class="faq-sec-btn" aria-expanded="false"><span class="faq-sec-q">Dentista pode ter site? O que o CRO permite?</span><svg class="faq-sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-sec-answer"><p class="faq-sec-a">Sim. A publicidade odontológica é regulamentada pelo Código de Ética Odontológica: o site pode apresentar o profissional, o CRO, as especialidades registradas e a estrutura da clínica. O uso de imagens de casos clínicos segue regras específicas do CFO, e promessa de resultado é vedada. A Vexo monta o site dentro dessas normas.</p></div>
+      </div>
+      <div class="faq-sec-item">
+        <button class="faq-sec-btn" aria-expanded="false"><span class="faq-sec-q">Como o site atrai pacientes para tratamentos específicos?</span><svg class="faq-sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-sec-answer"><p class="faq-sec-a">Criando páginas otimizadas por tratamento — implante dentário, alinhadores, clareamento, próteses. Quem busca "implante dentário em Bauru" encontra a página exata do serviço, não uma home genérica. Isso atrai o paciente certo para o tratamento que você quer vender.</p></div>
+      </div>
+      <div class="faq-sec-item">
+        <button class="faq-sec-btn" aria-expanded="false"><span class="faq-sec-q">O que o site de uma clínica odontológica precisa ter para converter?</span><svg class="faq-sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-sec-answer"><p class="faq-sec-a">CRO visível, especialidades, fotos reais da estrutura, formas de pagamento e agendamento direto pelo WhatsApp. A decisão do paciente é rápida: quanto menos cliques até o contato, mais agendamentos.</p></div>
+      </div>
+      <div class="faq-sec-item">
+        <button class="faq-sec-btn" aria-expanded="false"><span class="faq-sec-q">Quanto tempo leva para aparecer no Google para "dentista em [minha cidade]"?</span><svg class="faq-sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+        <div class="faq-sec-answer"><p class="faq-sec-a">Entre 30 e 90 dias para buscas locais. Termos de tratamento específicos, como "invisalign" ou "implante", costumam posicionar mais rápido que o termo genérico "dentista", porque têm menos concorrência e mais intenção de compra.</p></div>
       </div>
     </div>
   </div>
@@ -260,8 +296,7 @@
   <div class="wrap">
     <span class="label">Outras especialidades</span>
     <h2 class="title">Vexo atende todas as<br><em>áreas da saúde</em></h2>
-    <div class="seg-rel-grid">
-      <a href="/saude/site-para-fisioterapeuta" class="seg-rel-item"><div class="seg-rel-name">Fisioterapia</div><div class="seg-rel-sub">Clínicas e consultórios</div></a>      <a href="/saude/site-para-nutricionista" class="seg-rel-item"><div class="seg-rel-name">Nutrição</div><div class="seg-rel-sub">Nutricionistas</div></a>      <a href="/saude/site-para-psicologo" class="seg-rel-item"><div class="seg-rel-name">Psicologia</div><div class="seg-rel-sub">Psicólogos e terapeutas</div></a>      <a href="/saude/site-para-esteticista" class="seg-rel-item"><div class="seg-rel-name">Estética</div><div class="seg-rel-sub">Clínicas estéticas</div></a>
+    <div class="seg-rel-grid"><a href="/saude/site-para-medico" class="seg-rel-item"><div class="seg-rel-name">Médico</div><div class="seg-rel-sub">Médicos e especialistas</div></a><a href="/saude/site-para-psicologo" class="seg-rel-item"><div class="seg-rel-name">Psicologia</div><div class="seg-rel-sub">Psicólogos e terapia online</div></a><a href="/saude/site-para-fisioterapeuta" class="seg-rel-item"><div class="seg-rel-name">Fisioterapia</div><div class="seg-rel-sub">Clínicas e consultórios</div></a><a href="/saude/site-para-nutricionista" class="seg-rel-item"><div class="seg-rel-name">Nutrição</div><div class="seg-rel-sub">Nutricionistas</div></a><a href="/saude/site-para-esteticista" class="seg-rel-item"><div class="seg-rel-name">Estética</div><div class="seg-rel-sub">Clínicas estéticas</div></a><a href="/saude/site-para-enfermeiro" class="seg-rel-item"><div class="seg-rel-name">Enfermagem</div><div class="seg-rel-sub">Consultórios de enfermagem</div></a><a href="/saude/site-para-fonoaudiologo" class="seg-rel-item"><div class="seg-rel-name">Fonoaudiologia</div><div class="seg-rel-sub">Fonoaudiólogos</div></a><a href="/saude/site-para-oftalmologista" class="seg-rel-item"><div class="seg-rel-name">Oftalmologia</div><div class="seg-rel-sub">Oftalmologistas</div></a><a href="/saude/site-para-ortopedista" class="seg-rel-item"><div class="seg-rel-name">Ortopedia</div><div class="seg-rel-sub">Ortopedistas</div></a><a href="/saude/site-para-terapeuta" class="seg-rel-item"><div class="seg-rel-name">Terapias</div><div class="seg-rel-sub">Terapeutas</div></a><a href="/saude/site-para-veterinario" class="seg-rel-item"><div class="seg-rel-name">Veterinária</div><div class="seg-rel-sub">Veterinários e pet</div></a>
     </div>
   </div>
 </section>
@@ -337,4 +372,5 @@
   })();
 </script>
 <div id="vexo-lgpd" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(13,13,13,.97);border-top:.5px solid rgba(247,246,243,.12);padding:14px 20px;gap:12px;font-family:Inter,sans-serif;align-items:center;justify-content:space-between;flex-wrap:wrap;"><p style="font-size:13px;color:rgba(247,246,243,.65);line-height:1.5;flex:1;min-width:200px;margin:0;">Usamos cookies para analisar o tráfego e melhorar sua experiência. Saiba mais em nossa <a href="/privacidade" style="color:#00E676;text-decoration:none;">Política de Privacidade</a>.</p><div style="display:flex;gap:8px;flex-shrink:0;"><button onclick="vexoRecusar()" style="font-size:12px;padding:8px 16px;border-radius:6px;border:.5px solid rgba(247,246,243,.2);background:transparent;color:rgba(247,246,243,.55);cursor:pointer;font-family:Inter,sans-serif;">Recusar</button><button onclick="vexoAceitar()" style="font-size:12px;font-weight:500;padding:8px 16px;border-radius:6px;border:none;background:#00E676;color:#0D0D0D;cursor:pointer;font-family:Inter,sans-serif;">Aceitar cookies</button></div></div><script>(function(){var b=document.getElementById("vexo-lgpd");if(!b)return;if(!localStorage.getItem("vexo_lgpd"))b.style.display="flex";window.vexoAceitar=function(){localStorage.setItem("vexo_lgpd","granted");b.style.display="none";if(typeof gtag==="function")gtag("consent","update",{"analytics_storage":"granted","ad_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"});};window.vexoRecusar=function(){localStorage.setItem("vexo_lgpd","denied");b.style.display="none";};})();</script>
+<script>document.querySelectorAll(".faq-sec-btn").forEach(btn=>{btn.addEventListener("click",()=>{const item=btn.closest(".faq-sec-item"),isOpen=item.classList.contains("open");document.querySelectorAll(".faq-sec-item").forEach(i=>{i.classList.remove("open");i.querySelector(".faq-sec-btn").setAttribute("aria-expanded","false");});if(!isOpen){item.classList.add("open");btn.setAttribute("aria-expanded","true");}});});</script>
 </body>
