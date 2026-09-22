@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia Império — Cadastro de Produtos</title>
+<style>
+/* Forçar impressão de fundos em todos os elementos */
+* {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 14mm 15mm 14mm 15mm;
+}
+
+/* ── Tipografia: fontes do sistema, elegantes e garantidas ── */
+:root {
+  --heading: Georgia, 'Times New Roman', serif;
+  --body: 'Segoe UI', Arial, Helvetica, sans-serif;
+  --mono: 'Courier New', monospace;
+  --gold: #C9A84C;
+  --gold-bg: #FBF5E6;
+  --gold-mid: #E8D5A0;
+  --dark: #111111;
+  --ink: #1A1A1A;
+  --body-c: #3D3D3D;
+  --muted: #777;
+  --rule: #DEDEDE;
+  --green-bg: #F1F8F3;
+  --green: #2E8B4A;
+  --orange-bg: #FEF5F0;
+  --orange: #C05A20;
+  --bg: #FFFFFF;
+}
+
+html {
+  background: #E8E8E8;
+}
+
+body {
+  background: var(--bg);
+  color: var(--body-c);
+  font-family: var(--body);
+  font-size: 11.5pt;
+  line-height: 1.6;
+  max-width: 794px;
+  margin: 0 auto;
+  box-shadow: 0 0 40px rgba(0,0,0,0.15);
+}
+
+@media print {
+  html { background: #fff; }
+  body { max-width: none; box-shadow: none; margin: 0; }
+}
+
+/* ══════════════════════
+   CAPA
+══════════════════════ */
+.capa {
+  background-color: #111111;
+  color: #FFFFFF;
+  padding: 52px 48px 44px;
+  page-break-after: always;
+  position: relative;
+}
+
+/* Linha dourada no topo da capa */
+.capa-topo-linha {
+  height: 4px;
+  background-color: #C9A84C;
+  margin-bottom: 40px;
+}
+
+.capa-eyebrow {
+  font-family: var(--body);
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 28px;
+}
+
+.capa h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 38pt;
+  font-weight: normal;
+  line-height: 1.1;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.capa h1 em {
+  font-style: italic;
+  color: #C9A84C;
+}
+
+.capa-sub {
+  font-size: 12pt;
+  color: rgba(255,255,255,0.55);
+  max-width: 400px;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 48px;
+  font-style: italic;
+}
+
+/* Regra dourada antes dos metadados */
+.capa-rule {
+  border: none;
+  border-top: 1px solid rgba(201,168,76,0.35);
+  margin-bottom: 28px;
+}
+
+.capa-meta {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.capa-meta-item {
+  font-size: 8.5pt;
+}
+.capa-meta-item .label {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.4);
+  display: block;
+  margin-bottom: 3px;
+}
+.capa-meta-item .valor {
+  color: #C9A84C;
+  font-weight: 700;
+  font-size: 9.5pt;
+}
+
+.capa-nome-loja {
+  font-family: Georgia, serif;
+  font-size: 9pt;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* ══════════════════════
+   ESTRUTURA GERAL
+══════════════════════ */
+.conteudo {
+  padding: 6pt 40px 0;
+}
+
+/* ── Seção ── */
+.secao {
+  margin-bottom: 32pt;
+  page-break-inside: avoid;
+}
+
+/* Cabeçalho da seção */
+.secao-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 14pt;
+  padding-bottom: 10pt;
+  border-bottom: 2px solid #111111;
+}
+
+.secao-num {
+  font-family: Georgia, serif;
+  font-size: 28pt;
+  font-weight: normal;
+  color: #C9A84C;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 36pt;
+}
+
+.secao-header h2 {
+  font-family: Georgia, serif;
+  font-size: 15pt;
+  font-weight: normal;
+  color: #1A1A1A;
+  line-height: 1.2;
+}
+
+.secao-header .sub {
+  font-size: 9pt;
+  color: #777;
+  font-style: italic;
+  margin-left: 4pt;
+}
+
+/* ── Passos numerados ── */
+.passos {
+  display: flex;
+  flex-direction: column;
+  gap: 12pt;
+}
+
+.passo {
+  display: flex;
+  gap: 12pt;
+  align-items: flex-start;
+}
+
+.passo-n {
+  width: 22pt;
+  height: 22pt;
+  background-color: #C9A84C;
+  color: #111111;
+  border-radius: 50%;
+  font-family: Georgia, serif;
+  font-size: 10pt;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1pt;
+}
+
+.passo p {
+  font-size: 11pt;
+  line-height: 1.6;
+  color: #3D3D3D;
+}
+
+.passo p strong {
+  color: #1A1A1A;
+}
+
+/* ── URL ── */
+.url-box {
+  display: inline-block;
+  background-color: #F4F4F4;
+  border: 1px solid #DEDEDE;
+  border-radius: 3px;
+  padding: 4pt 9pt;
+  font-family: 'Courier New', monospace;
+  font-size: 9.5pt;
+  color: #1A1A1A;
+  margin-top: 5pt;
+}
+
+/* ── Tabela ── */
+.tabela-wrap { margin: 6pt 0 10pt; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10pt;
+}
+
+thead tr {
+  background-color: #111111;
+}
+
+thead th {
+  color: #C9A84C;
+  font-family: var(--body);
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8pt 10pt;
+  text-align: left;
+}
+
+tbody td {
+  padding: 8pt 10pt;
+  border-bottom: 1px solid #DEDEDE;
+  vertical-align: top;
+  line-height: 1.5;
+  color: #3D3D3D;
+}
+
+tbody td:first-child {
+  font-weight: 700;
+  color: #1A1A1A;
+  white-space: nowrap;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(even) td {
+  background-color: #FAFAFA;
+}
+
+/* ── Callouts ── */
+.callout {
+  display: flex;
+  gap: 10pt;
+  padding: 11pt 13pt;
+  border-radius: 4px;
+  margin: 10pt 0;
+  page-break-inside: avoid;
+}
+
+.callout.dica {
+  background-color: #F1F8F3;
+  border-left: 3px solid #2E8B4A;
+}
+
+.callout.atencao {
+  background-color: #FEF5F0;
+  border-left: 3px solid #C05A20;
+}
+
+.callout.info {
+  background-color: #FBF5E6;
+  border-left: 3px solid #C9A84C;
+}
+
+.callout-icon {
+  font-size: 12pt;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.callout p {
+  font-size: 10.5pt;
+  line-height: 1.55;
+  color: #3D3D3D;
+}
+
+/* ── Campos simulados ── */
+.campos-grid {
+  display: flex;
+  gap: 10pt;
+  margin: 8pt 0 10pt;
+  flex-wrap: wrap;
+}
+
+.campo {
+  flex: 1;
+  min-width: 110pt;
+  border: 1.5px solid #DEDEDE;
+  border-radius: 4px;
+  padding: 8pt 10pt;
+}
+
+.campo.destaque {
+  border-color: #C9A84C;
+  background-color: #FBF5E6;
+}
+
+.campo label {
+  display: block;
+  font-size: 7.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #777;
+  margin-bottom: 3pt;
+}
+
+.campo .val {
+  font-size: 11pt;
+  color: #1A1A1A;
+  font-weight: 600;
+}
+
+.campo .hint {
+  font-size: 9pt;
+  color: #999;
+  font-style: italic;
+}
+
+/* ── Checklist ── */
+.checklist {
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;
+  padding: 13pt 15pt;
+  display: flex;
+  flex-direction: column;
+  gap: 9pt;
+  margin: 10pt 0;
+  page-break-inside: avoid;
+}
+
+.check-item {
+  display: flex;
+  gap: 10pt;
+  align-items: center;
+  font-size: 11pt;
+  color: #3D3D3D;
+}
+
+.check-sq {
+  width: 14pt;
+  height: 14pt;
+  border: 2px solid #CACACA;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ── FAQ ── */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 8pt;
+}
+
+.faq-item {
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;
+  padding: 10pt 13pt;
+  page-break-inside: avoid;
+}
+
+.faq-item .faq-q {
+  font-family: Georgia, serif;
+  font-size: 11pt;
+  color: #1A1A1A;
+  margin-bottom: 5pt;
+}
+
+.faq-item .faq-r {
+  font-size: 10.5pt;
+  color: #3D3D3D;
+  line-height: 1.55;
+}
+
+/* ── Rodapé do documento ── */
+.doc-footer {
+  background-color: #111111;
+  color: rgba(255,255,255,0.45);
+  padding: 14pt 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 28pt;
+  font-size: 8.5pt;
+  border-top: 3px solid #C9A84C;
+}
+
+.doc-footer strong {
+  color: #C9A84C;
+  font-size: 8.5pt;
+}
+
+/* ══════════════════════
+   PRINT OVERRIDES
+══════════════════════ */
+@media print {
+  body { font-size: 10.5pt; }
+  .capa { padding: 44px 40px 36px; }
+  .capa h1 { font-size: 34pt; }
+  .secao { margin-bottom: 24pt; page-break-inside: avoid; }
+  .passo { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════
+     CAPA
+════════════════════ -->
+<div class="capa">
+  <div class="capa-topo-linha"></div>
+  <p class="capa-eyebrow">Uso interno &nbsp;·&nbsp; Equipe Império</p>
+
+  <h1>Como cadastrar<br>produtos <em>na loja</em></h1>
+
+  <p class="capa-sub">Guia passo a passo para adicionar produtos na Nuvemshop. Do login até publicar — sem complicação.</p>
+
+  <hr class="capa-rule">
+
+  <div class="capa-meta">
+    <div class="capa-meta-item">
+      <span class="label">Plataforma</span>
+      <span class="valor">Nuvemshop</span>
+    </div>
+    <div class="capa-meta-item">
+      <span class="label">Para quem</span>
+      <span class="valor">Nayara e funcionários</span>
+    </div>
+    <div class="capa-meta-item">
+      <span class="label">Atualizado em</span>
+      <span class="valor">Setembro 2026</span>
+    </div>
+    <div class="capa-meta-item">
+      <span class="label">Nível</span>
+      <span class="valor">Iniciante</span>
+    </div>
+  </div>
+
+  <div class="capa-nome-loja">Império Head Shop</div>
+</div>
+
+<!-- ════════════════════
+     CONTEÚDO
+════════════════════ -->
+<div class="conteudo">
+
+  <!-- 01 · O que preparar -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">01</div>
+      <h2>O que preparar antes de começar <span class="sub">— tenha em mãos antes de abrir o computador</span></h2>
+    </div>
+
+    <div class="tabela-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Informação</th>
+            <th>Exemplo</th>
+            <th>Para que serve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nome completo</td>
+            <td>Case Puff Colab Vents Pro</td>
+            <td>Aparece na vitrine e no Google</td>
+          </tr>
+          <tr>
+            <td>Descrição</td>
+            <td>Material, medidas, cores disponíveis</td>
+            <td>Ajuda o cliente a decidir comprar</td>
+          </tr>
+          <tr>
+            <td>Fotos (mín. 2)</td>
+            <td>Boa iluminação, fundo limpo</td>
+            <td>Essencial para vender online</td>
+          </tr>
+          <tr>
+            <td>Preço de venda</td>
+            <td>R$ 89,90</td>
+            <td>O que o cliente vai pagar</td>
+          </tr>
+          <tr>
+            <td>Peso com embalagem</td>
+            <td>0,360 kg (360 gramas)</td>
+            <td>A Nuvemshop usa para calcular o frete</td>
+          </tr>
+          <tr>
+            <td>Dimensões com embalagem</td>
+            <td>25 × 15 × 8 cm</td>
+            <td>Comprimento × Largura × Altura</td>
+          </tr>
+          <tr>
+            <td>Categoria</td>
+            <td>Cases / Dichavadores / Cuias…</td>
+            <td>Organiza o menu da loja</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout dica">
+      <div class="callout-icon">✓</div>
+      <p>Fotografe os produtos <strong>antes</strong> de sentar no computador. Fotos com boa luz (janela com luz natural funciona bem) fazem toda a diferença na hora de vender.</p>
+    </div>
+  </div>
+
+  <!-- 02 · Entrar no painel -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">02</div>
+      <h2>Entrar no painel e abrir o formulário de novo produto</h2>
+    </div>
+
+    <div class="passos">
+      <div class="passo">
+        <div class="passo-n">1</div>
+        <p>Abra o <strong>Chrome</strong> e acesse o endereço abaixo. Faça login com e-mail e senha da loja:<br>
+        <span class="url-box">imperioheadshop4.lojavirtualnuvem.com.br/admin</span></p>
+      </div>
+      <div class="passo">
+        <div class="passo-n">2</div>
+        <p>No menu do lado <strong>esquerdo</strong>, clique em <strong>Produtos</strong>.</p>
+      </div>
+      <div class="passo">
+        <div class="passo-n">3</div>
+        <p>No canto <strong>superior direito</strong> da lista, clique no botão azul <strong>"+ Adicionar produto"</strong>. O formulário vai abrir.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 · Nome, descrição e fotos -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">03</div>
+      <h2>Nome, descrição e fotos</h2>
+    </div>
+
+    <div class="passos">
+      <div class="passo">
+        <div class="passo-n">1</div>
+        <p>No campo <strong>"Nome do produto"</strong>, escreva o nome completo. Não abrevie — o nome aparece no Google e influencia as vendas.<br>
+        <em style="font-size:9.5pt;color:#777;">Certo: "Dichavador Gold 50mm 3 Partes" — Errado: "dichavador gold"</em></p>
+      </div>
+      <div class="passo">
+        <div class="passo-n">2</div>
+        <p>Na caixa de <strong>Descrição</strong>, escreva sobre o produto: material, tamanho, cores disponíveis, para que serve. Quanto mais completo, mais o cliente confia.</p>
+      </div>
+      <div class="passo">
+        <div class="passo-n">3</div>
+        <p>Na seção <strong>"Fotos e vídeo"</strong>, clique na área cinza e selecione as fotos do computador. Aguarde carregar. A <strong>primeira foto</strong> é a capa — coloque a melhor foto primeiro.</p>
+      </div>
+    </div>
+
+    <div class="callout atencao">
+      <div class="callout-icon">!</div>
+      <p>Use apenas fotos próprias do produto, com boa iluminação e foco. Não use fotos baixadas de outros sites — isso pode gerar problemas.</p>
+    </div>
+  </div>
+
+  <!-- 04 · Preço e frete -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">04</div>
+      <h2>Preço e dados de envio</h2>
+    </div>
+
+    <p style="margin-bottom:10pt;font-size:11pt;"><strong>Preços</strong> — role a página até a seção "Preços":</p>
+
+    <div class="campos-grid">
+      <div class="campo destaque">
+        <label>Preço de venda ← preencha este</label>
+        <div class="val">R$ 89,90</div>
+      </div>
+      <div class="campo">
+        <label>Preço promocional</label>
+        <div class="hint">Só preencha se tiver promoção. Se não tiver, deixe R$ 0,00.</div>
+      </div>
+    </div>
+
+    <p style="margin-bottom:10pt;margin-top:12pt;font-size:11pt;"><strong>Peso e dimensões</strong> — role até a seção "Peso e dimensões":</p>
+
+    <div class="campos-grid">
+      <div class="campo destaque">
+        <label>Peso (kg) — com embalagem</label>
+        <div class="val">0,360 = 360 gramas</div>
+      </div>
+      <div class="campo">
+        <label>Dimensões (cm) — com embalagem</label>
+        <div class="val">25 × 15 × 8</div>
+        <div class="hint">Comprimento × Largura × Altura</div>
+      </div>
+    </div>
+
+    <div class="callout info">
+      <div class="callout-icon">→</div>
+      <p>Pese o produto <strong>já embalado</strong>, como vai ser enviado. Se errar o peso, o frete fica errado e prejudica a loja ou o cliente. Em caso de dúvida sobre o peso de algum produto, pergunte para a Nayara.</p>
+    </div>
+  </div>
+
+  <!-- 05 · Categoria e variações -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">05</div>
+      <h2>Categoria e variações</h2>
+    </div>
+
+    <div class="passos">
+      <div class="passo">
+        <div class="passo-n">1</div>
+        <p>Role até <strong>Categorias</strong> e clique em "Adicionar categorias". Selecione a categoria correta:<br>
+        <em style="font-size:9.5pt;color:#777;">Cases &nbsp;·&nbsp; Dichavadores &nbsp;·&nbsp; Tesouras &nbsp;·&nbsp; Bandejas &nbsp;·&nbsp; Cinzeiros &nbsp;·&nbsp; Cuias &nbsp;·&nbsp; Sedas</em></p>
+      </div>
+      <div class="passo">
+        <div class="passo-n">2</div>
+        <p><strong>Variações</strong> — preencha <em>somente</em> se o produto vem em tamanhos ou cores diferentes. Clique em "Adicionar variação", escolha o tipo (Tamanho ou Cor) e liste cada opção. Se o produto for único, <strong>pule esta parte</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 · Salvar e conferir -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num">06</div>
+      <h2>Salvar, publicar e conferir na loja</h2>
+    </div>
+
+    <div class="passos">
+      <div class="passo">
+        <div class="passo-n">1</div>
+        <p>No topo ou no final do formulário, clique em <strong>"Salvar e publicar"</strong>. O produto aparece na loja <em>imediatamente</em>. (O botão "Salvar como rascunho" salva sem publicar — use quando ainda não terminou de preencher.)</p>
+      </div>
+      <div class="passo">
+        <div class="passo-n">2</div>
+        <p>Abra uma nova aba e acesse <strong>imperioheadshop.com.br</strong>. Procure o produto pela categoria ou pelo campo de busca da loja.</p>
+      </div>
+      <div class="passo">
+        <div class="passo-n">3</div>
+        <p>Confira se está tudo certo marcando o checklist abaixo:</p>
+      </div>
+    </div>
+
+    <div class="checklist">
+      <div class="check-item"><div class="check-sq"></div>O nome do produto está correto?</div>
+      <div class="check-item"><div class="check-sq"></div>As fotos aparecem e estão nítidas?</div>
+      <div class="check-item"><div class="check-sq"></div>O preço está correto?</div>
+      <div class="check-item"><div class="check-sq"></div>A descrição está completa?</div>
+      <div class="check-item"><div class="check-sq"></div>O produto aparece na categoria certa?</div>
+    </div>
+
+    <div class="callout dica">
+      <div class="callout-icon">✎</div>
+      <p>Precisa corrigir alguma coisa? Volte ao painel → Produtos → clique no produto → edite → salve. Não precisa criar do zero.</p>
+    </div>
+  </div>
+
+  <!-- 07 · Dúvidas -->
+  <div class="secao">
+    <div class="secao-header">
+      <div class="secao-num" style="color:#DEDEDE;">?</div>
+      <h2>Dúvidas frequentes</h2>
+    </div>
+
+    <div class="faq">
+      <div class="faq-item">
+        <p class="faq-q">Como colocar um produto em promoção?</p>
+        <p class="faq-r">Edite o produto → seção Preços → preencha o campo <strong>Preço promocional</strong>. A loja exibe os dois preços automaticamente, com o original riscado.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Como esconder um produto sem apagar?</p>
+        <p class="faq-r">Edite o produto e mude a visibilidade para <strong>Oculto</strong>. Ele fica salvo mas não aparece na loja. Para reativar, mude de volta para <strong>Visível</strong>.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">O frete está calculando errado — o que fazer?</p>
+        <p class="faq-r">Quase sempre o problema está no peso ou nas dimensões. Edite o produto, corrija os valores (sempre com embalagem) e salve. O sistema recalcula sozinho.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Deu erro ao salvar — o que fazer?</p>
+        <p class="faq-r">Verifique os campos obrigatórios: <strong>nome</strong>, <strong>preço</strong> e <strong>peso</strong>. A Nuvemshop destaca em vermelho o que falta. Preencha e salve de novo.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Posso adicionar fotos depois de publicar?</p>
+        <p class="faq-r">Sim. Edite o produto a qualquer hora, adicione as fotos e salve. Não precisa criar o produto do zero.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Rodapé -->
+<div class="doc-footer">
+  <span><strong>Império Head Shop</strong> — Guia interno de cadastro de produtos</span>
+  <span>imperioheadshop.com.br &nbsp;·&nbsp; Setembro 2026</span>
+</div>
+
+</body>
+</html>
