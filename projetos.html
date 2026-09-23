@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>Portfólio de Projetos · byvexo</title>
+  <meta name="description" content="Sites e campanhas criados pela byvexo para empresas que queriam crescer online e foram longe.">
+  <link rel="canonical" href="https://www.byvexo.com.br/projetos">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.byvexo.com.br/projetos">
+  <meta property="og:title" content="Portfólio de Projetos · byvexo">
+  <meta property="og:description" content="Sites e campanhas criados pela byvexo para empresas que queriam crescer online e foram longe.">
+  <meta property="og:image" content="https://www.byvexo.com.br/og-image.png">
+  <meta property="og:site_name" content="byvexo">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#F4F1EA;--bg-alt:#ECEAE2;--green:#152B22;--green-mid:#1C3A2D;--gold:#C4A96A;--gold-dark:#A88B4E;--text:#111111;--text-mid:#4A4A4A;--text-muted:#888888;--border:#D8D3C6;--white:#FFFFFF;--font-head:'Playfair Display',Georgia,serif;--font-body:'Inter',system-ui,sans-serif;--ease:cubic-bezier(0.22,1,0.36,1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit}button{cursor:pointer;border:none;background:none;font-family:inherit}ul{list-style:none}
+    .wrap{width:100%;max-width:1200px;margin:0 auto;padding-inline:48px}
+    @media(max-width:768px){.wrap{padding-inline:24px}}
+    .r{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}.r.on{opacity:1;transform:none}
+    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+    @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark)}.eyebrow::before{content:'';width:26px;height:1.5px;background:var(--gold-dark);flex-shrink:0}
+    .logo{display:inline-flex;align-items:baseline;gap:1px;font-family:var(--font-head);line-height:1}
+    .logo-by{font-size:14px;font-weight:400;font-style:italic;color:var(--gold-dark);letter-spacing:.01em}
+    .logo-vexo{font-size:24px;font-weight:800;color:var(--green);letter-spacing:-.04em}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:22px 0;transition:background .35s ease,padding .35s ease,box-shadow .35s ease}
+    nav.scrolled{background:rgba(244,241,234,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:15px 0;box-shadow:0 1px 0 var(--border)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between}
+    .nav-links{display:flex;align-items:center;gap:36px}.nav-links a{font-size:14px;font-weight:500;color:var(--text-mid);transition:color .2s}.nav-links a:hover,.nav-links a.active{color:var(--green)}
+    .nav-btn{font-size:13px;font-weight:600;color:var(--white);background:var(--green);padding:11px 24px;border-radius:6px;transition:background .2s,transform .15s}.nav-btn:hover{background:var(--green-mid);transform:translateY(-1px)}
+    .nav-ham{display:none;flex-direction:column;gap:5px;padding:4px}.nav-ham span{width:22px;height:2px;background:var(--green);display:block;border-radius:2px}
+    @media(max-width:900px){.nav-links,.nav-btn{display:none}.nav-ham{display:flex}}
+    .mob-nav{display:none;position:fixed;inset:0;background:var(--bg);z-index:199;flex-direction:column;align-items:flex-start;justify-content:center;padding:0 48px;gap:28px}
+    .mob-nav.open{display:flex}.mob-nav a{font-family:var(--font-head);font-size:38px;font-weight:800;color:var(--green);transition:color .2s}.mob-nav a:hover{color:var(--gold-dark)}.mob-close{position:absolute;top:24px;right:28px;font-size:26px;color:var(--text-muted);cursor:pointer}
+
+    /* PAGE HERO */
+    .page-hero{padding:160px 0 80px}
+    .page-kicker{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);display:flex;align-items:center;gap:10px;margin-bottom:28px;opacity:0;animation:fadeUp .6s var(--ease) .1s forwards}.page-kicker::before{content:'';width:26px;height:1.5px;background:var(--gold-dark);flex-shrink:0}
+    .page-h1{font-family:var(--font-head);font-size:clamp(44px,5.5vw,72px);font-weight:800;line-height:1.02;letter-spacing:-.03em;color:var(--green);margin-bottom:24px;opacity:0;animation:fadeUp .8s var(--ease) .2s forwards}
+    .page-h1 .gold{color:var(--gold-dark)}
+    .page-sub{font-size:18px;line-height:1.75;color:var(--text-mid);max-width:560px;opacity:0;animation:fadeUp .7s var(--ease) .3s forwards}
+
+    /* FILTER */
+    .filter-bar{padding:0 0 56px;opacity:0;animation:fadeUp .6s var(--ease) .45s forwards}
+    .filters{display:flex;flex-wrap:wrap;gap:10px}
+    .filter-btn{font-size:13px;font-weight:500;padding:9px 20px;border:1px solid var(--border);border-radius:100px;color:var(--text-mid);cursor:pointer;transition:all .2s;background:transparent}
+    .filter-btn:hover{border-color:var(--green);color:var(--green)}
+    .filter-btn.active{background:var(--green);color:var(--white);border-color:var(--green)}
+
+    /* GRID */
+    .proj-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding-bottom:120px}
+    @media(max-width:900px){.proj-grid{grid-template-columns:1fr}}
+
+    .proj-card{border-radius:12px;overflow:hidden;background:var(--white);border:1px solid var(--border);transition:transform .35s var(--ease),box-shadow .35s var(--ease);cursor:pointer}
+    .proj-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,.1)}
+    .proj-card.wide{grid-column:span 7}
+    .proj-card.tall{grid-column:span 5}
+    .proj-card.half{grid-column:span 6}
+    .proj-card.third{grid-column:span 4}
+    @media(max-width:900px){.proj-card.wide,.proj-card.tall,.proj-card.half,.proj-card.third{grid-column:span 1}}
+
+    .proj-thumb{aspect-ratio:16/10;background:var(--bg-alt);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .proj-card.wide .proj-thumb{aspect-ratio:16/9}
+    .proj-card.tall .proj-thumb{aspect-ratio:4/5}
+    .proj-thumb-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--text-muted)}
+    .proj-thumb-placeholder svg{opacity:.35}
+    .proj-thumb-label{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.5}
+    .proj-thumb-overlay{position:absolute;inset:0;background:rgba(21,43,34,0);transition:background .35s}
+    .proj-card:hover .proj-thumb-overlay{background:rgba(21,43,34,.45)}
+    .proj-thumb-cta{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+    .proj-card:hover .proj-thumb-cta{opacity:1}
+    .proj-thumb-cta span{font-size:13px;font-weight:600;color:var(--white);border:1px solid rgba(255,255,255,.5);padding:10px 22px;border-radius:6px}
+
+    .proj-info{padding:24px}
+    .proj-tag{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:8px}
+    .proj-title{font-family:var(--font-head);font-size:20px;font-weight:800;color:var(--green);letter-spacing:-.02em;margin-bottom:8px;line-height:1.2}
+    .proj-desc{font-size:14px;line-height:1.65;color:var(--text-muted)}
+    .proj-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:500;color:var(--gold-dark);transition:gap .2s}
+    .proj-link:hover{gap:10px}
+    .proj-stat-n{font-family:var(--font-body);font-size:18px;font-weight:300;color:var(--green);letter-spacing:-.02em;font-variant-numeric:tabular-nums lining-nums}
+    .proj-stat-l{font-size:11px;color:var(--text-muted);letter-spacing:.04em}
+
+    /* CTA */
+    .proj-cta{background:var(--green);padding:80px 0;text-align:center}
+    .proj-cta h2{font-family:var(--font-head);font-size:clamp(28px,3.5vw,46px);font-weight:800;color:var(--white);letter-spacing:-.025em;margin-bottom:14px}
+    .proj-cta p{font-size:17px;color:rgba(255,255,255,.65);margin-bottom:36px}
+    .btn-cta{display:inline-flex;align-items:center;gap:10px;padding:15px 32px;background:var(--gold);color:var(--green);font-size:15px;font-weight:600;border-radius:6px;transition:background .2s,transform .15s}
+    .btn-cta:hover{background:#d4ba7e;transform:translateY(-2px)}
+
+    footer{background:var(--bg);border-top:1px solid var(--border);padding:72px 0 40px}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:60px}
+    @media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}@media(max-width:560px){.footer-top{grid-template-columns:1fr}}
+    .footer-brand p{font-size:15px;line-height:1.7;color:var(--text-muted);max-width:280px;margin-top:14px}
+    .footer-socials{display:flex;gap:10px;margin-top:22px}.soc{width:34px;height:34px;border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);transition:border-color .2s,color .2s}.soc:hover{border-color:var(--green);color:var(--green)}
+    .footer-col h4{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--green);margin-bottom:16px}.footer-col li{margin-bottom:10px}.footer-col a{font-size:14px;color:var(--text-muted);transition:color .2s}.footer-col a:hover{color:var(--green)}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;border-top:1px solid var(--border);gap:16px;flex-wrap:wrap}
+    .footer-copy{font-size:13px;color:var(--text-muted)}.footer-copy a{color:var(--green);font-weight:500}
+    .footer-legal{display:flex;gap:20px}.footer-legal a{font-size:12px;color:var(--text-muted);transition:color .2s}.footer-legal a:hover{color:var(--green)}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:300;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:transform .2s,box-shadow .2s}
+    .wa-float:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 8px 28px rgba(37,211,102,.5)}
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-40VDX9QW3Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-40VDX9QW3Z');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KTLNBPG6');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTLNBPG6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="byvexo"><span class="logo-by">by</span><span class="logo-vexo">vexo</span></a>
+        <ul class="nav-links">
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/servicos">Servi&ccedil;os</a></li>
+      <li><a href="/projetos">Projetos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/resultados">Resultados</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+    <a href="/contato" class="nav-btn">Falar com a equipe</a>
+    <button class="nav-ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob-nav" id="mobNav">
+  <span class="mob-close" id="mobClose">&#10005;</span>
+  <a href="/sobre" class="mob-link">Sobre</a>
+  <a href="/servicos" class="mob-link">Servi&ccedil;os</a>
+  <a href="/projetos" class="mob-link">Projetos</a>
+  <a href="/blog" class="mob-link">Blog</a>
+  <a href="/resultados" class="mob-link">Resultados</a>
+  <a href="/contato" class="mob-link">Contato</a>
+</div>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-kicker">Portfólio</div>
+    <h1 class="page-h1">O que já<br><span class="gold">construímos</span></h1>
+    <p class="page-sub">Sites, campanhas e projetos digitais para empresas que queriam crescer online. Aqui está parte do caminho que percorremos juntos.</p>
+  </div>
+</section>
+
+<!-- FILTERS -->
+<div class="filter-bar">
+  <div class="wrap">
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterProj(this,'all')">Todos</button>
+      <button class="filter-btn" onclick="filterProj(this,'site')">Sites</button>
+      <button class="filter-btn" onclick="filterProj(this,'trafego')">Tráfego Pago</button>
+      <button class="filter-btn" onclick="filterProj(this,'gmb')">Google Meu Negócio</button>
+      <button class="filter-btn" onclick="filterProj(this,'social')">Redes Sociais</button>
+    </div>
+  </div>
+</div>
+
+<!-- GRID -->
+<section>
+  <div class="wrap">
+    <div class="proj-grid">
+
+      <div class="proj-card wide r" data-cat="site">
+        <div class="proj-thumb">
+          <img src="/img/triadeprime-byvexo.png" alt="A Tríade Prime" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top">
+          <div class="proj-thumb-overlay"></div>
+          <div class="proj-thumb-cta"><a href="https://triadeprime.com.br" target="_blank" rel="noopener"><span>Ver site ao vivo</span></a></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tag">Site · Assessoria Contábil</div>
+          <div class="proj-title">A Tríade Prime</div>
+          <p class="proj-desc">Site institucional para escritório de assessoria contábil e tributária. Presença digital que transmite credibilidade antes da primeira reunião.</p>
+          <a href="https://triadeprime.com.br" target="_blank" rel="noopener" class="proj-link">Ver site ao vivo <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="proj-card tall r d1" data-cat="site">
+        <div class="proj-thumb">
+          <img src="/img/draelisiane-byvexo.png" alt="Dra. Elisiane Elias" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top">
+          <div class="proj-thumb-overlay"></div>
+          <div class="proj-thumb-cta"><a href="https://draelisianeelias.com.br" target="_blank" rel="noopener"><span>Ver site ao vivo</span></a></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tag">Site · Saúde</div>
+          <div class="proj-title">Dra. Elisiane Elias</div>
+          <p class="proj-desc">Site profissional para consultório médico. Design sóbrio e construído para gerar confiança no paciente já no primeiro acesso.</p>
+          <a href="https://draelisianeelias.com.br" target="_blank" rel="noopener" class="proj-link">Ver site ao vivo <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="proj-card half r d1" data-cat="site">
+        <div class="proj-thumb">
+          <img src="/img/aea-byvexo.png" alt="Associação Esportiva Araçatuba" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top">
+          <div class="proj-thumb-overlay"></div>
+          <div class="proj-thumb-cta"><a href="https://aearacatuba.com.br" target="_blank" rel="noopener"><span>Ver site ao vivo</span></a></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tag">Site · Esporte</div>
+          <div class="proj-title">Associação Esportiva Araçatuba</div>
+          <p class="proj-desc">Site para clube de futebol com história. Uma presença digital que une a identidade do clube à sua trajetória e à base de parceiros.</p>
+          <a href="https://aearacatuba.com.br" target="_blank" rel="noopener" class="proj-link">Ver site ao vivo <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="proj-card half r d2" data-cat="site">
+        <div class="proj-thumb">
+          <img src="/img/pereiraleite-byvexo.png" alt="Pereira Leite Assessoria Contábil" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top">
+          <div class="proj-thumb-overlay"></div>
+          <div class="proj-thumb-cta"><a href="https://pereiraleiteassessoria.com.br" target="_blank" rel="noopener"><span>Ver site ao vivo</span></a></div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-tag">Site · Contabilidade</div>
+          <div class="proj-title">Pereira Leite Assessoria Contábil</div>
+          <p class="proj-desc">Site para escritório contábil que precisava de uma presença digital à altura do atendimento. Posicionamento claro, visual limpo.</p>
+          <a href="https://pereiraleiteassessoria.com.br" target="_blank" rel="noopener" class="proj-link">Ver site ao vivo <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="proj-cta">
+  <div class="wrap">
+    <h2 class="r">O próximo pode ser<br>o seu negócio</h2>
+    <p class="r d1">Conte para a gente o que você precisa e vamos montar uma proposta sob medida.</p>
+    <a href="/contato" class="btn-cta r d2">
+      Quero um projeto como esse
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="byvexo"><span class="logo-by">by</span><span class="logo-vexo">vexo</span></a>
+        <p>Revolucionando a presença digital de empresas de todos os portes.</p>
+        <div class="footer-socials">
+          <a href="#" class="soc" aria-label="Instagram"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="soc" aria-label="LinkedIn"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Serviços</h4><ul><li><a href="/servicos">Criação de Sites</a></li><li><a href="/servicos">Tráfego Pago</a></li><li><a href="/servicos">Google Meu Negócio</a></li><li><a href="/servicos">Redes Sociais</a></li></ul></div>
+      <div class="footer-col"><h4>Empresa</h4><ul><li><a href="/sobre">Sobre nós</a></li><li><a href="/projetos">Portfólio</a></li><li><a href="/resultados">Resultados</a></li></ul></div>
+      <div class="footer-col"><h4>Contato</h4><ul><li><a href="/contato">WhatsApp</a></li><li><a href="/contato">E-mail</a></li><li><a href="#">Instagram</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 <a href="/">byvexo</a>. Todos os direitos reservados.</p>
+      <div class="footer-legal"><a href="/politica-de-privacidade">Privacidade</a><a href="/termos-de-uso">Termos de Uso</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50)},{passive:true});
+  document.getElementById('ham').addEventListener('click',()=>document.getElementById('mobNav').classList.add('open'));
+  document.getElementById('mobClose').addEventListener('click',()=>document.getElementById('mobNav').classList.remove('open'));
+  const io = new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}}),{threshold:.1});
+  document.querySelectorAll('.r').forEach(el=>io.observe(el));
+
+  function filterProj(btn, cat) {
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.proj-card').forEach(card=>{
+      if(cat==='all'||card.dataset.cat===cat){card.style.display='';} else {card.style.display='none';}
+    });
+  }
+</script>
+<a href="https://wa.me/5518997985211" class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "url": "https://www.byvexo.com.br/projetos",
+      "name": "Portfólio de Projetos · byvexo",
+      "description": "Sites, campanhas e projetos digitais criados pela byvexo para empresas que queriam crescer online.",
+      "isPartOf": {"@id": "https://www.byvexo.com.br/#website"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.byvexo.com.br"},
+        {"@type": "ListItem", "position": 2, "name": "Projetos", "item": "https://www.byvexo.com.br/projetos"}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
+
+
+

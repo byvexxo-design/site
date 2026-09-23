@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>Serviços de Marketing Digital · byvexo</title>
+  <meta name="description" content="Sites, tráfego pago, Google Meu Negócio e redes sociais. Conheça todos os serviços da byvexo.">
+  <link rel="canonical" href="https://www.byvexo.com.br/servicos">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.byvexo.com.br/servicos">
+  <meta property="og:title" content="Serviços de Marketing Digital · byvexo">
+  <meta property="og:description" content="Sites, tráfego pago, Google Meu Negócio e redes sociais. Conheça todos os serviços da byvexo.">
+  <meta property="og:image" content="https://www.byvexo.com.br/og-image.png">
+  <meta property="og:site_name" content="byvexo">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#F4F1EA; --bg-alt:#ECEAE2; --green:#152B22; --green-mid:#1C3A2D;
+      --gold:#C4A96A; --gold-dark:#A88B4E; --text:#111111; --text-mid:#4A4A4A;
+      --text-muted:#888888; --border:#D8D3C6; --white:#FFFFFF;
+      --font-head:'Playfair Display',Georgia,serif; --font-body:'Inter',system-ui,sans-serif;
+      --ease:cubic-bezier(0.22,1,0.36,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);background:var(--bg);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit}
+    button{cursor:pointer;border:none;background:none;font-family:inherit}
+    ul{list-style:none}
+    .wrap{width:100%;max-width:1200px;margin:0 auto;padding-inline:48px}
+    @media(max-width:768px){.wrap{padding-inline:24px}}
+    .r{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .r.on{opacity:1;transform:none}
+    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+    @media(prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark)}
+    .eyebrow::before{content:'';width:26px;height:1.5px;background:var(--gold-dark);flex-shrink:0}
+
+    /* LOGO */
+    .logo{display:inline-flex;align-items:baseline;gap:1px;font-family:var(--font-head);line-height:1}
+    .logo-by{font-size:14px;font-weight:400;font-style:italic;color:var(--gold-dark);letter-spacing:.01em}
+    .logo-vexo{font-size:24px;font-weight:800;color:var(--green);letter-spacing:-.04em}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:22px 0;transition:background .35s ease,padding .35s ease,box-shadow .35s ease}
+    nav.scrolled{background:rgba(244,241,234,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:15px 0;box-shadow:0 1px 0 var(--border)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between}
+    .nav-links{display:flex;align-items:center;gap:36px}
+    .nav-links a{font-size:14px;font-weight:500;color:var(--text-mid);transition:color .2s}
+    .nav-links a:hover,.nav-links a.active{color:var(--green)}
+    .nav-btn{font-size:13px;font-weight:600;color:var(--white);background:var(--green);padding:11px 24px;border-radius:6px;transition:background .2s,transform .15s}
+    .nav-btn:hover{background:var(--green-mid);transform:translateY(-1px)}
+    .nav-ham{display:none;flex-direction:column;gap:5px;padding:4px}
+    .nav-ham span{width:22px;height:2px;background:var(--green);display:block;border-radius:2px}
+    @media(max-width:900px){.nav-links,.nav-btn{display:none}.nav-ham{display:flex}}
+    .mob-nav{display:none;position:fixed;inset:0;background:var(--bg);z-index:199;flex-direction:column;align-items:flex-start;justify-content:center;padding:0 48px;gap:28px}
+    .mob-nav.open{display:flex}
+    .mob-nav a{font-family:var(--font-head);font-size:38px;font-weight:800;color:var(--green);transition:color .2s}
+    .mob-nav a:hover{color:var(--gold-dark)}
+    .mob-close{position:absolute;top:24px;right:28px;font-size:26px;color:var(--text-muted);cursor:pointer}
+
+    /* PAGE HERO */
+    .page-hero{padding-block:160px 80px;border-bottom:1px solid var(--border)}
+    .page-hero-inner{max-width:780px}
+    .page-kicker{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dark);display:flex;align-items:center;gap:10px;margin-bottom:28px;opacity:0;animation:fadeUp .6s var(--ease) .1s forwards}
+    .page-kicker::before{content:'';width:26px;height:1.5px;background:var(--gold-dark);flex-shrink:0}
+    .page-h1{font-family:var(--font-head);font-size:clamp(42px,5.5vw,72px);font-weight:800;line-height:1.04;letter-spacing:-.03em;color:var(--green);margin-bottom:24px;opacity:0;animation:fadeUp .8s var(--ease) .2s forwards}
+    .page-h1 .gold{color:var(--gold-dark)}
+    .page-sub{font-size:18px;line-height:1.75;color:var(--text-mid);max-width:560px;opacity:0;animation:fadeUp .7s var(--ease) .35s forwards}
+
+    /* SERVICES DETAIL */
+    .svc-detail{padding:100px 0}
+    .svc-block{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;padding:72px 0;border-top:1px solid var(--border)}
+    .svc-block:last-child{border-bottom:1px solid var(--border)}
+    @media(max-width:900px){.svc-block{grid-template-columns:1fr;gap:32px;padding:48px 0}}
+    .svc-block-num{font-family:var(--font-head);font-size:11px;font-weight:700;letter-spacing:.15em;color:var(--gold-dark);margin-bottom:16px}
+    .svc-block-h2{font-family:var(--font-head);font-size:clamp(28px,3.2vw,40px);font-weight:800;line-height:1.08;letter-spacing:-.025em;color:var(--green);margin-bottom:20px}
+    .svc-block-desc{font-size:16px;line-height:1.8;color:var(--text-mid);margin-bottom:28px}
+    .svc-block-items{display:flex;flex-direction:column;gap:12px;margin-bottom:32px}
+    .svc-item-row{display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--text-mid);line-height:1.5}
+    .svc-item-ico{width:18px;height:18px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:3px}
+    .svc-block-cta{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--green);border-bottom:1px solid var(--border);padding-bottom:3px;transition:border-color .2s,gap .2s}
+    .svc-block-cta:hover{border-color:var(--green);gap:12px}
+    .svc-visual{background:var(--green);border-radius:16px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+    .svc-visual-bg{position:absolute;inset:0;background:radial-gradient(circle at 30% 70%,rgba(196,169,106,.1) 0%,transparent 55%),linear-gradient(135deg,#152B22 0%,#244838 100%)}
+    .svc-visual-letter{position:relative;font-family:var(--font-head);font-size:120px;font-weight:900;color:rgba(196,169,106,.07);letter-spacing:-.05em;line-height:1;user-select:none}
+
+    /* DIFFERENTIALS */
+    .differentials{padding:80px 0;background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .diff-header{text-align:center;max-width:600px;margin:0 auto 64px}
+    .diff-h2{font-family:var(--font-head);font-size:clamp(30px,3.5vw,46px);font-weight:800;line-height:1.06;letter-spacing:-.025em;color:var(--green);margin-top:20px;text-wrap:balance}
+    .diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+    @media(max-width:768px){.diff-grid{grid-template-columns:1fr}}
+    .diff-item{background:var(--bg-alt);padding:36px 30px;transition:background .25s}
+    .diff-item:hover{background:var(--bg)}
+    .diff-icon{width:36px;height:36px;border-radius:8px;background:rgba(21,43,34,.07);display:flex;align-items:center;justify-content:center;color:var(--green);margin-bottom:18px}
+    .diff-title{font-family:var(--font-head);font-size:18px;font-weight:800;color:var(--green);margin-bottom:10px;letter-spacing:-.01em}
+    .diff-text{font-size:14px;line-height:1.7;color:var(--text-mid)}
+
+    /* CTA */
+    .cta-section{padding:120px 0;background:var(--green);position:relative;overflow:hidden}
+    .cta-section::before{content:'';position:absolute;top:-100px;right:-100px;width:480px;height:480px;border-radius:50%;border:1px solid rgba(196,169,106,.08);pointer-events:none}
+    .cta-inner{position:relative;text-align:center;max-width:700px;margin:0 auto}
+    .cta-eyebrow{justify-content:center;margin-bottom:28px;color:var(--gold)}
+    .cta-eyebrow::before{background:var(--gold)}
+    .cta-h2{font-family:var(--font-head);font-size:clamp(36px,5vw,60px);font-weight:800;line-height:1.04;letter-spacing:-.033em;color:var(--white);text-wrap:balance;margin-bottom:24px}
+    .cta-h2 .gold{color:var(--gold)}
+    .cta-sub{font-size:18px;line-height:1.7;color:rgba(255,255,255,.5);max-width:440px;margin:0 auto 48px}
+    .cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+    .btn-gold{display:inline-flex;align-items:center;gap:10px;padding:17px 32px;background:var(--gold);color:var(--green);font-size:15px;font-weight:700;border-radius:6px;transition:background .2s,transform .15s,color .2s}
+    .btn-gold:hover{background:var(--gold-dark);color:var(--white);transform:translateY(-2px)}
+    .btn-ghost-w{display:inline-flex;align-items:center;padding:17px 26px;border:1.5px solid rgba(255,255,255,.18);color:rgba(255,255,255,.65);font-size:15px;font-weight:500;border-radius:6px;transition:border-color .2s,color .2s}
+    .btn-ghost-w:hover{border-color:rgba(255,255,255,.5);color:var(--white)}
+
+    /* FOOTER */
+    footer{background:var(--bg);border-top:1px solid var(--border);padding:72px 0 40px}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:60px}
+    @media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.footer-top{grid-template-columns:1fr}}
+    .footer-brand p{font-size:15px;line-height:1.7;color:var(--text-muted);max-width:280px;margin-top:14px}
+    .footer-socials{display:flex;gap:10px;margin-top:22px}
+    .soc{width:34px;height:34px;border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);transition:border-color .2s,color .2s}
+    .soc:hover{border-color:var(--green);color:var(--green)}
+    .footer-col h4{font-family:var(--font-head);font-size:14px;font-weight:800;color:var(--green);margin-bottom:16px}
+    .footer-col li{margin-bottom:10px}
+    .footer-col a{font-size:14px;color:var(--text-muted);transition:color .2s}
+    .footer-col a:hover{color:var(--green)}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;border-top:1px solid var(--border);gap:16px;flex-wrap:wrap}
+    .footer-copy{font-size:13px;color:var(--text-muted)}
+    .footer-copy a{color:var(--green);font-weight:500}
+    .footer-legal{display:flex;gap:20px}
+    .footer-legal a{font-size:12px;color:var(--text-muted);transition:color .2s}
+    .footer-legal a:hover{color:var(--green)}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:300;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:transform .2s,box-shadow .2s}
+    .wa-float:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 8px 28px rgba(37,211,102,.5)}
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-40VDX9QW3Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-40VDX9QW3Z');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KTLNBPG6');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTLNBPG6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="byvexo">
+      <span class="logo-by">by</span><span class="logo-vexo">vexo</span>
+    </a>
+        <ul class="nav-links">
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/servicos">Servi&ccedil;os</a></li>
+      <li><a href="/projetos">Projetos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/resultados">Resultados</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+    <a href="/contato" class="nav-btn">Falar com a equipe</a>
+    <button class="nav-ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mob-nav" id="mobNav">
+  <span class="mob-close" id="mobClose">&#10005;</span>
+  <a href="/sobre" class="mob-link">Sobre</a>
+  <a href="/servicos" class="mob-link">Servi&ccedil;os</a>
+  <a href="/projetos" class="mob-link">Projetos</a>
+  <a href="/blog" class="mob-link">Blog</a>
+  <a href="/resultados" class="mob-link">Resultados</a>
+  <a href="/contato" class="mob-link">Contato</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero-inner">
+      <div class="page-kicker">Serviços</div>
+      <h1 class="page-h1">Tudo o que sua empresa<br>precisa para <span class="gold">crescer online</span></h1>
+      <p class="page-sub">Cada serviço funciona sozinho. Mas quando você combina os certos, o crescimento acelera de forma que nenhum isolado conseguiria.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES DETAIL -->
+<section class="svc-detail">
+  <div class="wrap">
+
+    <div class="svc-block r">
+      <div>
+        <div class="svc-block-num">01 — Criação de Sites</div>
+        <h2 class="svc-block-h2">Sites que aparecem no Google e convertem</h2>
+        <p class="svc-block-desc">Seu site é o vendedor que nunca tira férias. Criamos sites rápidos, bem construídos e otimizados para o Google, que transformam visita em contato e contato em cliente.</p>
+        <div class="svc-block-items">
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Design exclusivo, 100% personalizado para o seu negócio</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>SEO técnico integrado desde o primeiro código</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Carregamento em menos de 2 segundos</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Mobile-first, perfeito em qualquer dispositivo</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Integração com WhatsApp, Google Analytics e Pixel</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Suporte e manutenção inclusos no primeiro mês</div>
+        </div>
+        <a href="/contato" class="svc-block-cta">Solicitar orçamento <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="svc-visual r d1">
+        <div class="svc-visual-bg"></div>
+        <svg style="position:relative;width:80px;height:80px;opacity:.25" viewBox="0 0 80 80" fill="none"><rect x="8" y="16" width="64" height="42" rx="4" stroke="#C4A96A" stroke-width="2"/><path d="M8 28h64M28 58v8M52 58v8M16 66h48" stroke="#C4A96A" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+    </div>
+
+    <div class="svc-block r">
+      <div>
+        <div class="svc-block-num">02 — Tráfego Pago</div>
+        <h2 class="svc-block-h2">Cada real investido com rastreamento total</h2>
+        <p class="svc-block-desc">Cuidamos do Google Ads e do Meta Ads com foco em uma coisa só: retorno real. Chega de pagar campanha sem saber o que voltou. Aqui você vê cada centavo trabalhando.</p>
+        <div class="svc-block-items">
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Criação e gestão de campanhas Google Ads</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Meta Ads (Instagram e Facebook)</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Remarketing e audiências personalizadas</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Relatório semanal com métricas reais</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Otimização contínua baseada em dados</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>ROI médio de 4,7× para nossos clientes ativos</div>
+        </div>
+        <a href="/contato" class="svc-block-cta">Solicitar orçamento <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="svc-visual r d1">
+        <div class="svc-visual-bg"></div>
+        <svg style="position:relative;width:80px;height:80px;opacity:.25" viewBox="0 0 80 80" fill="none"><path d="M8 60 C20 56 30 44 40 32 C50 20 60 14 72 10" stroke="#C4A96A" stroke-width="2" stroke-linecap="round"/><circle cx="72" cy="10" r="4" fill="#C4A96A"/><path d="M8 70h64M8 10v60" stroke="#C4A96A" stroke-width="1.5" stroke-linecap="round" opacity=".4"/></svg>
+      </div>
+    </div>
+
+    <div class="svc-block r">
+      <div>
+        <div class="svc-block-num">03 — Google Meu Negócio</div>
+        <h2 class="svc-block-h2">Primeiro no Google Maps antes dos concorrentes</h2>
+        <p class="svc-block-desc">Quando alguém busca por "dentista perto de mim" ou "advocacia em São Paulo", quem aparece primeiro leva o cliente. Fazemos sua empresa aparecer nesse momento exato.</p>
+        <div class="svc-block-items">
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Criação e verificação do perfil completo</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Otimização para buscas locais e Google Maps</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Gestão de avaliações e respostas estratégicas</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Publicações semanais com fotos e atualizações</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Monitoramento de concorrentes locais</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Relatório mensal de posicionamento e visitas</div>
+        </div>
+        <a href="/contato" class="svc-block-cta">Solicitar orçamento <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="svc-visual r d1">
+        <div class="svc-visual-bg"></div>
+        <svg style="position:relative;width:80px;height:80px;opacity:.25" viewBox="0 0 80 80" fill="none"><path d="M40 12C28.4 12 19 21.4 19 33c0 17.3 21 35 21 35s21-17.7 21-35c0-11.6-9.4-21-21-21z" stroke="#C4A96A" stroke-width="2"/><circle cx="40" cy="33" r="7" stroke="#C4A96A" stroke-width="2"/></svg>
+      </div>
+    </div>
+
+    <div class="svc-block r">
+      <div>
+        <div class="svc-block-num">04 — Redes Sociais</div>
+        <h2 class="svc-block-h2">Presença que constrói autoridade e vende</h2>
+        <p class="svc-block-desc">Chega de só contar likes. Redes sociais que posicionam sua marca, criam autoridade no seu mercado e trazem cliente de volta. Conteúdo com intenção, não volume.</p>
+        <div class="svc-block-items">
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Planejamento de conteúdo mensal</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Design de posts alinhado à identidade da marca</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Copywriting estratégico para cada publicação</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Gestão de Instagram e Facebook</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Resposta a comentários e mensagens</div>
+          <div class="svc-item-row"><span class="svc-item-ico"><svg width="8" height="8" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>Relatório mensal de métricas e crescimento</div>
+        </div>
+        <a href="/contato" class="svc-block-cta">Solicitar orçamento <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </div>
+      <div class="svc-visual r d1">
+        <div class="svc-visual-bg"></div>
+        <svg style="position:relative;width:80px;height:80px;opacity:.25" viewBox="0 0 80 80" fill="none"><rect x="10" y="10" width="60" height="60" rx="14" stroke="#C4A96A" stroke-width="2"/><circle cx="40" cy="40" r="14" stroke="#C4A96A" stroke-width="2"/><circle cx="57" cy="23" r="3" fill="#C4A96A"/></svg>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DIFFERENTIALS -->
+<section class="differentials">
+  <div class="wrap">
+    <div class="diff-header">
+      <div class="eyebrow r">Por que a byvexo</div>
+      <h2 class="diff-h2 r d1">O que nos faz<br>diferentes</h2>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-item r">
+        <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+        <div class="diff-title">Decisões baseadas em dados</div>
+        <p class="diff-text">Nada de feeling. Cada decisão estratégica é fundamentada em métricas reais do seu negócio.</p>
+      </div>
+      <div class="diff-item r d1">
+        <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+        <div class="diff-title">Comunicação transparente</div>
+        <p class="diff-text">Você recebe atualizações semanais e tem acesso direto à equipe. Sem caixa preta.</p>
+      </div>
+      <div class="diff-item r d2">
+        <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="diff-title">Foco em resultado, não em horas</div>
+        <p class="diff-text">Nosso sucesso depende do seu. Por isso trabalhamos com obsessão no que realmente move o negócio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="wrap">
+    <div class="cta-inner">
+      <div class="eyebrow cta-eyebrow r">Pronto para começar?</div>
+      <h2 class="cta-h2 r d1">Vamos escolher o<br>plano <span class="gold">certo para você</span></h2>
+      <p class="cta-sub r d2">Fale com a equipe e monte uma estratégia sob medida para o seu negócio.</p>
+      <div class="cta-btns r d3">
+        <a href="https://wa.me/5518997985211" class="btn-gold" target="_blank" rel="noopener">
+          Falar no WhatsApp
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+        <a href="/contato" class="btn-ghost-w">Enviar mensagem</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="byvexo"><span class="logo-by">by</span><span class="logo-vexo">vexo</span></a>
+        <p>Revolucionando a presença digital de empresas de todos os portes.</p>
+        <div class="footer-socials">
+          <a href="#" class="soc" aria-label="Instagram"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="soc" aria-label="LinkedIn"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Serviços</h4><ul><li><a href="#">Criação de Sites</a></li><li><a href="#">Tráfego Pago</a></li><li><a href="#">Google Meu Negócio</a></li><li><a href="#">Redes Sociais</a></li></ul></div>
+      <div class="footer-col"><h4>Empresa</h4><ul><li><a href="/sobre">Sobre nós</a></li><li><a href="index.html#projetos">Portfólio</a></li><li><a href="#">Blog</a></li></ul></div>
+      <div class="footer-col"><h4>Contato</h4><ul><li><a href="#">WhatsApp</a></li><li><a href="#">E-mail</a></li><li><a href="#">Instagram</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 <a href="/">byvexo</a>. Todos os direitos reservados.</p>
+      <div class="footer-legal"><a href="/politica-de-privacidade">Privacidade</a><a href="/termos-de-uso">Termos de Uso</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
+  document.getElementById('ham').addEventListener('click', () => document.getElementById('mobNav').classList.add('open'));
+  document.getElementById('mobClose').addEventListener('click', () => document.getElementById('mobNav').classList.remove('open'));
+  const io = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)} }), { threshold: 0.1 });
+  document.querySelectorAll('.r').forEach(el => io.observe(el));
+</script>
+<a href="https://wa.me/5518997985211" class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.byvexo.com.br/servicos",
+      "name": "Serviços de Marketing Digital · byvexo",
+      "isPartOf": {"@id": "https://www.byvexo.com.br/#website"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.byvexo.com.br"},
+        {"@type": "ListItem", "position": 2, "name": "Serviços", "item": "https://www.byvexo.com.br/servicos"}
+      ]
+    },
+    {"@type": "Service", "name": "Criação de Sites", "provider": {"@id": "https://www.byvexo.com.br/#organization"}, "description": "Sites rápidos, otimizados para o Google, que transformam visita em contato e contato em cliente.", "serviceType": "Web Design e Desenvolvimento", "areaServed": {"@type": "Country", "name": "Brasil"}},
+    {"@type": "Service", "name": "Tráfego Pago", "provider": {"@id": "https://www.byvexo.com.br/#organization"}, "description": "Gestão de Google Ads e Meta Ads com foco em retorno real sobre investimento.", "serviceType": "Publicidade Digital", "areaServed": {"@type": "Country", "name": "Brasil"}},
+    {"@type": "Service", "name": "Google Meu Negócio", "provider": {"@id": "https://www.byvexo.com.br/#organization"}, "description": "Otimização do perfil no Google para aparecer nas buscas locais e no Google Maps.", "serviceType": "Marketing Local", "areaServed": {"@type": "Country", "name": "Brasil"}},
+    {"@type": "Service", "name": "Gestão de Redes Sociais", "provider": {"@id": "https://www.byvexo.com.br/#organization"}, "description": "Conteúdo estratégico, identidade visual e presença digital que posiciona e gera negócio.", "serviceType": "Social Media Marketing", "areaServed": {"@type": "Country", "name": "Brasil"}}
+  ]
+}
+</script>
+</body>
+</html>
+
+
+

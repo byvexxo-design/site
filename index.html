@@ -1,667 +1,1002 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vexo — Criação de Sites Profissionais com SEO para Empresas</title>
-  <meta name="description" content="A Vexo cria sites profissionais que aparecem no Google e atraem clientes. SEO, design premium e performance. Sites para clínicas, advogados, imobiliárias e muito mais.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://byvexo.com.br/">
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://byvexo.com.br/">
-  <meta property="og:title" content="Vexo — Criação de Sites Profissionais com SEO para Empresas">
-  <meta property="og:description" content="A Vexo cria sites profissionais que aparecem no Google e atraem clientes. SEO, design premium e performance. Sites para clínicas, advogados, imobiliárias e muito mais.">
-  <meta property="og:image" content="https://byvexo.com.br/images/og-home.png">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Vexo">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vexo — Sites que geram resultado de verdade">
-  <meta name="twitter:description" content="A Vexo cria sites que aparecem no Google, atraem os clientes certos e constroem a autoridade que a sua empresa merece.">
-  <meta name="twitter:image" content="https://byvexo.com.br/images/og-home.png">
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/favicon-180.png">
-  <link rel="manifest" href="/site.webmanifest">
-    <!-- LGPD: Consent Mode v2 — antes do GTM -->
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","wait_for_update":500});if(localStorage.getItem("vexo_lgpd")==="granted"){gtag("consent","update",{"analytics_storage":"granted","ad_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"});}</script>
-  <!-- GTM -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KTLNBPG6');</script>
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5M0GVDBS27"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-5M0GVDBS27');</script>
-  <!-- Fonts -->
+  <title>byvexo · Agência de Marketing Digital</title>
+  <meta name="description" content="Sites, tráfego pago e gestão de redes sociais para empresas que querem crescer de verdade.">
+  <link rel="canonical" href="https://www.byvexo.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.byvexo.com.br/">
+  <meta property="og:title" content="byvexo · Agência de Marketing Digital">
+  <meta property="og:description" content="Sites, tráfego pago e gestão de redes sociais para empresas que querem crescer de verdade.">
+  <meta property="og:image" content="https://www.byvexo.com.br/og-image.png">
+  <meta property="og:site_name" content="byvexo">
+  <meta property="og:locale" content="pt_BR">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,500&family=Inter:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300;1,500&family=Inter:wght@300;400;500&display=swap"></noscript>
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Vexo",
-    "url": "https://byvexo.com.br",
-    "image": "https://byvexo.com.br/images/og-home.png",
-    "priceRange": "$$",
-    "logo": {"@type": "ImageObject", "url": "https://byvexo.com.br/favicon-512.png"},
-    "description": "A Vexo é uma agência de criação de sites profissionais com SEO para empresas no Brasil. Atendimento 100% remoto. Sites que aparecem no Google e geram clientes reais.",
-    "telephone": "+5518996745458",
-    "email": "contato@byvexo.com.br",
-    "vatID": "57.540.383/0001-08",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Copacabana, 325",
-      "addressLocality": "Barueri",
-      "addressRegion": "SP",
-      "postalCode": "06471-002",
-      "addressCountry": "BR"
-    },
-    "areaServed": {"@type": "Country", "name": "Brasil"},
-    "serviceArea": {"@type": "Country", "name": "Brasil"},
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00"}
-    ],
-    "sameAs": [
-      "https://instagram.com/byvexo.br",
-      "https://linkedin.com/company/byvexo"
-    ],
-    "founder": [
-      {"@type": "Person", "name": "João Vitor Cassiano", "jobTitle": "CEO & Estrategista de Growth", "url": "https://www.linkedin.com/in/joao-vcassiano/"},
-      {"@type": "Person", "name": "Rebeca Okano", "jobTitle": "Diretora de Marketing & Design", "url": "https://www.linkedin.com/in/rebeca-okano/"}
-    ]
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── TOKENS ─────────────────────────────────────────── */
     :root {
-      --black:#0D0D0D; --forest:#0F4D2E; --green:#00E676; --off:#F7F6F3;
-      --muted:rgba(247,246,243,0.48); --sub:rgba(247,246,243,0.45);
-      --border:rgba(247,246,243,0.1); --border2:rgba(247,246,243,0.06);
-      --green-dim:rgba(0,230,118,0.1); --green-border:rgba(0,230,118,0.22);
+      --bg:         #F4F1EA;
+      --bg-alt:     #ECEAE2;
+      --green:      #152B22;
+      --green-mid:  #1C3A2D;
+      --gold:       #C4A96A;
+      --gold-dark:  #A88B4E;
+      --text:       #111111;
+      --text-mid:   #4A4A4A;
+      --text-muted: #888888;
+      --border:     #D8D3C6;
+      --white:      #FFFFFF;
+      --font-head: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
     }
+
+    /* ── BASE ───────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family:'Inter',sans-serif; background:var(--black); color:var(--off); -webkit-font-smoothing:antialiased; overflow-x:hidden; }
-    .wrap { width:100%; max-width:1120px; margin:0 auto; padding:0 20px; }
-    .label { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--green); opacity:.85; margin-bottom:1rem; display:block; }
-    .title { font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; line-height:1.1; letter-spacing:-0.02em; font-size:clamp(2rem,8vw,3.4rem); color:var(--off); }
-    .title em { font-style:italic; font-weight:300; color:var(--green); }
-    .body-text { font-size:1rem; font-weight:300; line-height:1.7; color:var(--muted); margin-top:1rem; }
-    .btn { display:inline-flex; align-items:center; justify-content:center; font-family:'Inter',sans-serif; font-size:15px; font-weight:500; padding:15px 28px; border-radius:8px; cursor:pointer; border:none; text-decoration:none; transition:opacity .2s,transform .15s; -webkit-tap-highlight-color:transparent; }
-    .btn:active { transform:scale(0.97); }
-    .btn-primary { background:var(--green); color:var(--black); width:100%; }
-    .btn-primary:hover { opacity:.88; }
-    .btn-ghost { background:transparent; color:var(--muted); border:0.5px solid var(--border); width:100%; }
-    .btn-ghost:hover { color:var(--off); border-color:rgba(247,246,243,0.25); }
-    /* NAV */
-    nav { position:sticky; top:0; z-index:100; background:rgba(13,13,13,0.93); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:0.5px solid var(--border); }
-    .nav-inner { display:flex; align-items:center; justify-content:space-between; height:60px; }
-    .logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.3rem; letter-spacing:0.03em; color:var(--off); text-decoration:none; }
-    .logo span { color:var(--green); }
-    .nav-links { display:none; align-items:center; gap:1.75rem; }
-    .nav-links a { font-size:13px; color:var(--muted); text-decoration:none; transition:color .2s; }
-    .nav-links a:hover { color:var(--off); }
-    .nav-cta { font-size:13px; font-weight:500; background:var(--green); color:#0D0D0D !important; border:none; padding:9px 18px; border-radius:6px; cursor:pointer; white-space:nowrap; text-decoration:none; }
-    .nav-menu-btn { background:none; border:0.5px solid var(--border); border-radius:6px; padding:8px 10px; cursor:pointer; color:var(--muted); display:flex; align-items:center; }
-    .nav-menu-btn svg { width:18px; height:18px; }
-    .mobile-menu { display:none; flex-direction:column; background:rgba(13,13,13,0.98); border-bottom:0.5px solid var(--border); }
-    .mobile-menu.open { display:flex; }
-    .mobile-menu a, .mobile-menu button { font-size:15px; font-weight:400; color:var(--muted); text-decoration:none; padding:16px 20px; border-bottom:0.5px solid var(--border2); background:none; border-left:none; border-right:none; border-top:none; text-align:left; cursor:pointer; font-family:'Inter',sans-serif; transition:color .2s; }
-    .mobile-menu a:hover, .mobile-menu button:hover { color:var(--off); }
-    .mobile-menu .m-cta { color:var(--green); font-weight:500; border-bottom:none; }
-    /* HERO */
-    .hero { padding:72px 0 64px; }
-    .hero-eyebrow { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:var(--green); opacity:.8; margin-bottom:1.5rem; display:block; }
-    .hero .title { font-size:clamp(2.4rem,9vw,4.6rem); margin-bottom:1.25rem; }
-    .hero .body-text { max-width:480px; margin-bottom:2rem; }
-    .hero-btns { display:flex; flex-direction:column; gap:12px; }
-    .hero-stats { margin-top:3rem; padding-top:2.5rem; border-top:0.5px solid var(--border); display:grid; grid-template-columns:1fr 1fr; gap:1.75rem 1rem; }
-    .stat-n { font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; font-size:2rem; color:var(--off); letter-spacing:-0.02em; line-height:1; }
-    .stat-n span { color:var(--green); font-size:1.3rem; }
-    .stat-l { font-size:12px; color:var(--muted); margin-top:5px; }
-    /* SECTIONS */
-    section { padding:80px 0; }
-    section + section { border-top:0.5px solid var(--border); }
-    /* PROBLEMA */
-    .sec-prob { background:var(--off); color:var(--black); }
-    .sec-prob + section { border-top:none; }
-    section + .sec-prob { border-top:none; }
-    .sec-prob .label { color:var(--forest); opacity:1; }
-    .sec-prob .title { color:var(--black); font-size:clamp(1.8rem,7vw,3rem); }
-    .sec-prob .title em { color:var(--forest); }
-    .prob-grid { display:grid; grid-template-columns:1fr; gap:12px; margin-top:2rem; }
-    .prob-card { border:0.5px solid rgba(13,13,13,0.12); border-radius:12px; padding:1.5rem; background:rgba(13,13,13,0.03); }
-    .prob-icon { color:var(--forest); margin-bottom:.75rem; display:block; }
-    .prob-title { font-size:15px; font-weight:500; color:var(--black); margin-bottom:.4rem; }
-    .prob-desc { font-size:13px; color:rgba(13,13,13,0.55); line-height:1.65; }
-    /* SOLUÇÃO */
-    .sol-cards { display:grid; grid-template-columns:1fr; gap:12px; margin-top:2rem; }
-    .sol-card { border:0.5px solid var(--border); border-radius:12px; padding:1.5rem; background:rgba(247,246,243,0.03); }
-    .sol-card-top { display:flex; align-items:flex-start; gap:12px; margin-bottom:.75rem; }
-    .sol-num { font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; font-size:2rem; color:var(--green); line-height:1; letter-spacing:-0.02em; flex-shrink:0; }
-    .sol-card-title { font-size:15px; font-weight:500; color:var(--off); padding-top:6px; }
-    .sol-card-desc { font-size:13px; color:var(--muted); line-height:1.65; }
-    .resultado-box { margin-top:2rem; background:rgba(15,77,46,0.18); border:0.5px solid var(--green-border); border-radius:14px; padding:1.5rem; }
-    .resultado-label { font-size:11px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:var(--green); opacity:.8; margin-bottom:1.25rem; display:block; }
-    .resultado-items { display:flex; flex-direction:column; gap:10px; }
-    .res-item { display:flex; align-items:center; gap:12px; padding:14px 16px; background:rgba(0,230,118,0.06); border:0.5px solid rgba(0,230,118,0.12); border-radius:8px; }
-    .res-check { width:20px; height:20px; border-radius:50%; background:var(--green-dim); border:0.5px solid var(--green-border); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-    .res-check svg { width:10px; height:10px; stroke:var(--green); stroke-width:2.5; }
-    .res-text { font-size:14px; color:var(--off); font-weight:300; }
-    /* COMO FUNCIONA */
-    .sec-como { background:rgba(15,77,46,0.07); }
-    .steps { display:flex; flex-direction:column; margin-top:2rem; }
-    .step { display:flex; gap:1rem; padding:1.5rem 0; border-bottom:0.5px solid var(--border); }
-    .step:last-child { border-bottom:none; }
-    .step-n { font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; font-size:2rem; color:var(--green); letter-spacing:-0.02em; line-height:1; flex-shrink:0; min-width:40px; }
-    .step-title { font-size:15px; font-weight:500; color:var(--off); margin-bottom:4px; }
-    .step-desc { font-size:13px; color:var(--muted); line-height:1.6; }
-    /* PROJETOS */
-    .proj-placeholder { margin-top:2rem; border:0.5px dashed var(--border); border-radius:14px; padding:3rem 2rem; text-align:center; }
-    .proj-ph-title { font-size:15px; font-weight:400; color:var(--muted); margin-bottom:.5rem; margin-top:1rem; }
-    .proj-ph-sub { font-size:13px; color:var(--sub); }
-    /* SEGMENTOS */
-    .seg-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:2rem; }
-    .seg-item { border:0.5px solid var(--border); border-radius:10px; padding:16px 14px; transition:all .2s; }
-    .seg-item:hover { background:var(--green-dim); border-color:var(--green-border); }
-    .seg-ico { color:var(--muted); margin-bottom:8px; display:block; }
-    .seg-item:hover .seg-ico { color:var(--green); }
-    .seg-name { font-size:13px; font-weight:500; color:var(--off); }
-    .seg-sub { font-size:11px; color:var(--muted); margin-top:2px; }
-    /* DEPOIMENTOS */
-    .dep-list { display:flex; flex-direction:column; gap:12px; margin-top:2rem; }
-    .dep-card { border:0.5px solid var(--border); border-radius:12px; padding:1.5rem; background:rgba(247,246,243,0.02); }
-    .dep-q-mark { font-family:'Plus Jakarta Sans',sans-serif; font-size:2.5rem; font-weight:500; color:var(--green); line-height:.8; margin-bottom:.5rem; display:block; }
-    .dep-quote { font-size:14px; font-weight:300; color:rgba(247,246,243,0.72); line-height:1.7; margin-bottom:1.25rem; }
-    .dep-author { display:flex; align-items:center; gap:10px; }
-    .dep-av { width:34px; height:34px; border-radius:50%; background:var(--green-dim); border:0.5px solid var(--green-border); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:500; color:var(--green); flex-shrink:0; }
-    .dep-name { font-size:13px; font-weight:500; color:var(--off); }
-    .dep-role { font-size:11px; color:var(--muted); }
-    /* CTA */
-    .sec-cta { padding:80px 0; }
-    .cta-box { background:rgba(15,77,46,0.16); border:0.5px solid var(--green-border); border-radius:20px; padding:3rem 1.5rem; text-align:center; }
-    .cta-box .title { font-size:clamp(1.8rem,7vw,2.8rem); }
-    .cta-box .body-text { max-width:440px; margin:1rem auto 2rem; text-align:left; }
-    .cta-btns { display:flex; flex-direction:column; gap:12px; }
-    /* FOOTER */
-    footer { padding:48px 0 32px; border-top:0.5px solid var(--border); }
-    .foot-top { display:flex; flex-direction:column; gap:2rem; margin-bottom:2rem; }
-    .foot-logo { font-family:'Plus Jakarta Sans',sans-serif; font-weight:300; font-size:1.2rem; color:var(--off); }
-    .foot-logo span { color:var(--green); }
-    .foot-tagline { font-size:12px; color:var(--muted); margin-top:5px; }
-    .foot-links { display:flex; flex-wrap:wrap; gap:.75rem 1.5rem; }
-    .foot-links a { font-size:12px; color:var(--muted); text-decoration:none; }
-    .foot-links a:hover { color:var(--off); }
-    .foot-copy { padding-top:1.5rem; border-top:0.5px solid var(--border2); font-size:11px; color:var(--sub); text-align:center; }
-    /* WHATSAPP FLUTUANTE */
-    .wa-float { position:fixed; bottom:24px; right:20px; z-index:200; width:54px; height:54px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 16px rgba(37,211,102,0.35); text-decoration:none; transition:transform .2s, box-shadow .2s; }
-    .wa-float:hover { transform:scale(1.08); box-shadow:0 6px 20px rgba(37,211,102,0.45); }
-    .wa-float svg { width:28px; height:28px; fill:#fff; }
-    /* POP-UP SAÍDA */
-    .popup-overlay { display:none; position:fixed; inset:0; background:rgba(13,13,13,0.82); z-index:300; align-items:center; justify-content:center; padding:20px; }
-    .popup-overlay.show { display:flex; }
-    .popup-box { background:#111; border:0.5px solid var(--green-border); border-radius:16px; padding:2rem 1.5rem; max-width:420px; width:100%; position:relative; }
-    .popup-close { position:absolute; top:14px; right:16px; background:none; border:none; color:var(--muted); font-size:20px; cursor:pointer; line-height:1; }
-    .popup-label { font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--green); opacity:.8; margin-bottom:.75rem; display:block; }
-    .popup-title { font-family:'Plus Jakarta Sans',sans-serif; font-weight:500; font-size:1.5rem; color:var(--off); line-height:1.15; margin-bottom:.75rem; }
-    .popup-sub { font-size:13px; color:var(--muted); line-height:1.6; margin-bottom:1.5rem; }
-    .popup-form { display:flex; flex-direction:column; gap:10px; }
-    .popup-input, .popup-select { font-family:'Inter',sans-serif; font-size:14px; padding:12px 14px; border-radius:8px; border:0.5px solid var(--border); background:rgba(247,246,243,0.05); color:var(--off); outline:none; transition:border-color .2s; -webkit-appearance:none; }
-    .popup-input::placeholder { color:var(--sub); }
-    .popup-input:focus, .popup-select:focus { border-color:var(--green-border); }
-    .popup-select option { background:#1a1a1a; }
-    .popup-btn { background:var(--green); color:var(--black); border:none; padding:14px; border-radius:8px; font-family:'Inter',sans-serif; font-size:14px; font-weight:500; cursor:pointer; transition:opacity .2s; }
-    .popup-btn:hover { opacity:.88; }
-    /* RESPONSIVE */
-    @media(min-width:640px) {
-      .wrap { padding:0 40px; }
-      .hero { padding:100px 0 80px; }
-      .hero-btns { flex-direction:row; }
-      .btn-primary, .btn-ghost { width:auto; }
-      .hero-stats { grid-template-columns:repeat(4,1fr); }
-      .prob-grid { grid-template-columns:repeat(2,1fr); }
-      .sol-cards { grid-template-columns:repeat(2,1fr); }
-      .seg-grid { grid-template-columns:repeat(4,1fr); }
-      .dep-list { flex-direction:row; }
-      .cta-btns { flex-direction:row; justify-content:center; }
-      .cta-btns .btn { width:auto; }
-      .foot-top { flex-direction:row; justify-content:space-between; align-items:flex-start; }
-    }
-    @media(min-width:900px) {
-      .nav-links { display:flex; }
-      .nav-menu-btn { display:none; }
-      section { padding:100px 0; }
-      .prob-grid { grid-template-columns:repeat(4,1fr); }
-      .seg-grid { grid-template-columns:repeat(4,1fr); }
-    }
-    @media(min-width:1024px) { .wrap { padding:0 5%; } }
-  
-    .foot-social { display:flex; gap:16px; align-items:center; margin-top:1rem; }
-    .foot-social a { color:var(--muted); text-decoration:none; transition:color .2s; display:flex; align-items:center; }
-    .foot-social a:hover { color:var(--green); }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; }
+    ul { list-style: none; }
 
-    /* PROJETOS */
-    .proj-grid { display:grid; grid-template-columns:1fr; gap:16px; margin-top:2rem; }
-    .proj-card { border:0.5px solid var(--border); border-radius:12px; overflow:hidden; text-decoration:none; background:rgba(247,246,243,0.02); transition:border-color .25s; display:block; }
-    .proj-card:hover { border-color:rgba(0,230,118,0.3); }
-    .proj-thumb { height:160px; display:flex; align-items:center; justify-content:center; position:relative; }
-    .proj-tag { position:absolute; top:12px; right:12px; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; background:rgba(0,230,118,0.15); color:var(--green); padding:4px 10px; border-radius:20px; }
-    .proj-info { padding:1.25rem; }
-    .proj-name { font-size:15px; font-weight:500; color:var(--off); margin-bottom:3px; }
-    .proj-seg { font-size:12px; color:var(--muted); }
-    .proj-link { font-size:12px; color:var(--green); margin-top:8px; }
-    @media(min-width:640px) { .proj-grid { grid-template-columns:repeat(3,1fr); } }
+    /* ── LAYOUT ─────────────────────────────────────────── */
+    .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding-inline: 48px; }
+    @media (max-width: 768px) { .wrap { padding-inline: 24px; } }
 
-    /* FAQ HOME */
-    .home-faq{max-width:800px;margin-top:2rem;}
-    .home-faq-item{border-bottom:0.5px solid var(--border);}.home-faq-item:first-child{border-top:0.5px solid var(--border);}
-    .home-faq-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.25rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:'Inter',sans-serif;}
-    .home-faq-q{font-size:15px;font-weight:500;color:var(--off);line-height:1.4;}
-    .home-faq-icon{width:20px;height:20px;flex-shrink:0;color:var(--green);transition:transform .25s;}
-    .home-faq-item.open .home-faq-icon{transform:rotate(45deg);}
-    .home-faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease;}
-    .home-faq-item.open .home-faq-answer{max-height:400px;}
-    .home-faq-a{font-size:14px;color:var(--muted);line-height:1.75;padding-bottom:1.25rem;font-weight:300;}
+    /* ── REVEAL ─────────────────────────────────────────── */
+    .r { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .r.on { opacity: 1; transform: none; }
+    .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; }
+    .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
+    @media (prefers-reduced-motion: reduce) { .r { opacity: 1; transform: none; transition: none; } }
+
+    /* ── EYEBROW ────────────────────────────────────────── */
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--gold-dark); }
+    .eyebrow::before { content: ''; width: 26px; height: 1.5px; background: var(--gold-dark); flex-shrink: 0; }
+
+    /* ── LOGO ───────────────────────────────────────────── */
+    .logo {
+      display: inline-flex; align-items: baseline; gap: 1px;
+      font-family: var(--font-head); line-height: 1;
+    }
+    .logo-by {
+      font-size: 14px; font-weight: 400; font-style: italic;
+      color: var(--gold-dark); letter-spacing: .01em;
+    }
+    .logo-vexo {
+      font-size: 24px; font-weight: 800;
+      color: var(--green); letter-spacing: -.04em;
+    }
+
+    /* ── NAV ────────────────────────────────────────────── */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 22px 0; transition: background .35s ease, padding .35s ease, box-shadow .35s ease; }
+    nav.scrolled { background: rgba(244,241,234,.96); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); padding: 15px 0; box-shadow: 0 1px 0 var(--border); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-links { display: flex; align-items: center; gap: 36px; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--text-mid); transition: color .2s; }
+    .nav-links a:hover { color: var(--green); }
+    .nav-btn { font-size: 13px; font-weight: 600; color: var(--white); background: var(--green); padding: 11px 24px; border-radius: 6px; transition: background .2s, transform .15s; }
+    .nav-btn:hover { background: var(--green-mid); transform: translateY(-1px); }
+    .nav-ham { display: none; flex-direction: column; gap: 5px; padding: 4px; }
+    .nav-ham span { width: 22px; height: 2px; background: var(--green); display: block; border-radius: 2px; }
+    @media (max-width: 900px) { .nav-links, .nav-btn { display: none; } .nav-ham { display: flex; } }
+
+    .mob-nav { display: none; position: fixed; inset: 0; background: var(--bg); z-index: 199; flex-direction: column; align-items: flex-start; justify-content: center; padding: 0 48px; gap: 28px; }
+    .mob-nav.open { display: flex; }
+    .mob-nav a { font-family: var(--font-head); font-size: 38px; font-weight: 800; color: var(--green); transition: color .2s; }
+    .mob-nav a:hover { color: var(--gold-dark); }
+    .mob-close { position: absolute; top: 24px; right: 28px; font-size: 26px; color: var(--text-muted); cursor: pointer; transition: color .2s; }
+    .mob-close:hover { color: var(--green); }
+
+    /* ── HERO ───────────────────────────────────────────── */
+    .hero { padding-block: 170px 110px; position: relative; overflow: hidden; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 420px; gap: 64px; align-items: center; }
+
+    .hero-kicker {
+      font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
+      color: var(--gold-dark); margin-bottom: 28px;
+      opacity: 0; animation: fadeUp .6s var(--ease) .1s forwards;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .hero-kicker::before { content: ''; width: 26px; height: 1.5px; background: var(--gold-dark); flex-shrink: 0; }
+
+    .hero-h1 {
+      font-family: var(--font-head);
+      font-size: clamp(46px, 5.8vw, 78px);
+      font-weight: 800; line-height: 1.03; letter-spacing: -.028em;
+      color: var(--green); margin-bottom: 28px;
+    }
+    .hero-h1 .line { display: block; overflow: hidden; }
+    .hero-h1 .line span { display: block; opacity: 0; transform: translateY(110%); animation: lineUp .85s var(--ease) forwards; }
+    .hero-h1 .line:nth-child(1) span { animation-delay: .25s; }
+    .hero-h1 .line:nth-child(2) span { animation-delay: .38s; }
+    .hero-h1 .line:nth-child(3) span { animation-delay: .51s; }
+
+    .hero-word-wrap { display: inline-block; position: relative; overflow: hidden; vertical-align: bottom; }
+    .hero-word { display: inline-block; color: var(--gold-dark); }
+    .hero-word.out { animation: wordOut .28s var(--ease) forwards; }
+    .hero-word.in  { animation: wordIn  .28s var(--ease) forwards; }
+
+    .hero-sub { font-size: 18px; line-height: 1.75; color: var(--text-mid); max-width: 480px; margin-bottom: 44px; opacity: 0; animation: fadeUp .7s var(--ease) .75s forwards; }
+    .hero-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; opacity: 0; animation: fadeUp .7s var(--ease) .9s forwards; }
+
+    .hero-trust { display: flex; align-items: center; gap: 24px; margin-top: 40px; opacity: 0; animation: fadeUp .6s var(--ease) 1.05s forwards; }
+    .hero-trust-item { display: flex; flex-direction: column; }
+    .hero-trust-n { font-family: var(--font-body); font-size: 22px; font-weight: 300; color: var(--green); letter-spacing: -.02em; line-height: 1; font-variant-numeric: tabular-nums lining-nums; }
+    .hero-trust-l { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+    .hero-trust-div { width: 1px; height: 32px; background: var(--border); }
+
+    /* Hero dashboard card */
+    .hero-card {
+      background: var(--green); border-radius: 20px; padding: 36px;
+      position: relative; overflow: hidden;
+      opacity: 0; animation: fadeUp .9s var(--ease) .5s forwards;
+      box-shadow: 0 32px 80px rgba(21,43,34,.18);
+    }
+    .hero-card::before {
+      content: ''; position: absolute; top: -80px; right: -80px;
+      width: 220px; height: 220px; border-radius: 50%;
+      border: 1px solid rgba(196,169,106,.08);
+    }
+    .hc-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }
+    .hc-live { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.45); }
+    .hc-dot { width: 6px; height: 6px; border-radius: 50%; background: #4ade80; animation: pulse 2s ease-in-out infinite; }
+    .hc-label { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: rgba(255,255,255,.3); }
+    .hc-roi { margin-bottom: 6px; }
+    .hc-roi-n { font-family: var(--font-body); font-size: 62px; font-weight: 300; color: var(--white); letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums lining-nums; }
+    .hc-roi-n sup { font-size: .45em; vertical-align: super; color: var(--gold); }
+    .hc-roi-label { font-size: 13px; color: rgba(255,255,255,.45); margin-top: 4px; }
+    .hc-delta { font-size: 12px; font-weight: 500; color: rgba(74,222,128,.75); margin-top: 10px; margin-bottom: 24px; display: flex; align-items: center; gap: 6px; }
+    .hc-delta-arrow { font-size: 10px; }
+
+    .hc-chart { margin-bottom: 24px; }
+    .chart-svg { width: 100%; height: 54px; }
+
+    .hc-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,.07); border-radius: 8px; overflow: hidden; }
+    .hc-stat { background: rgba(255,255,255,.04); padding: 12px 10px; text-align: center; }
+    .hc-stat-n { font-family: var(--font-body); font-size: 17px; font-weight: 700; color: var(--white); letter-spacing: -.03em; font-variant-numeric: tabular-nums lining-nums; }
+    .hc-stat-l { font-size: 10px; color: rgba(255,255,255,.35); margin-top: 3px; }
+
+    @media (max-width: 980px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .hero { padding-block: 140px 80px; }
+    }
+
+    /* ── BUTTONS ────────────────────────────────────────── */
+    .btn-dark { display: inline-flex; align-items: center; gap: 10px; padding: 15px 28px; background: var(--green); color: var(--white); font-size: 15px; font-weight: 600; border-radius: 6px; transition: background .2s, transform .15s; }
+    .btn-dark:hover { background: var(--green-mid); transform: translateY(-2px); }
+    .btn-dark svg { transition: transform .2s; }
+    .btn-dark:hover svg { transform: translateX(3px); }
+    .btn-outline { display: inline-flex; align-items: center; padding: 15px 24px; border: 1.5px solid var(--border); color: var(--text-mid); font-size: 15px; font-weight: 500; border-radius: 6px; transition: border-color .2s, color .2s; }
+    .btn-outline:hover { border-color: var(--green); color: var(--green); }
+
+    /* ── CLIENTS ────────────────────────────────────────── */
+    .clients-strip { padding: 44px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: hidden; }
+    .marquee-wrap { overflow: hidden; }
+    .marquee-row { display: flex; width: max-content; animation: marquee 28s linear infinite; }
+    .marquee-row:hover { animation-play-state: paused; }
+    .m-group { display: flex; align-items: center; flex-shrink: 0; }
+    .m-item { display: flex; align-items: center; gap: 10px; padding: 0 34px; border-right: 1px solid var(--border); }
+    .m-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .m-item span { font-size: 14px; font-weight: 500; color: var(--text-muted); white-space: nowrap; transition: color .2s; }
+    .m-item:hover span { color: var(--green); }
+
+    /* ── SERVICES (editorial accordion) ────────────────── */
+    .services { padding: 120px 0; }
+    .svc-header { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 64px; }
+    @media (max-width: 768px) { .svc-header { grid-template-columns: 1fr; gap: 16px; } }
+
+    .sec-h2 { font-family: var(--font-head); font-size: clamp(34px, 4.2vw, 52px); font-weight: 800; line-height: 1.06; letter-spacing: -.025em; color: var(--green); text-wrap: balance; }
+    .sec-h2 .gold { color: var(--gold-dark); }
+    .sec-body { font-size: 17px; line-height: 1.75; color: var(--text-mid); }
+
+    .svc-list { border-bottom: 1px solid var(--border); }
+    .svc-item { border-top: 1px solid var(--border); }
+    .svc-head {
+      display: flex; align-items: center; gap: 28px;
+      padding: 26px 0; cursor: pointer;
+    }
+    .svc-head:hover .svc-title { color: var(--gold-dark); }
+    .svc-num { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: var(--text-muted); letter-spacing: .1em; min-width: 28px; }
+    .svc-title { font-family: var(--font-head); font-size: clamp(22px, 2.8vw, 34px); font-weight: 800; color: var(--green); letter-spacing: -.02em; flex: 1; transition: color .2s; }
+    .svc-arrow {
+      width: 38px; height: 38px; border-radius: 50%;
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text-muted); flex-shrink: 0;
+      transition: background .25s, border-color .25s, transform .35s var(--ease), color .25s;
+    }
+    .svc-item.open .svc-arrow { background: var(--green); border-color: var(--green); color: var(--white); transform: rotate(45deg); }
+
+    .svc-body { max-height: 0; overflow: hidden; transition: max-height .45s var(--ease); }
+    .svc-body-inner { padding: 0 0 36px 56px; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; }
+    .svc-desc { font-size: 16px; line-height: 1.75; color: var(--text-mid); max-width: 500px; }
+    .svc-tags { font-size: 12px; color: var(--text-muted); margin-top: 14px; letter-spacing: .04em; }
+    .svc-item.open .svc-body { max-height: 200px; }
+    .svc-cta { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--green); border-bottom: 1px solid var(--border); padding-bottom: 2px; white-space: nowrap; transition: border-color .2s, gap .2s; }
+    .svc-cta:hover { border-color: var(--green); gap: 10px; }
+    @media (max-width: 700px) {
+      .svc-body-inner { grid-template-columns: 1fr; gap: 20px; padding-left: 0; }
+    }
+
+    /* ── ABOUT ──────────────────────────────────────────── */
+    .about { padding: 120px 0; background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); position: relative; overflow: hidden; }
+    .about-map { position: absolute; right: -4%; top: 50%; transform: translateY(-50%); width: 58%; max-width: 680px; opacity: .06; pointer-events: none; }
+    .about-inner { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    @media (max-width: 900px) { .about-inner { grid-template-columns: 1fr; gap: 48px; } .about-map { width: 90%; right: -20%; opacity: .04; } }
+    .about-h2 { font-family: var(--font-head); font-size: clamp(32px, 3.8vw, 50px); font-weight: 800; line-height: 1.06; letter-spacing: -.025em; color: var(--green); margin-block: 20px 22px; text-wrap: balance; }
+    .about-h2 .gold { color: var(--gold-dark); }
+    .about-body { font-size: 17px; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+    .checks { display: flex; flex-direction: column; gap: 13px; margin-bottom: 40px; }
+    .check-row { display: flex; align-items: flex-start; gap: 13px; font-size: 16px; color: var(--text-mid); line-height: 1.5; }
+    .check-ico { width: 20px; height: 20px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px; }
+    .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    .astat { background: var(--bg-alt); padding: 26px 20px; text-align: center; }
+    .astat-num { font-family: var(--font-body); font-size: 38px; font-weight: 300; letter-spacing: -.02em; color: var(--green); line-height: 1; font-variant-numeric: tabular-nums lining-nums; }
+    .astat-num sup { font-size: .4em; vertical-align: super; color: var(--gold-dark); }
+    .astat-lbl { font-size: 12px; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+    .about-visual { position: relative; }
+    .about-img { border-radius: 20px; overflow: hidden; background: var(--green); aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center; position: relative; }
+    .about-img-bg { position: absolute; inset: 0; background: radial-gradient(circle at 28% 72%, rgba(196,169,106,.12) 0%, transparent 55%), linear-gradient(135deg, #152B22 0%, #244838 100%); }
+    .about-letter { position: relative; font-family: var(--font-head); font-size: 190px; font-weight: 900; color: rgba(196,169,106,.07); letter-spacing: -.05em; line-height: 1; user-select: none; }
+
+    /* ── PROCESS ────────────────────────────────────────── */
+    .process { padding: 120px 0; }
+    .sec-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 64px; }
+    @media (max-width: 768px) { .sec-intro { grid-template-columns: 1fr; gap: 16px; } }
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; }
+    @media (max-width: 900px) { .process-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 500px) { .process-grid { grid-template-columns: 1fr; } }
+    .step { background: var(--bg); padding: 40px 32px; transition: background .25s; }
+    .step:hover { background: var(--bg-alt); }
+    .step-n { font-family: var(--font-head); font-size: 12px; font-weight: 700; letter-spacing: .12em; color: var(--gold-dark); margin-bottom: 20px; }
+    .step-t { font-family: var(--font-head); font-size: 22px; font-weight: 800; color: var(--green); margin-bottom: 12px; letter-spacing: -.01em; }
+    .step-p { font-size: 15px; line-height: 1.7; color: var(--text-mid); }
+
+    /* ── WOW RESULTS ────────────────────────────────────── */
+    .wow-results {
+      padding: 120px 0;
+      background: var(--green);
+      position: relative; overflow: hidden;
+    }
+    .wow-results::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 80% 50%, rgba(196,169,106,.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .wow-inner { position: relative; }
+    .wow-top { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; margin-bottom: 80px; }
+    @media (max-width: 768px) { .wow-top { grid-template-columns: 1fr; gap: 20px; margin-bottom: 56px; } }
+    .wow-eyebrow { color: var(--gold); margin-bottom: 20px; }
+    .wow-eyebrow::before { background: var(--gold); }
+    .wow-h2 { font-family: var(--font-head); font-size: clamp(34px, 4vw, 52px); font-weight: 800; line-height: 1.05; letter-spacing: -.03em; color: var(--white); text-wrap: balance; }
+    .wow-sub { font-size: 17px; line-height: 1.75; color: rgba(255,255,255,.45); align-self: end; }
+
+    .wow-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; overflow: hidden; }
+    @media (max-width: 900px) { .wow-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 480px) { .wow-grid { grid-template-columns: 1fr; } }
+
+    .wow-metric { background: rgba(255,255,255,.02); padding: 40px 32px; transition: background .25s; }
+    .wow-metric:hover { background: rgba(255,255,255,.05); }
+    .wow-metric-cat { font-size: 11px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 18px; }
+    .wow-metric-n {
+      font-family: var(--font-body);
+      font-size: clamp(44px, 5vw, 66px);
+      font-weight: 300; letter-spacing: -.03em;
+      color: var(--white); line-height: 1;
+      margin-bottom: 14px;
+      font-variant-numeric: tabular-nums lining-nums;
+    }
+    .wow-metric-n .accent { color: var(--gold); }
+    .wow-metric-label { font-size: 14px; line-height: 1.55; color: rgba(255,255,255,.45); }
+
+    /* ── PORTFOLIO ──────────────────────────────────────── */
+    .portfolio { padding: 120px 0; background: var(--bg-alt); border-top: 1px solid var(--border); }
+    .port-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 52px; flex-wrap: wrap; gap: 24px; }
+    .port-track { display: flex; gap: 20px; overflow-x: auto; scrollbar-width: none; cursor: grab; padding-bottom: 8px; }
+    .port-track::-webkit-scrollbar { display: none; }
+    .port-track:active { cursor: grabbing; }
+    .port-card { flex: 0 0 340px; background: var(--white); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: transform .35s var(--ease), box-shadow .35s; }
+    @media (max-width: 480px) { .port-card { flex: 0 0 280px; } }
+    .port-card:hover { transform: translateY(-5px); box-shadow: 0 20px 48px rgba(0,0,0,.07); }
+    .port-thumb { aspect-ratio: 16/9; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .port-overlay { position: absolute; inset: 0; background: rgba(21,43,34,.88); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .3s; }
+    .port-card:hover .port-overlay { opacity: 1; }
+    .port-cta-lbl { font-size: 13px; font-weight: 600; color: var(--gold); display: flex; align-items: center; gap: 6px; }
+    .port-body { padding: 24px; }
+    .port-cat { display: block; font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dark); margin-bottom: 10px; }
+    .port-name { font-family: var(--font-head); font-size: 20px; font-weight: 800; color: var(--green); margin-bottom: 7px; }
+    .port-desc { font-size: 14px; line-height: 1.65; color: var(--text-muted); }
+
+    /* ── TESTIMONIALS ───────────────────────────────────── */
+    .testimonials { padding: 120px 0; border-top: 1px solid var(--border); }
+    .testi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 64px; }
+    @media (max-width: 768px) { .testi-grid { grid-template-columns: 1fr; } }
+    .testi-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 36px 32px; display: flex; flex-direction: column; gap: 20px; transition: transform .3s var(--ease), box-shadow .3s; }
+    .testi-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.06); }
+    .testi-stars { display: flex; gap: 4px; }
+    .star { width: 14px; height: 14px; color: var(--gold); }
+    .testi-quote { font-family: var(--font-head); font-size: 17px; font-weight: 700; line-height: 1.55; color: var(--green); flex: 1; position: relative; }
+    .testi-quote::before { content: '\201C'; font-size: 56px; line-height: .7; color: rgba(196,169,106,.18); font-family: var(--font-head); display: block; margin-bottom: 8px; }
+    .testi-body { font-size: 14px; line-height: 1.7; color: var(--text-mid); }
+    .testi-author { display: flex; align-items: center; gap: 12px; padding-top: 20px; border-top: 1px solid var(--border); }
+    .testi-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 14px; font-weight: 900; color: var(--gold); flex-shrink: 0; }
+    .testi-name { font-weight: 600; font-size: 14px; color: var(--green); }
+    .testi-role { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+    /* ── CTA ────────────────────────────────────────────── */
+    .cta-section { padding: 120px 0; background: var(--green); position: relative; overflow: hidden; }
+    .cta-section::before { content: ''; position: absolute; top: -100px; right: -100px; width: 480px; height: 480px; border-radius: 50%; border: 1px solid rgba(196,169,106,.08); pointer-events: none; }
+    .cta-section::after { content: ''; position: absolute; bottom: -80px; left: -80px; width: 320px; height: 320px; border-radius: 50%; border: 1px solid rgba(196,169,106,.06); pointer-events: none; }
+    .cta-inner { position: relative; text-align: center; max-width: 700px; margin: 0 auto; }
+    .cta-eyebrow { justify-content: center; margin-bottom: 28px; color: var(--gold); }
+    .cta-eyebrow::before { background: var(--gold); }
+    .cta-h2 { font-family: var(--font-head); font-size: clamp(38px, 5.5vw, 66px); font-weight: 800; line-height: 1.03; letter-spacing: -.033em; color: var(--white); text-wrap: balance; margin-bottom: 24px; }
+    .cta-h2 .gold { color: var(--gold); }
+    .cta-sub { font-size: 18px; line-height: 1.7; color: rgba(255,255,255,.5); max-width: 440px; margin: 0 auto 48px; }
+    .cta-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn-gold { display: inline-flex; align-items: center; gap: 10px; padding: 17px 32px; background: var(--gold); color: var(--green); font-size: 15px; font-weight: 700; border-radius: 6px; transition: background .2s, transform .15s, color .2s; }
+    .btn-gold:hover { background: var(--gold-dark); color: var(--white); transform: translateY(-2px); }
+    .btn-ghost-w { display: inline-flex; align-items: center; padding: 17px 26px; border: 1.5px solid rgba(255,255,255,.18); color: rgba(255,255,255,.65); font-size: 15px; font-weight: 500; border-radius: 6px; transition: border-color .2s, color .2s; }
+    .btn-ghost-w:hover { border-color: rgba(255,255,255,.5); color: var(--white); }
+
+    /* ── FOOTER ─────────────────────────────────────────── */
+    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 72px 0 40px; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 60px; }
+    @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
+    .footer-brand p { font-size: 15px; line-height: 1.7; color: var(--text-muted); max-width: 280px; margin-top: 14px; }
+    .footer-socials { display: flex; gap: 10px; margin-top: 22px; }
+    .soc { width: 34px; height: 34px; border: 1px solid var(--border); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); transition: border-color .2s, color .2s; }
+    .soc:hover { border-color: var(--green); color: var(--green); }
+    .footer-col h4 { font-family: var(--font-head); font-size: 14px; font-weight: 800; color: var(--green); margin-bottom: 16px; }
+    .footer-col li { margin-bottom: 10px; }
+    .footer-col a { font-size: 14px; color: var(--text-muted); transition: color .2s; }
+    .footer-col a:hover { color: var(--green); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; border-top: 1px solid var(--border); gap: 16px; flex-wrap: wrap; }
+    .footer-copy { font-size: 13px; color: var(--text-muted); }
+    .footer-copy a { color: var(--green); font-weight: 500; }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal a { font-size: 12px; color: var(--text-muted); transition: color .2s; }
+    .footer-legal a:hover { color: var(--green); }
+
+    /* ── KEYFRAMES ──────────────────────────────────────── */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:300;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.35);transition:transform .2s,box-shadow .2s}
+    .wa-float:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 8px 28px rgba(37,211,102,.5)}
+    @keyframes lineUp { from { opacity: 0; transform: translateY(110%); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes wordOut { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-18px); } }
+    @keyframes wordIn  { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .5; transform: scale(.8); } }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .chart-line { stroke-dasharray: 300; stroke-dashoffset: 300; animation: drawLine 1.6s var(--ease) 1.2s forwards; }
+    @keyframes drawLine { to { stroke-dashoffset: 0; } }
+
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Vexo — Criação de Sites Profissionais com SEO para Empresas",
-    "url": "https://byvexo.com.br/",
-    "description": "A Vexo cria sites profissionais com SEO para empresas no Brasil. Atendimento 100% remoto. Design premium, performance e resultado real.",
-    "isPartOf": {"@type": "WebSite", "name": "Vexo", "url": "https://byvexo.com.br"},
-    "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".hero .title", ".hero .body-text"]},
-    "about": {"@type": "Organization", "name": "Vexo", "url": "https://byvexo.com.br"}
-  }
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-40VDX9QW3Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-40VDX9QW3Z');
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "João Vitor Cassiano",
-    "jobTitle": "CEO & Estrategista de Growth",
-    "worksFor": {"@type": "Organization", "name": "Vexo", "url": "https://byvexo.com.br"},
-    "url": "https://www.linkedin.com/in/joao-vcassiano/",
-    "sameAs": ["https://www.linkedin.com/in/joao-vcassiano/"],
-    "image": "https://byvexo.com.br/joao.jpg"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rebeca Okano",
-    "jobTitle": "Diretora de Marketing & Design",
-    "worksFor": {"@type": "Organization", "name": "Vexo", "url": "https://byvexo.com.br"},
-    "url": "https://www.linkedin.com/in/rebeca-okano/",
-    "sameAs": ["https://www.linkedin.com/in/rebeca-okano/"],
-    "image": "https://byvexo.com.br/rebeca.jpg"
-  }
-  </script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto tempo leva para meu site aparecer no Google?", "acceptedAnswer": {"@type": "Answer", "text": "Para buscas locais em cidades de médio porte do interior, os primeiros resultados orgânicos costumam aparecer entre 30 e 60 dias após o site ir ao ar. Em capitais e cidades mais competitivas, entre 60 e 120 dias. O fator mais importante não é o tempo — é a qualidade técnica do SEO desde o início. Site com SEO bem feito no dia um ranqueia mais rápido e mantém a posição por mais tempo do que site otimizado depois."}}, {"@type": "Question", "name": "Quanto custa criar um site profissional com a Vexo?", "acceptedAnswer": {"@type": "Answer", "text": "A Vexo trabalha com proposta por projeto — sem pacotes fixos, porque cada negócio tem um escopo diferente. O valor depende do tipo de site, número de páginas, complexidade do design e nível de SEO aplicado. O que é garantido em todos os projetos: SEO técnico desde o início, performance no celular, canonical tags corretas e entrega entre 15 e 30 dias úteis. Para receber uma proposta específica para o seu negócio, o caminho é uma conversa pelo WhatsApp."}}, {"@type": "Question", "name": "A Vexo atende empresas de qualquer cidade do Brasil?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O atendimento da Vexo é 100% remoto — por WhatsApp, videoconferência e e-mail. Trabalhamos com empresas em todo o Brasil, de Araçatuba a Ribeirão Preto, de capitais a cidades do interior. A localização não impacta em nada a qualidade do projeto entregue. O SEO é configurado para a cidade específica de atuação do cliente, independentemente de onde a Vexo esteja."}}, {"@type": "Question", "name": "Meu site precisa de SEO ou só o design que importa?", "acceptedAnswer": {"@type": "Answer", "text": "Design sem SEO é um site bonito que ninguém encontra. SEO sem design é um site que aparece mas não converte. Os dois precisam trabalhar juntos desde o início — não é possível \"adicionar SEO depois\" de forma eficiente, porque a estrutura técnica precisa estar correta desde a primeira linha de código. Na Vexo, SEO não é opcional nem adicional: faz parte de tudo que entregamos."}}, {"@type": "Question", "name": "Quanto tempo leva do primeiro contato ao site no ar?", "acceptedAnswer": {"@type": "Answer", "text": "Entre 15 e 30 dias úteis. O processo começa com uma conversa para entender o negócio, público e objetivos. Depois vem a proposta com escopo, prazo e valor. Aprovada a proposta, a Vexo entra em produção: estrutura, design, conteúdo, SEO e testes. No prazo acordado, o site vai ao ar com sitemap enviado ao Google Search Console para indexação imediata."}}]}</script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KTLNBPG6');</script>
+  <!-- End Google Tag Manager -->
 </head>
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTLNBPG6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTLNBPG6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-<!-- NAV -->
-<nav>
+<!-- ── NAV ─────────────────────────────────────────────── -->
+<nav id="nav">
   <div class="wrap nav-inner">
-    <a href="/" class="logo" aria-label="Vexo — início">Vexo<span>.</span></a>
-    <div class="nav-links" role="navigation" aria-label="Menu principal">
-      <a href="/">Home</a><a href="/sobre">Sobre</a><a href="/cases">Cases</a>
-      <a href="/founders">Founders</a><a href="/blog">Blog</a><a href="/contato">Contato</a>
-      <a href="https://wa.me/5518996745458?text=Olá%2C%20vim%20da%20home%20da%20Vexo%20e%20quero%20saber%20mais!" target="_blank" rel="noopener" class="nav-cta">Falar com a Vexo</a>
-    </div>
-    <button class="nav-menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false">
-      <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h14M2 9h14M2 14h14"/></svg>
-    </button>
-  </div>
-  <div class="mobile-menu" id="mobile-menu">
-    <a href="/">Home</a><a href="/sobre">Sobre</a><a href="/cases">Cases</a>
-    <a href="/founders">Founders</a><a href="/blog">Blog</a><a href="/contato">Contato</a>
-    <button class="m-cta" onclick="location.href='https://wa.me/5518996745458?text=Olá%2C%20vim%20da%20home%20da%20Vexo%20e%20quero%20saber%20mais!'">Falar com a Vexo</button>
+    <a href="/" class="logo" aria-label="byvexo">
+      <span class="logo-by">by</span><span class="logo-vexo">vexo</span>
+    </a>
+        <ul class="nav-links">
+      <li><a href="/sobre">Sobre</a></li>
+      <li><a href="/servicos">Servi&ccedil;os</a></li>
+      <li><a href="/projetos">Projetos</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/resultados">Resultados</a></li>
+      <li><a href="/contato">Contato</a></li>
+    </ul>
+    <a href="/contato" class="nav-btn">Falar com a equipe</a>
+    <button class="nav-ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<main>
-<!-- 01 HERO -->
-<section class="hero" style="border-top:none;">
-  <div class="wrap">
-    <span class="hero-eyebrow">byvexo.com.br</span>
-    <h1 class="title">Seu site precisa<br>trabalhar por você.<br><em>Não apenas existir.</em></h1>
-    <p style="font-size:13px;font-weight:500;letter-spacing:0.06em;color:var(--muted);margin-top:.75rem;margin-bottom:0;">Agência de Criação de Sites Profissionais com SEO · Brasil inteiro · 100% remoto</p>
-    <p class="body-text">A Vexo cria sites que aparecem no Google, atraem os clientes certos e constroem a autoridade que a sua empresa merece.</p>
-    <div class="hero-btns">
-      <a href="https://wa.me/5518996745458?text=Olá%2C%20vim%20da%20home%20e%20quero%20um%20site%20que%20gera%20resultado!" target="_blank" rel="noopener" class="btn btn-primary">Quero um site que gera resultado</a>
-      <a href="/cases" class="btn btn-ghost">Ver projetos</a>
-    </div>
-    <div class="hero-stats" aria-label="Números da Vexo">
-      <div><div class="stat-n">47<span>+</span></div><div class="stat-l">Empresas atendidas</div></div>
-      <div><div class="stat-n">12</div><div class="stat-l">Segmentos de mercado</div></div>
-      <div><div class="stat-n">8</div><div class="stat-l">Estados com presença</div></div>
-      <div><div class="stat-n">100<span>%</span></div><div class="stat-l">Focado em resultado</div></div>
-    </div>
-  </div>
-</section>
+<div class="mob-nav" id="mobNav">
+  <span class="mob-close" id="mobClose">&#10005;</span>
+  <a href="/sobre" class="mob-link">Sobre</a>
+  <a href="/servicos" class="mob-link">Servi&ccedil;os</a>
+  <a href="/projetos" class="mob-link">Projetos</a>
+  <a href="/blog" class="mob-link">Blog</a>
+  <a href="/resultados" class="mob-link">Resultados</a>
+  <a href="/contato" class="mob-link">Contato</a>
+</div>
 
-<!-- 02 PROBLEMA -->
-<section class="sec-prob">
-  <div class="wrap">
-    <span class="label">Você se identifica?</span>
-    <h2 class="title">O site da sua empresa<br>está te <em>custando clientes</em></h2>
-    <div class="prob-grid">
-      <div class="prob-card">
-        <span class="prob-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg></span>
-        <div class="prob-title">Invisível no Google</div>
-        <p class="prob-desc">Seu concorrente aparece na primeira página. O seu site está na décima. Ninguém chega até você.</p>
-      </div>
-      <div class="prob-card">
-        <span class="prob-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M9 10l2 2 4-4"/></svg></span>
-        <div class="prob-title">Visitas que não viram clientes</div>
-        <p class="prob-desc">Pessoas entram no site, olham e saem. Não ligam, não mandam mensagem, não compram.</p>
-      </div>
-      <div class="prob-card">
-        <span class="prob-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
-        <div class="prob-title">Lento e desatualizado</div>
-        <p class="prob-desc">Carrega devagar, não funciona bem no celular. Passa uma imagem que não representa a empresa.</p>
-      </div>
-      <div class="prob-card">
-        <span class="prob-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/><path d="M8 3h8"/></svg></span>
-        <div class="prob-title">Parece menor do que é</div>
-        <p class="prob-desc">A empresa é séria, mas o site não transmite isso. Clientes chegam sem a confiança que deveriam ter.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- ── HERO ────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="wrap hero-inner">
 
-<!-- 03 SOLUÇÃO -->
-<section>
-  <div class="wrap">
-    <span class="label">O que a Vexo entrega</span>
-    <h2 class="title">Um site construído<br>para <em>aparecer e converter</em></h2>
-    <div class="sol-cards">
-      <div class="sol-card"><div class="sol-card-top"><div class="sol-num">1</div><div class="sol-card-title">Aparece no Google</div></div><p class="sol-card-desc">Cada página é construída para ranquear. Seu cliente busca, encontra você — não o concorrente.</p></div>
-      <div class="sol-card"><div class="sol-card-top"><div class="sol-num">2</div><div class="sol-card-title">Transmite autoridade</div></div><p class="sol-card-desc">Visual profissional alinhado com o seu negócio. Primeira impressão que gera confiança e fecha venda.</p></div>
-      <div class="sol-card"><div class="sol-card-top"><div class="sol-num">3</div><div class="sol-card-title">Transforma visita em contato</div></div><p class="sol-card-desc">Botões, textos e estrutura pensados para uma coisa só: levar o visitante a entrar em contato com você.</p></div>
-      <div class="sol-card"><div class="sol-card-top"><div class="sol-num">4</div><div class="sol-card-title">Rápido no celular</div></div><p class="sol-card-desc">A maioria dos seus clientes acessa pelo celular. O site carrega em segundos e funciona perfeitamente.</p></div>
-    </div>
-    <div class="resultado-box">
-      <span class="resultado-label">O que você ganha na prática</span>
-      <div class="resultado-items">
-        <div class="res-item"><div class="res-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3"/></svg></div><span class="res-text">Mais clientes chegando pelo Google todo mês</span></div>
-        <div class="res-item"><div class="res-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3"/></svg></div><span class="res-text">Site que representa o tamanho real da sua empresa</span></div>
-        <div class="res-item"><div class="res-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3"/></svg></div><span class="res-text">Menos tempo explicando — o site convence por você</span></div>
-        <div class="res-item"><div class="res-check"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3"/></svg></div><span class="res-text">Autoridade de mercado que atrai clientes melhores</span></div>
+    <!-- Left -->
+    <div>
+      <div class="hero-kicker">Sites · Tráfego Pago · Redes Sociais</div>
+      <h1 class="hero-h1">
+        <span class="line"><span><span class="hero-word-wrap"><span id="heroWord" class="hero-word">Sua clínica</span></span></span></span>
+        <span class="line"><span>no topo do</span></span>
+        <span class="line"><span>Google.</span></span>
+      </h1>
+      <p class="hero-sub">Criamos sites que rankeiam, campanhas que convertem e redes sociais que vendem. Tudo integrado, tudo mensurável.</p>
+      <div class="hero-actions">
+        <a href="#contato" class="btn-dark">
+          Quero crescer agora
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#resultados" class="btn-outline">Ver resultados</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- 04 COMO FUNCIONA -->
-<section class="sec-como" id="como-funciona">
-  <div class="wrap">
-    <span class="label">Simples assim</span>
-    <h2 class="title">Como a Vexo<br><em>funciona</em></h2>
-    <div class="steps">
-      <div class="step"><div class="step-n">1</div><div><div class="step-title">Conversa sobre o seu negócio</div><p class="step-desc">Entendemos o que você faz, quem é seu cliente ideal e o que você quer que o site gere para a empresa.</p></div></div>
-      <div class="step"><div class="step-n">2</div><div><div class="step-title">Proposta e alinhamento</div><p class="step-desc">Você recebe uma proposta clara com escopo, prazo e valor. Sem surpresas no meio do caminho.</p></div></div>
-      <div class="step"><div class="step-n">3</div><div><div class="step-title">Criação do site</div><p class="step-desc">Construímos o site com SEO, design e velocidade desde o início. Você acompanha e aprova cada etapa.</p></div></div>
-      <div class="step"><div class="step-n">4</div><div><div class="step-title">Site no ar e gerando resultado</div><p class="step-desc">Publicamos, configuramos tudo e o site começa a trabalhar por você. Suporte contínuo incluso.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 05 PROJETOS -->
-<section id="projetos">
-  <div class="wrap">
-    <span class="label">Projetos entregues</span>
-    <h2 class="title">Sites que já estão<br><em>gerando resultado</em></h2>
-    <p class="body-text">Cada projeto entregue com SEO, performance e identidade alinhada ao negócio do cliente.</p>
-    <div class="proj-grid">
-      <a href="https://draelisianeelias.com.br/" target="_blank" rel="noopener" class="proj-card">
-        <div class="proj-thumb" style="background:#0a1628;">
-          <div class="proj-thumb-logo" style="color:#c8a96e;font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;font-size:1.2rem;letter-spacing:0.04em;text-align:center;padding:0 1rem;">Dra. Elisiane Elias</div>
-          <span class="proj-tag">Saúde</span>
+      <div class="hero-trust">
+        <div class="hero-trust-item">
+          <span class="hero-trust-n">120+</span>
+          <span class="hero-trust-l">Clientes ativos</span>
         </div>
-        <div class="proj-info">
-          <div class="proj-name">Dra. Elisiane Elias</div>
-          <div class="proj-seg">Médica — São Paulo, SP</div>
-          <div class="proj-link">draelisianeelias.com.br ↗</div>
+        <div class="hero-trust-div"></div>
+        <div class="hero-trust-item">
+          <span class="hero-trust-n">340+</span>
+          <span class="hero-trust-l">Projetos entregues</span>
         </div>
-      </a>
-      <a href="https://triadeprime.com.br/" target="_blank" rel="noopener" class="proj-card">
-        <div class="proj-thumb" style="background:#1a1a2e;">
-          <div class="proj-thumb-logo" style="color:#e8c97a;font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;font-size:1.2rem;letter-spacing:0.04em;text-align:center;padding:0 1rem;">Tríade Prime</div>
-          <span class="proj-tag">Consultoria</span>
+        <div class="hero-trust-div"></div>
+        <div class="hero-trust-item">
+          <span class="hero-trust-n">4.7×</span>
+          <span class="hero-trust-l">ROI médio em ads</span>
         </div>
-        <div class="proj-info">
-          <div class="proj-name">Tríade Prime</div>
-          <div class="proj-seg">Consultoria Tributária — SP e Curitiba</div>
-          <div class="proj-link">triadeprime.com.br ↗</div>
-        </div>
-      </a>
-      <a href="https://salvve.ai/" target="_blank" rel="noopener" class="proj-card">
-        <div class="proj-thumb" style="background:#0D1F0F;">
-          <div class="proj-thumb-logo" style="color:#00E676;font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;font-size:1.5rem;letter-spacing:0.06em;">Salvve</div>
-          <span class="proj-tag">Fintech</span>
-        </div>
-        <div class="proj-info">
-          <div class="proj-name">Salvve</div>
-          <div class="proj-seg">Assistente Financeira — Brasil</div>
-          <div class="proj-link">salvve.ai ↗</div>
-        </div>
-      </a>
+      </div>
     </div>
-    <div style="text-align:center;margin-top:2rem;">
-      <a href="/cases" class="btn btn-ghost" style="display:inline-flex;">Ver todos os projetos</a>
+
+    <!-- Right: Dashboard card -->
+    <div class="hero-visual" style="position:relative;">
+      <div class="hero-card">
+        <div class="hc-top">
+          <div class="hc-live">
+            <span class="hc-dot"></span>
+            Campanha ativa
+          </div>
+          <span class="hc-label">Google Ads</span>
+        </div>
+        <div class="hc-roi">
+          <div class="hc-roi-n">4.7<sup>×</sup></div>
+          <div class="hc-roi-label">Retorno sobre investimento</div>
+          <div class="hc-delta">
+            <span class="hc-delta-arrow">↑</span>
+            +127% vs. mês anterior
+          </div>
+        </div>
+        <div class="hc-chart">
+          <svg class="chart-svg" viewBox="0 0 240 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#C4A96A" stop-opacity=".2"/>
+                <stop offset="100%" stop-color="#C4A96A" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,50 C30,48 55,42 80,34 C105,26 125,22 150,16 C170,11 195,7 240,3 L240,54 L0,54 Z" fill="url(#cg)"/>
+            <path class="chart-line" d="M0,50 C30,48 55,42 80,34 C105,26 125,22 150,16 C170,11 195,7 240,3" stroke="#C4A96A" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <circle cx="240" cy="3" r="3.5" fill="#C4A96A"/>
+            <circle cx="240" cy="3" r="6.5" fill="rgba(196,169,106,.18)"/>
+          </svg>
+        </div>
+        <div class="hc-stats">
+          <div class="hc-stat">
+            <div class="hc-stat-n">#1</div>
+            <div class="hc-stat-l">Google</div>
+          </div>
+          <div class="hc-stat">
+            <div class="hc-stat-n">143</div>
+            <div class="hc-stat-l">Leads/mês</div>
+          </div>
+          <div class="hc-stat">
+            <div class="hc-stat-n">8.4%</div>
+            <div class="hc-stat-l">Conversão</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CLIENTS ──────────────────────────────────────────── -->
+<div class="clients-strip">
+  <div class="marquee-wrap">
+    <div class="marquee-row">
+      <div class="m-group">
+        <div class="m-item"><span class="m-dot"></span><span>Advocacia Fonseca</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>OdontoVida Clínica</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>ModaFem Store</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Delivery Express SP</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Construções Oliveira</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Imobiliária Terraverde</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Academia FitLife</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Clínica Estética Renova</span></div>
+      </div>
+      <div class="m-group" aria-hidden="true">
+        <div class="m-item"><span class="m-dot"></span><span>Advocacia Fonseca</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>OdontoVida Clínica</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>ModaFem Store</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Delivery Express SP</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Construções Oliveira</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Imobiliária Terraverde</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Academia FitLife</span></div>
+        <div class="m-item"><span class="m-dot"></span><span>Clínica Estética Renova</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── SERVICES ─────────────────────────────────────────── -->
+<section class="services" id="servicos">
+  <div class="wrap">
+    <div class="svc-header">
+      <div>
+        <div class="eyebrow r" style="margin-bottom:20px">O que fazemos</div>
+        <h2 class="sec-h2 r d1">Cada detalhe<br>pensado para <span class="gold">crescer</span></h2>
+      </div>
+      <p class="sec-body r d2">Do primeiro clique até a venda fechada, construímos cada canal digital com estratégia que funciona de verdade.</p>
+    </div>
+
+    <div class="svc-list r d1">
+
+      <div class="svc-item open" id="svc1">
+        <div class="svc-head" onclick="toggleSvc('svc1')">
+          <span class="svc-num">01</span>
+          <h3 class="svc-title">Criação de Sites</h3>
+          <span class="svc-arrow">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-body-inner">
+            <div>
+              <p class="svc-desc">Do zero até no ar: sites que aparecem no Google, carregam em menos de 2 segundos e transformam visitante em cliente. Institucional, landing page ou e-commerce.</p>
+              <p class="svc-tags">SEO Técnico · Performance · Mobile First · WordPress / Custom</p>
+            </div>
+            <a href="#contato" class="svc-cta">Saiba mais <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-item" id="svc2">
+        <div class="svc-head" onclick="toggleSvc('svc2')">
+          <span class="svc-num">02</span>
+          <h3 class="svc-title">Tráfego Pago</h3>
+          <span class="svc-arrow">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-body-inner">
+            <div>
+              <p class="svc-desc">Google Ads e Meta Ads com obsessão por resultado. Cada real é rastreado: você sabe o que investiu, o que voltou e por quê.</p>
+              <p class="svc-tags">Google Ads · Meta Ads · Remarketing · Relatório semanal</p>
+            </div>
+            <a href="#contato" class="svc-cta">Saiba mais <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-item" id="svc3">
+        <div class="svc-head" onclick="toggleSvc('svc3')">
+          <span class="svc-num">03</span>
+          <h3 class="svc-title">Google Meu Negócio</h3>
+          <span class="svc-arrow">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-body-inner">
+            <div>
+              <p class="svc-desc">Apareça antes dos concorrentes no Google Maps e nas buscas locais. Gestão de avaliações, fotos e otimização contínua do seu perfil.</p>
+              <p class="svc-tags">SEO Local · Google Maps · Avaliações · Perfil verificado</p>
+            </div>
+            <a href="#contato" class="svc-cta">Saiba mais <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-item" id="svc4">
+        <div class="svc-head" onclick="toggleSvc('svc4')">
+          <span class="svc-num">04</span>
+          <h3 class="svc-title">Redes Sociais</h3>
+          <span class="svc-arrow">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-body-inner">
+            <div>
+              <p class="svc-desc">Conteúdo que posiciona, identidade visual que diferencia e presença que gera negócio de verdade. Instagram, Facebook e além.</p>
+              <p class="svc-tags">Conteúdo mensal · Design · Copywriting · Métricas</p>
+            </div>
+            <a href="#contato" class="svc-cta">Saiba mais <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- 06 SEGMENTOS -->
-<section id="segmentos">
-  <div class="wrap">
-    <span class="label">Para quem a Vexo trabalha</span>
-    <h2 class="title">Atendemos qualquer negócio<br>que queira <em>ser encontrado</em></h2>
-    <p class="body-text">Cada segmento tem suas particularidades. A Vexo conhece as palavras que seu cliente usa para te procurar — e cria o site que aparece para ele.</p>
-    <div class="seg-grid">
-      <a href="/site-para-clinica" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 1 1 0 10A5 5 0 0 1 12 2z"/><path d="M12 14c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/><path d="M12 9v3m-1.5-1.5h3"/></svg></span><div class="seg-name">Saúde</div><div class="seg-sub">Clínicas, consultórios</div></a>
-      <a href="/site-para-juridico" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span><div class="seg-name">Jurídico</div><div class="seg-sub">Advogados, escritórios</div></a>
-      <a href="/site-para-imobiliaria" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></span><div class="seg-name">Imobiliário</div><div class="seg-sub">Imobiliárias, corretores</div></a>
-      <a href="/site-para-ecommerce" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span><div class="seg-name">E-commerce</div><div class="seg-sub">Lojas virtuais</div></a>
-      <a href="/site-para-servicos" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span><div class="seg-name">Serviços</div><div class="seg-sub">Manutenção, reforma</div></a>
-      <a href="/site-para-educacao" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span><div class="seg-name">Educação</div><div class="seg-sub">Escolas, cursos</div></a>
-      <a href="/site-para-gastronomia" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><path d="M6 2v3M10 2v3M14 2v3"/></svg></span><div class="seg-name">Gastronomia</div><div class="seg-sub">Restaurantes, delivery</div></a>
-      <a href="/site-para-industria" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M12 12v3m-3-1.5h6"/></svg></span><div class="seg-name">Indústria</div><div class="seg-sub">Fábricas, distribuidoras</div></a>
-      <a href="/site-para-contabilidade" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div class="seg-name">Contabilidade</div><div class="seg-sub">Contadores, escritórios</div></a>
-      <a href="/site-para-automotivo" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h11l5 5v5h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span><div class="seg-name">Automotivo</div><div class="seg-sub">Mecânicas, autocenters</div></a>
-      <a href="/site-para-beleza" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span><div class="seg-name">Beleza</div><div class="seg-sub">Salões, barbearias</div></a>
-      <a href="/site-para-construcao" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M4 20V10l8-6 8 6v10"/><path d="M10 20v-5h4v5"/></svg></span><div class="seg-name">Construção</div><div class="seg-sub">Construtoras, reformas</div></a>
-      <a href="/site-para-consultoria" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><div class="seg-name">Consultoria</div><div class="seg-sub">Empresas B2B</div></a>
-      <a href="/site-para-turismo" class="seg-item" style="text-decoration:none;display:block;"><span class="seg-ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></span><div class="seg-name">Turismo</div><div class="seg-sub">Hotéis, pousadas</div></a>
+<!-- ── ABOUT ─────────────────────────────────────────────── -->
+<section class="about" id="sobre">
+  <svg class="about-map" viewBox="0 0 440 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path stroke="#152B22" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" fill="none" d="M 22,22 C 60,14 100,12 142,18 C 180,22 210,26 240,30 C 265,32 290,36 312,46 C 345,60 375,92 400,122 C 412,148 410,170 402,190 C 394,208 376,216 368,228 C 358,244 352,260 348,274 C 342,294 338,314 336,332 C 330,348 318,354 308,358 C 286,368 268,374 258,380 C 248,394 244,412 240,428 C 232,448 218,464 210,470 C 198,464 182,448 170,432 C 160,416 154,398 150,380 C 146,356 150,330 148,306 C 142,276 130,254 118,238 C 102,220 84,212 74,206 C 54,194 30,164 24,128 C 20,96 20,58 22,22 Z"/>
+  </svg>
+  <div class="wrap about-inner">
+    <div>
+      <div class="eyebrow r">Nosso escritório</div>
+      <h2 class="about-h2 r d1">Sede em São Paulo,<br>atendemos todo o <span class="gold">Brasil</span></h2>
+      <p class="about-body r d2">Nascemos em São Paulo com um propósito claro: levar estratégia digital de alto nível para empresas de qualquer cidade do país. Com tecnologia e processos remotos, não importa onde você está: nós chegamos até você.</p>
+      <ul class="checks r d3">
+        <li class="check-row">
+          <span class="check-ico"><svg width="9" height="9" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+          Atendimento 100% remoto para todo o Brasil
+        </li>
+        <li class="check-row">
+          <span class="check-ico"><svg width="9" height="9" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+          Estratégia baseada em dados, sem achismo
+        </li>
+        <li class="check-row">
+          <span class="check-ico"><svg width="9" height="9" fill="none" stroke="var(--gold)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+          Planejamento de longo prazo para escalar com você
+        </li>
+      </ul>
+      <div class="about-stats r d4">
+        <div class="astat"><div class="astat-num" data-target="120">0</div><div class="astat-lbl">Clientes atendidos</div></div>
+        <div class="astat"><div class="astat-num" data-target="340">0</div><div class="astat-lbl">Projetos entregues</div></div>
+        <div class="astat"><div class="astat-num">98<sup>%</sup></div><div class="astat-lbl">Taxa de satisfação</div></div>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- 07 DEPOIMENTOS -->
-<section>
-  <div class="wrap">
-    <span class="label">Quem já trabalhou com a Vexo</span>
-    <h2 class="title">O que nossos clientes<br><em>dizem na prática</em></h2>
-    <div class="dep-list">
-      <div class="dep-card"><span class="dep-q-mark" aria-hidden="true">"</span><p class="dep-quote">Eu precisava de um site que transmitisse a mesma confiança que ofereço aos meus pacientes. A equipe da Vexo entregou exatamente isso: um site moderno, profissional e que fortaleceu minha presença digital.</p><div class="dep-author"><div class="dep-av">EE</div><div><div class="dep-name">Dra. Elisiane Elias</div><div class="dep-role">Médica — São Paulo, SP</div></div></div></div>
-      <div class="dep-card"><span class="dep-q-mark" aria-hidden="true">"</span><p class="dep-quote">O resultado superou minhas expectativas. O site ficou elegante, organizado e transmite credibilidade desde o primeiro acesso. Hoje consigo apresentar meu escritório de forma muito mais profissional.</p><div class="dep-author"><div class="dep-av">TP</div><div><div class="dep-name">Dr. Giovani — Tríade Prime</div><div class="dep-role">Consultoria Tributária — SP e Curitiba</div></div></div></div>
-      <div class="dep-card"><span class="dep-q-mark" aria-hidden="true">"</span><p class="dep-quote">Queríamos um site que mostrasse a seriedade da nossa empresa e facilitasse o contato com clientes. A Vexo entendeu nosso objetivo e entregou uma plataforma rápida, bonita e extremamente eficiente.</p><div class="dep-author"><div class="dep-av">SV</div><div><div class="dep-name">Rodrigo — Salvve</div><div class="dep-role">Assistente Financeira — Brasil</div></div></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 08 CTA FINAL -->
-<section class="sec-cta" id="contato">
-  <div class="wrap">
-    <div class="cta-box">
-      <span class="label" style="display:block;text-align:center;">Próximo passo</span>
-      <h2 class="title">Pronto para um site<br>que <em>trabalha por você?</em></h2>
-      <p class="body-text">Sem contrato longo, sem promessa vazia. Uma conversa para entender o seu negócio e mostrar o que a Vexo pode fazer por ele.</p>
-      <div class="cta-btns">
-        <a href="https://wa.me/5518996745458?text=Olá%2C%20vim%20da%20home%20da%20Vexo%20e%20quero%20conversar!" target="_blank" rel="noopener" class="btn btn-primary">Falar com a Vexo no WhatsApp</a>
-        <a href="#como-funciona" class="btn btn-ghost">Ver como funciona</a>
+    <div class="about-visual r d2">
+      <div class="about-img">
+        <div class="about-img-bg"></div>
+        <span class="about-letter">VX</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<!-- FAQ HOME -->
-<section id="faq-home">
+<!-- ── PROCESS ───────────────────────────────────────────── -->
+<section class="process" id="processo">
   <div class="wrap">
-    <span class="label">Perguntas frequentes</span>
-    <h2 class="title">O que empresários perguntam<br><em>antes de contratar</em></h2>
-    <div class="home-faq">
-      <div class="home-faq-item">
-        <button class="home-faq-btn" aria-expanded="false">
-          <span class="home-faq-q">Quanto tempo leva para meu site aparecer no Google?</span>
-          <svg class="home-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="home-faq-answer"><p class="home-faq-a">Para buscas locais em cidades de médio porte do interior, os primeiros resultados orgânicos costumam aparecer entre 30 e 60 dias após o site ir ao ar. Em capitais e cidades mais competitivas, entre 60 e 120 dias. O fator mais importante não é o tempo — é a qualidade técnica do SEO desde o início. Site com SEO bem feito no dia um ranqueia mais rápido e mantém a posição por mais tempo do que site otimizado depois.</p></div>
-      </div>      <div class="home-faq-item">
-        <button class="home-faq-btn" aria-expanded="false">
-          <span class="home-faq-q">Quanto custa criar um site profissional com a Vexo?</span>
-          <svg class="home-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="home-faq-answer"><p class="home-faq-a">A Vexo trabalha com proposta por projeto — sem pacotes fixos, porque cada negócio tem um escopo diferente. O valor depende do tipo de site, número de páginas, complexidade do design e nível de SEO aplicado. O que é garantido em todos os projetos: SEO técnico desde o início, performance no celular, canonical tags corretas e entrega entre 15 e 30 dias úteis. Para receber uma proposta específica para o seu negócio, o caminho é uma conversa pelo WhatsApp.</p></div>
-      </div>      <div class="home-faq-item">
-        <button class="home-faq-btn" aria-expanded="false">
-          <span class="home-faq-q">A Vexo atende empresas de qualquer cidade do Brasil?</span>
-          <svg class="home-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="home-faq-answer"><p class="home-faq-a">Sim. O atendimento da Vexo é 100% remoto — por WhatsApp, videoconferência e e-mail. Trabalhamos com empresas em todo o Brasil, de Araçatuba a Ribeirão Preto, de capitais a cidades do interior. A localização não impacta em nada a qualidade do projeto entregue. O SEO é configurado para a cidade específica de atuação do cliente, independentemente de onde a Vexo esteja.</p></div>
-      </div>      <div class="home-faq-item">
-        <button class="home-faq-btn" aria-expanded="false">
-          <span class="home-faq-q">Meu site precisa de SEO ou só o design que importa?</span>
-          <svg class="home-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="home-faq-answer"><p class="home-faq-a">Design sem SEO é um site bonito que ninguém encontra. SEO sem design é um site que aparece mas não converte. Os dois precisam trabalhar juntos desde o início — não é possível "adicionar SEO depois" de forma eficiente, porque a estrutura técnica precisa estar correta desde a primeira linha de código. Na Vexo, SEO não é opcional nem adicional: faz parte de tudo que entregamos.</p></div>
-      </div>      <div class="home-faq-item">
-        <button class="home-faq-btn" aria-expanded="false">
-          <span class="home-faq-q">Quanto tempo leva do primeiro contato ao site no ar?</span>
-          <svg class="home-faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="home-faq-answer"><p class="home-faq-a">Entre 15 e 30 dias úteis. O processo começa com uma conversa para entender o negócio, público e objetivos. Depois vem a proposta com escopo, prazo e valor. Aprovada a proposta, a Vexo entra em produção: estrutura, design, conteúdo, SEO e testes. No prazo acordado, o site vai ao ar com sitemap enviado ao Google Search Console para indexação imediata.</p></div>
+    <div class="sec-intro">
+      <div>
+        <div class="eyebrow r" style="margin-bottom:20px">Como trabalhamos</div>
+        <h2 class="sec-h2 r d1">Do briefing<br>ao <span class="gold">resultado</span></h2>
       </div>
+      <p class="sec-body r d2">Um processo pensado para ser rápido, transparente e entregar o máximo em cada etapa — sem enrolação, sem surpresa no final.</p>
     </div>
-    <div style="margin-top:2rem;">
-      <a href="/faq" style="font-size:14px;color:var(--green);text-decoration:none;">Ver todas as perguntas →</a>
+    <div class="process-grid">
+      <div class="step r"><div class="step-n">01</div><h3 class="step-t">Diagnóstico</h3><p class="step-p">Entendemos seu negócio, concorrentes e as maiores oportunidades de crescimento digital.</p></div>
+      <div class="step r d1"><div class="step-n">02</div><h3 class="step-t">Estratégia</h3><p class="step-p">Montamos um plano personalizado integrando site, tráfego, SEO e redes sociais.</p></div>
+      <div class="step r d2"><div class="step-n">03</div><h3 class="step-t">Execução</h3><p class="step-p">Desenvolvemos, publicamos e ativamos cada canal com agilidade e precisão.</p></div>
+      <div class="step r d3"><div class="step-n">04</div><h3 class="step-t">Crescimento</h3><p class="step-p">Monitoramos, otimizamos e escalamos continuamente. Seu sucesso é o nosso produto.</p></div>
     </div>
   </div>
 </section>
 
-</main>
+<!-- ── WOW RESULTS ───────────────────────────────────────── -->
+<section class="wow-results" id="resultados">
+  <div class="wrap wow-inner">
+    <div class="wow-top">
+      <div>
+        <div class="eyebrow wow-eyebrow r">Números reais</div>
+        <h2 class="wow-h2 r d1">Resultados que<br>falam por si</h2>
+      </div>
+      <p class="wow-sub r d2">Não vendemos promessa. Vendemos resultado. Esses são os números que construímos junto com nossos clientes.</p>
+    </div>
+    <div class="wow-grid">
+      <div class="wow-metric r">
+        <div class="wow-metric-cat">Receita gerada</div>
+        <div class="wow-metric-n">R$4<span class="accent">,</span>2M</div>
+        <div class="wow-metric-label">em vendas diretas atribuídas a campanhas gerenciadas pela byvexo</div>
+      </div>
+      <div class="wow-metric r d1">
+        <div class="wow-metric-cat">Projetos</div>
+        <div class="wow-metric-n">340<span class="accent">+</span></div>
+        <div class="wow-metric-label">sites, campanhas e estratégias entregues desde nossa fundação</div>
+      </div>
+      <div class="wow-metric r d2">
+        <div class="wow-metric-cat">ROI médio</div>
+        <div class="wow-metric-n">4<span class="accent">,</span>7×</div>
+        <div class="wow-metric-label">retorno sobre investimento em tráfego pago para nossos clientes ativos</div>
+      </div>
+      <div class="wow-metric r d3">
+        <div class="wow-metric-cat">Satisfação</div>
+        <div class="wow-metric-n">98<span class="accent">%</span></div>
+        <div class="wow-metric-label">dos clientes renovam o contrato após o primeiro trimestre de parceria</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PORTFOLIO ─────────────────────────────────────────── -->
+<section class="portfolio" id="projetos">
+  <div class="wrap">
+    <div class="port-header">
+      <div>
+        <div class="eyebrow r" style="margin-bottom:20px">Portfólio</div>
+        <h2 class="sec-h2 r d1">O que já<br><span class="gold">construímos</span></h2>
+      </div>
+      <a href="/projetos" class="btn-outline r d2">Ver todos os projetos</a>
+    </div>
+    <div class="port-track r d1" id="portTrack">
+
+      <div class="port-card">
+        <div class="port-thumb" style="background:#1a3329">
+          <img src="/img/triadeprime-byvexo.png" alt="A Tríade Prime" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+          <a href="https://triadeprime.com.br/" target="_blank" rel="noopener" class="port-overlay"><span class="port-cta-lbl">Ver projeto <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></a>
+        </div>
+        <div class="port-body">
+          <span class="port-cat">Site · Assessoria Contábil</span>
+          <h3 class="port-name">A Tríade Prime</h3>
+          <p class="port-desc">Site institucional que posiciona o escritório e gera credibilidade antes da primeira reunião.</p>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb">
+          <img src="/img/draelisiane-byvexo.png" alt="Dra. Elisiane Elias" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+          <a href="https://draelisianeelias.com.br/" target="_blank" rel="noopener" class="port-overlay"><span class="port-cta-lbl">Ver projeto <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></a>
+        </div>
+        <div class="port-body">
+          <span class="port-cat">Site · Saúde</span>
+          <h3 class="port-name">Dra. Elisiane Elias</h3>
+          <p class="port-desc">Site sóbrio e profissional que transmite confiança ao paciente antes mesmo da consulta.</p>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb">
+          <img src="/img/aea-byvexo.png" alt="Associação Esportiva Araçatuba" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+          <a href="https://aearacatuba.com.br/" target="_blank" rel="noopener" class="port-overlay"><span class="port-cta-lbl">Ver projeto <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></a>
+        </div>
+        <div class="port-body">
+          <span class="port-cat">Site · Esporte</span>
+          <h3 class="port-name">Associação Esportiva Araçatuba</h3>
+          <p class="port-desc">Presença digital que torcedor e patrocinador sentem orgulho de mostrar.</p>
+        </div>
+      </div>
+
+      <div class="port-card">
+        <div class="port-thumb">
+          <img src="/img/pereiraleite-byvexo.png" alt="Pereira Leite Assessoria Contábil" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+          <a href="https://pereiraleiteassessoria.com.br/" target="_blank" rel="noopener" class="port-overlay"><span class="port-cta-lbl">Ver projeto <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></a>
+        </div>
+        <div class="port-body">
+          <span class="port-cat">Site · Contabilidade</span>
+          <h3 class="port-name">Pereira Leite Assessoria Contábil</h3>
+          <p class="port-desc">Site que virou cartão de visitas digital — mandado sem hesitar para qualquer cliente.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ──────────────────────────────────────── -->
+<section class="testimonials" id="depoimentos">
+  <div class="wrap">
+    <div class="sec-intro">
+      <div>
+        <div class="eyebrow r" style="margin-bottom:20px">Depoimentos</div>
+        <h2 class="sec-h2 r d1">O que nossos<br>clientes <span class="gold">dizem</span></h2>
+      </div>
+      <p class="sec-body r d2">Empresários de diferentes segmentos que confiaram na byvexo e transformaram sua presença digital.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card r">
+        <div class="testi-stars"><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="testi-quote">A credibilidade já estava feita</div>
+        <p class="testi-body">Antes do site, o escritório dependia quase exclusivamente de indicação. O que a byvexo entregou foi uma presença digital que representa de verdade o nível do nosso trabalho. Hoje, quando chego numa reunião com um novo cliente, a credibilidade já está feita.</p>
+        <div class="testi-author"><div class="testi-avatar">G</div><div><div class="testi-name">Giovanni Cicarelli</div><div class="testi-role">Sócio · A Tríade Prime</div></div></div>
+      </div>
+      <div class="testi-card r d1">
+        <div class="testi-stars"><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="testi-quote">Sóbrio, profissional e fiel ao que faço</div>
+        <p class="testi-body">Precisava de um site que transmitisse confiança antes mesmo de o paciente agendar consulta. A byvexo entendeu isso sem eu precisar explicar duas vezes. Ficou exatamente o que eu precisava: sóbrio, profissional e fiel ao que faço.</p>
+        <div class="testi-author"><div class="testi-avatar">E</div><div><div class="testi-name">Dra. Elisiane Elias</div><div class="testi-role">Médica</div></div></div>
+      </div>
+      <div class="testi-card r d2">
+        <div class="testi-stars"><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="testi-quote">Recebemos elogios de parceiros que nunca tinham entrado em contato</div>
+        <p class="testi-body">A AEA tem uma história que merecia ser contada direito. A byvexo deu ao clube uma presença digital que torcedor e patrocinador sentem orgulho de mostrar. Recebemos elogios de parceiros que nunca tinham entrado em contato antes.</p>
+        <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">AEA Araçatuba</div><div class="testi-role">Associação Esportiva Araçatuba</div></div></div>
+      </div>
+      <div class="testi-card r d3">
+        <div class="testi-stars"><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <div class="testi-quote">Hoje mando sem pensar duas vezes</div>
+        <p class="testi-body">Tinha vergonha de mandar o site antigo para um cliente. Hoje mando sem pensar duas vezes. A byvexo não fez só um site bonito, fez um site que representa o escritório antes da gente abrir a boca.</p>
+        <div class="testi-author"><div class="testi-avatar">F</div><div><div class="testi-name">Flavia Leite</div><div class="testi-role">Sócia · Pereira Leite Assessoria Contábil</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ───────────────────────────────────────────────── -->
+<section class="cta-section" id="contato">
+  <div class="wrap">
+    <div class="cta-inner">
+      <div class="eyebrow cta-eyebrow r">Vamos começar?</div>
+      <h2 class="cta-h2 r d1">Sua empresa merece<br>estar no <span class="gold">topo</span></h2>
+      <p class="cta-sub r d2">Fale com nosso time hoje e descubra como a byvexo pode transformar sua presença digital em resultado real.</p>
+      <div class="cta-btns r d3">
+        <a href="https://wa.me/5518997985211" class="btn-gold" target="_blank" rel="noopener">
+          Falar no WhatsApp
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+        <a href="mailto:contato@byvexo.com.br" class="btn-ghost-w">Enviar e-mail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────── -->
 <footer>
   <div class="wrap">
-    <div class="foot-top">
-      <div>
-        <div class="foot-logo">Vexo<span>.</span></div>
-        <div class="foot-tagline">Sites que geram resultado de verdade.</div>
-        <div class="foot-social">
-          <a href="https://wa.me/5518996745458" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.524 5.849L.057 23.617a.75.75 0 0 0 .922.922l5.783-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.73 9.73 0 0 1-4.951-1.354l-.355-.211-3.683.931.949-3.567-.232-.368A9.721 9.721 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg></a>
-          <a href="https://instagram.com/byvexo.br" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
-          <a href="https://linkedin.com/company/byvexo" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="byvexo">
+          <span class="logo-by">by</span><span class="logo-vexo">vexo</span>
+        </a>
+        <p>Revolucionando a presença digital de empresas de todos os portes. Sites, tráfego pago e gestão de redes sociais.</p>
+        <div class="footer-socials">
+          <a href="#" class="soc" aria-label="Instagram"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="soc" aria-label="LinkedIn"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="soc" aria-label="Facebook"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
         </div>
       </div>
-      <nav class="foot-links" aria-label="Links do rodapé">
-        <a href="/">Home</a>
-        <a href="/sobre">Sobre</a>
-        <a href="/cases">Cases</a>
-        <a href="/blog">Blog</a>
-        <a href="/faq">FAQ</a>
-        <a href="/contato">Contato</a>
-      </nav>
+      <div class="footer-col"><h4>Serviços</h4><ul><li><a href="#">Criação de Sites</a></li><li><a href="#">Tráfego Pago</a></li><li><a href="#">Google Meu Negócio</a></li><li><a href="#">Redes Sociais</a></li><li><a href="#">SEO</a></li></ul></div>
+      <div class="footer-col"><h4>Empresa</h4><ul><li><a href="#">Sobre nós</a></li><li><a href="#">Portfólio</a></li><li><a href="#">Blog</a></li><li><a href="#">Parceiros</a></li></ul></div>
+      <div class="footer-col"><h4>Contato</h4><ul><li><a href="#">WhatsApp</a></li><li><a href="#">E-mail</a></li><li><a href="#">Instagram</a></li><li><a href="#">LinkedIn</a></li></ul></div>
     </div>
-    <div class="foot-copy">© 2026 Vexo · byvexo.com.br · CNPJ: 57.540.383/0001-08 · Todos os direitos reservados</div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 <a href="#">byvexo</a>. Todos os direitos reservados.</p>
+      <div class="footer-legal"><a href="/politica-de-privacidade">Privacidade</a><a href="/termos-de-uso">Termos de Uso</a></div>
+    </div>
   </div>
 </footer>
 
-<!-- WHATSAPP FLUTUANTE -->
-<div class="popup-overlay" id="vexo-popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
-  <div class="popup-box">
-    <button class="popup-close" id="popup-close" aria-label="Fechar">&times;</button>
-    <span class="popup-label">Antes de ir embora</span>
-    <h2 class="popup-title" id="popup-title">Quer saber quanto custa<br>um site para a sua empresa?</h2>
-    <p class="popup-sub">Deixa seu contato e a gente te responde em até 2 horas em dias úteis.</p>
-    <form class="popup-form" id="popup-form">
-      <input type="hidden" name="access_key" value="8ed7dc29-fe39-49ec-8ae5-764800cee2ec">
-      <input type="hidden" name="subject" id="popup-subject" value="Lead — Pop-up">
-      <input type="hidden" name="from_page" id="popup-from" value="">
-      <input class="popup-input" type="text" name="name" placeholder="Seu nome" required>
-      <input class="popup-input" type="tel" name="whatsapp" placeholder="WhatsApp com DDD" required>
-      <input class="popup-input" type="text" name="segmento" placeholder="Segmento da sua empresa">
-      <div class="popup-msg" id="popup-msg"></div>
-      <button type="submit" class="popup-btn" id="popup-btn">Quero saber mais</button>
-    </form>
-  </div>
-</div>
-<a href="https://wa.me/5518996745458?text=Olá%2C%20vim%20do%20site%20da%20Vexo%20e%20quero%20saber%20mais!" target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.118 1.524 5.849L.057 23.617a.75.75 0 0 0 .922.922l5.783-1.461A11.942 11.942 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.73 9.73 0 0 1-4.951-1.354l-.355-.211-3.683.931.949-3.567-.232-.368A9.721 9.721 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
-</a>
-
-<!-- POP-UP SAÍDA -->
-
-
 <script>
-  // Menu mobile
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  menuBtn.addEventListener('click', () => {
-    const isOpen = mobileMenu.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', isOpen);
-  });
-  mobileMenu.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('click', () => {
-      mobileMenu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    });
-  });
+  /* ── NAV ─────────────────────────────────────── */
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 50); }, { passive: true });
 
-  document.querySelectorAll('.home-faq-btn').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const item=btn.closest('.home-faq-item'),isOpen=item.classList.contains('open');
-      document.querySelectorAll('.home-faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.home-faq-btn').setAttribute('aria-expanded','false');});
-      if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true');}
-    });
-  });
+  const ham = document.getElementById('ham');
+  const mob = document.getElementById('mobNav');
+  const mc  = document.getElementById('mobClose');
+  ham.addEventListener('click', () => mob.classList.add('open'));
+  mc.addEventListener('click',  () => mob.classList.remove('open'));
+  document.querySelectorAll('.mob-link').forEach(l => l.addEventListener('click', () => mob.classList.remove('open')));
 
-  (function(){
-    var popup=document.getElementById('vexo-popup');
-    if(!popup)return;
-    document.getElementById('popup-from').value=window.location.pathname;
-    document.getElementById('popup-subject').value='Lead — Pop-up ('+window.location.pathname+')';
-    var shown=false,timer;
-    function show(){if(shown)return;shown=true;clearTimeout(timer);popup.classList.add('show');}
-    timer=setTimeout(show,40000);
-    document.addEventListener('mouseleave',function(e){if(e.clientY<10)show();});
-    document.getElementById('popup-close').addEventListener('click',function(){popup.classList.remove('show');});
-    popup.addEventListener('click',function(e){if(e.target===popup)popup.classList.remove('show');});
-    document.getElementById('popup-form').addEventListener('submit',async function(e){
-      e.preventDefault();
-      var btn=document.getElementById('popup-btn');
-      btn.textContent='Enviando...';btn.disabled=true;
-      try{
-        var res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(this)))});
-        var data=await res.json();
-        if(data.success){this.reset();setTimeout(function(){window.location.href='/obrigado';},800);}
-        else{throw new Error();}
-      }catch(err){
-        var msg=document.getElementById('popup-msg');
-        msg.className='popup-msg err';msg.textContent='Erro ao enviar. Tente pelo WhatsApp.';
-      }
-      btn.textContent='Quero saber mais';btn.disabled=false;
+  /* ── REVEAL ──────────────────────────────────── */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.r').forEach(el => io.observe(el));
+
+  /* ── COUNTER ─────────────────────────────────── */
+  const cio = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, target = parseInt(el.dataset.target), dur = 1400, start = performance.now();
+      (function tick(now) {
+        const p = Math.min((now - start) / dur, 1), ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(ease * target);
+        if (p < 1) requestAnimationFrame(tick);
+      })(performance.now());
+      cio.unobserve(el);
     });
-  })();
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-target]').forEach(c => cio.observe(c));
+
+  /* ── HERO WORD CYCLE ─────────────────────────── */
+  const words = ['Sua clínica', 'Seu escritório', 'Seu restaurante', 'Sua academia', 'Sua loja', 'Sua empresa'];
+  let wi = 0;
+  const hw = document.getElementById('heroWord');
+  setInterval(() => {
+    hw.classList.add('out');
+    setTimeout(() => {
+      wi = (wi + 1) % words.length;
+      hw.textContent = words[wi];
+      hw.classList.remove('out');
+      hw.classList.add('in');
+      setTimeout(() => hw.classList.remove('in'), 300);
+    }, 280);
+  }, 2800);
+
+  /* ── SERVICES ACCORDION ──────────────────────── */
+  function toggleSvc(id) {
+    const item = document.getElementById(id);
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.svc-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  /* ── PORTFOLIO DRAG ──────────────────────────── */
+  const pt = document.getElementById('portTrack');
+  let dn = false, sx, sl;
+  pt.addEventListener('mousedown', e => { dn = true; sx = e.pageX - pt.offsetLeft; sl = pt.scrollLeft; });
+  document.addEventListener('mouseup', () => dn = false);
+  pt.addEventListener('mousemove', e => {
+    if (!dn) return;
+    e.preventDefault();
+    pt.scrollLeft = sl - (e.pageX - pt.offsetLeft - sx);
+  });
 </script>
-<div id="vexo-lgpd" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(13,13,13,.97);border-top:.5px solid rgba(247,246,243,.12);padding:14px 20px;gap:12px;font-family:Inter,sans-serif;align-items:center;justify-content:space-between;flex-wrap:wrap;"><p style="font-size:13px;color:rgba(247,246,243,.65);line-height:1.5;flex:1;min-width:200px;margin:0;">Usamos cookies para analisar o tráfego e melhorar sua experiência. Saiba mais em nossa <a href="/privacidade" style="color:#00E676;text-decoration:none;">Política de Privacidade</a>.</p><div style="display:flex;gap:8px;flex-shrink:0;"><button onclick="vexoRecusar()" style="font-size:12px;padding:8px 16px;border-radius:6px;border:.5px solid rgba(247,246,243,.2);background:transparent;color:rgba(247,246,243,.55);cursor:pointer;font-family:Inter,sans-serif;">Recusar</button><button onclick="vexoAceitar()" style="font-size:12px;font-weight:500;padding:8px 16px;border-radius:6px;border:none;background:#00E676;color:#0D0D0D;cursor:pointer;font-family:Inter,sans-serif;">Aceitar cookies</button></div></div><script>(function(){var b=document.getElementById("vexo-lgpd");if(!b)return;if(!localStorage.getItem("vexo_lgpd"))b.style.display="flex";window.vexoAceitar=function(){localStorage.setItem("vexo_lgpd","granted");b.style.display="none";if(typeof gtag==="function")gtag("consent","update",{"analytics_storage":"granted","ad_storage":"granted","ad_user_data":"granted","ad_personalization":"granted"});};window.vexoRecusar=function(){localStorage.setItem("vexo_lgpd","denied");b.style.display="none";};})();</script>
+
+<a href="https://wa.me/5518997985211" class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg width="26" height="26" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+      "@id": "https://www.byvexo.com.br/#organization",
+      "name": "byvexo",
+      "url": "https://www.byvexo.com.br",
+      "logo": {"@type": "ImageObject", "url": "https://www.byvexo.com.br/logo-mark.svg"},
+      "foundingDate": "2024",
+      "taxID": "51.538.514/0001-36",
+      "description": "Agência de marketing digital especializada em criação de sites, tráfego pago, Google Meu Negócio e redes sociais para empresas brasileiras.",
+      "address": {"@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR"},
+      "telephone": "+55-18-99798-5211",
+      "email": "contato@byvexo.com.br",
+      "areaServed": {"@type": "Country", "name": "Brasil"},
+      "sameAs": ["https://www.instagram.com/byvexobrasil/", "https://www.linkedin.com/company/byvexo"],
+      "founder": [
+        {"@type": "Person", "name": "João Vitor Cassiano"},
+        {"@type": "Person", "name": "Rebeca Okano"}
+      ],
+      "knowsAbout": ["Marketing Digital", "SEO", "Google Ads", "Meta Ads", "Google Meu Negócio", "Criação de Sites", "Redes Sociais"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.byvexo.com.br/#website",
+      "url": "https://www.byvexo.com.br",
+      "name": "byvexo",
+      "publisher": {"@id": "https://www.byvexo.com.br/#organization"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.byvexo.com.br/#webpage",
+      "url": "https://www.byvexo.com.br",
+      "name": "byvexo · Agência de Marketing Digital",
+      "description": "Sites, tráfego pago e gestão de redes sociais para empresas que querem crescer de verdade.",
+      "isPartOf": {"@id": "https://www.byvexo.com.br/#website"},
+      "about": {"@id": "https://www.byvexo.com.br/#organization"}
+    }
+  ]
+}
+</script>
 </body>
+</html>
+
+
+
